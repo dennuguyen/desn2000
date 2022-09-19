@@ -17,12 +17,12 @@
 Going through all of the ideas we conducted individual research on over the weekend (ideas in this doc:  https://docs.google.com/document/d/1lhBVNqQttMCyS-LZkeU3rhdo17ehIDjxk5FEoXpYh4c/edit?usp=sharing)
 
 Ranked our selection criteria using a pairwise comparison chart:
-		1. compatibility with report
-		2. innovativeness
-		3. biggest impact on stakeholders
-		4. realistic 
-		5. complementary impacts
-        6. widest reach
+	1. compatibility with report
+	2. innovativeness
+	3. biggest impact on stakeholders
+	4. realistic 
+	5. complementary impacts
+	6. widest reach
 
 We will need to make a matrix as well to assess our ideas based on the rankings we determined.
 
