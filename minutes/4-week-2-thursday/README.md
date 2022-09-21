@@ -3,9 +3,15 @@
 - **When:** 8am 😭
 - **Where:** Teams
 - **Chair:** 
-- **Scribe:** 
+- **Scribe:** @catherinecheng02 
 
 **Attendees:**
+- Dan (@dennuguyen)
+- Catherine (@catherinecheng02)
+- Courtney (@courtzc)
+- James (@jjsnacks)
+- Melissa (@melissathein06)
+- Nikki (@nikkifang)
 
 ## [Review of Research Problem Area Task](https://gitlab.com/dennuguyen/desn2000/-/issues/22)
 	- Skyscraper turbine/ vertical turbines for urban areas
