@@ -10,17 +10,17 @@ Brainstorm problem areas related to energy, energy harvesting, and energy loss i
 
 Brainstormed energy types to set the parameters of the project brief.
 
-<img src="IMG_7120.jpeg" alt="energy-types" width="50%">
+<img src="brainstorm-energy-types.jpeg" alt="brainstorm-energy-types" width="50%">
 
 ### Energy Sources
 
 Brainstormed general sources of energy.
 
-<img src="IMG_7121.jpeg" alt="general-energy-sources" width="50%">
+<img src="brainstorm-general-energy-sources.jpeg" alt="brainstorm-general-energy-sources" width="50%">
 
 This then expanded to include specific sources of energy focused around energy loss.
 
-<img src="IMG_7123.jpeg" alt="specific-energy-sources" width="50%">
+<img src="brainstorm-specific-energy-sources.jpeg" alt="brainstorm-specific-energy-sources" width="50%">
 
 ## Researching Problem Areas 🧩
 
