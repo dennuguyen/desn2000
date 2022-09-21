@@ -71,11 +71,13 @@ Some templates were created to facilitate the persona creation activity.
 			§ Environment
 			§ Source
 			§ Mechanical/mechatronic system 
+			§ Our preliminary ideas on which 2 of the 4 topics we'll pick
 		○ Context
 			§ Current research available
 			§ Data available
 			§ How are we different
 			§ Regulations and policies 
+			§ Scientific context
 		○ Stakeholders
 			§ How are we conducting user research
 		○ Functional requirements and design constraints
