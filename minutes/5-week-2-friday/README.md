@@ -9,8 +9,6 @@
 - Dan (@dennuguyen)
 - Catherine (@catherinecheng02)
 - Courtney (@courtzc)
-- James (@jjsnacks)
-- Melissa (@melissathein06)
 - Nikki (@nikkifang)
 
 ## Agenda
@@ -45,5 +43,5 @@ The following work needs to be delegated in the next meeting:
 - Gantt Chart: Nikki (@nikkifang)
 - Organisation of slides 
 
-Next Meeting: Sunday 25th 8pm
+Next Meeting: Monday 26th 8pm
 
