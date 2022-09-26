@@ -25,7 +25,7 @@ We then further refined the affinity map into the following as we fleshed out th
 
 We added `sustain` and `improve` keyword categories (which is roughly analogous to `design constraints` and `functional requirements`).
 
-## [Function Hierarchy](https://miro.com/app/board/uXjVPThrLNQ=/)
+## [Functional Hierarchy](https://miro.com/app/board/uXjVPThrLNQ=/)
 
 When the team was happy with the basis of the affinity map, the requirements were translated to a functional hierarchy for decomposition into more descriptive and specific requirements/constraints (note that this image is just a subset of the diagram since it's huge):
 
