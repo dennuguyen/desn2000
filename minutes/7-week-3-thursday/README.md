@@ -14,7 +14,7 @@
 - Melissa (@melissathein06)
 
 ## Problem Statement Edit
-- Generalised problem statement after talking to Olivia, as this will give us more scope to explore different applications of the energy that we harvest: 
+Generalised problem statement after talking to Olivia, as this will give us more scope to explore different applications of the energy that we harvest: 
 
 The ever-increasing environmental impact of urban cities is an evolving concern. Worldwide, 1/5 of building energy consumption is air conditioning use - exhausting hot air directly into the atmosphere which is consequently wasted. By capturing and harvesting the energy of the exhausted air, we can reuse the energy to power devices which directly benefit the residents.  
 ## Presentation Progress Updates
