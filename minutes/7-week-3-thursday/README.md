@@ -3,7 +3,7 @@
 - **When:** During workshop
 - **Where:** AGSM
 - **Chair:** 
-- **Scribe:** @datherinecheng02 
+- **Scribe:** @catherinecheng02 
 
 **Attendees:**
 - Dan (@dennuguyen)
