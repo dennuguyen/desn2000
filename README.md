@@ -17,8 +17,9 @@ These are the folders for our assessments:
 - [Final Presentation](./final-presentation)
 - [Final Report](./final-report)
 
-Here are the minutes:
-- [minutes](./minutes)
+Here are the [minutes](./minutes).
+
+Here are the [workshops](./workshops).
 
 ## Issue Management ‼️
 
