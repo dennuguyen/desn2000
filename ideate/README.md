@@ -6,7 +6,7 @@ Conceptual generation and evaluation.
 
 [TOC]
 
-## Concept Generation
+## Concept Generation 📈
 
 Divergent thinking step to generate as many possible concepts that solves our problem.
 
@@ -16,14 +16,14 @@ A few different methods:
 - Crazy 8
 - C Sketch
 
-## Concept Evaluation
+## Concept Evaluation 📉
 
 Convergent thinking step to evaluate all the generated concepts to select a single concept to focus on for prototyping.
 
-### Ranking Functional Requirements
+### Ranking Functional 👑
 
 Perform a pair-wise comparison chart to rank the requirements in terms of importance to us.
 
-### Best-of-Class Chart
+### Best-of-Class Chart 🥇
 
 Scoring the concepts.
