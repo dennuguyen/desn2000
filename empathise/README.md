@@ -2,93 +2,61 @@
 
 User-focused thinking of problem spaces and refinement of a problem statement.
 
-## Work Packages 💼
+## Brainstorming Problem Areas 🧠
 
-- Brainstorm problem spaces related to energy, energy harvesting, and energy loss.
-- Evaluate problem spaces to narrow down the problem spaces.
-- Identify the stakeholders within these problem spaces.
-- Define a problem statement from a selected problem space with stakeholders in mind.
-- Identify stakeholder/user requirements.
-
-## Brainstorming 🧠
-
-### Problem Constraints
-
-- Stick to the city(?)
-- Output energy is electrical.
+Brainstorm problem areas related to energy, energy harvesting, and energy loss in order to develop a problem statement.
 
 ### Energy Types
 
-- Thermal
-- Pressure
-- Vibrations
-- Kinetic
-- Hydro
-- Magnetic
-- Electrical
-- Potential
+Brainstormed energy types to set the parameters of the project brief.
+
+<img src="brainstorm-energy-types.jpeg" alt="brainstorm-energy-types" width="50%">
 
 ### Energy Sources
 
-- Sun
-- Wind
-- Waves
-- Rivers
-- Movement
-    - Human
-    - Cows
-    - Cars
-- Vibrations
-- Sound
-- Thermal
-    - Geothermal
-    - Body
-    - Building ventilation exhaust
-- Non-renewables
+Brainstormed general sources of energy.
 
-### Human Movement
+<img src="brainstorm-general-energy-sources.jpeg" alt="brainstorm-general-energy-sources" width="50%">
 
-A shoe that when stepped, generates energy.
+This then expanded to include specific sources of energy focused around energy loss.
 
-### Car Movement
+<img src="brainstorm-specific-energy-sources.jpeg" alt="brainstorm-specific-energy-sources" width="50%">
 
-Cars driving over speed-bumps that generate energy when compressed.
+## Researching Problem Areas 🧩
 
-### Solar Space Energy
+Further research into problem areas to:
+- Identify the stakeholders within these problem spaces.
+- The marketability of the problem.
+- Presence of data and previous research.
+- The innovativeness of the problem i.e. presencen existing solutions and their innovativeness.
 
-Solar panels in space then send energy to Earth.
+> This work was done within a [Google Doc](https://docs.google.com/document/d/1lhBVNqQttMCyS-LZkeU3rhdo17ehIDjxk5FEoXpYh4c/edit?usp=sharing).
 
-### Concentrated Solar Panel
+## Evaluating Problem Areas 🤔
 
-Solar panels in 
+Evaluate problem areas to narrow down the problem areas.
 
-### Street Gutters
+This was a three step process:
+1. Identify the selection criteria to measure the problem areas against.
+1. Conducting a pair-wise comparison chart to weigh the selection criteria in terms of importance to us.
+1. Filling a best-of-class chart to score the problem areas with the selection criteria weighting.
 
-A generator in a gutter can capture water-flow to generate energy.
+> This work was done within a [Google Sheet](https://docs.google.com/spreadsheets/d/15Y5BLjWYeOzdiXMWd3SZe7I68tTQgj5_khv4GgHinzo/edit?usp=sharing).
 
-### Stormwater Generator
+## Problem Statement ⁉️
 
-Expanding off the [street gutters](#street-gutters).
 
-We can place generators in larger tunnels in a city's stormwater drainage system (basically building a dam off stormwater). Potential stakeholders would be:
-- All residents of the city.
-- Entities responsible for city stormwater drainage.
-- Entities responsible for city energy delivery.
 
-This might see great success in regions that:
-- Experience wet seasons and could significantly decrease the use of carbon fuels during these seasons.
-- Located far from dams.
+## Creating Personas 👤
 
-### Building Ventilation Exhaust
+The personalities that represent who the users are to the problem.
 
-City buildings are huge and use massive amounts of air to ventilate a building. Used air is just wasted by its exhaust into the atmosphere. We can capture this used air by placing generators at the air exhaust points of buildings.
-
-Someone [patented](https://patents.google.com/patent/US6365985B1/en) this idea? But this patent is very small scale and doesn't tackle industrial level air conditioning.
-
-### 
-
-## Converging Ideas 🧩
-
-## Problem Statement 🤔
+> This work was done within a [Google Doc](https://docs.google.com/document/d/1QcTmauxbnZnFPAq2-T5k6lEO8NxcR10Ln2A-Wx-NyZU/edit?usp=sharing).
 
 ## User Requirements 🤝
+
+User requirements elaborate on what our personas want.
+
+What do they want? Why do they want it?
+
+> This work was done within a [Google Doc](https://docs.google.com/document/d/1A06ONjj7tLm_xGvUQfQnWL-As_b0yvIB1bE-RqM8eos/edit?usp=sharing).
