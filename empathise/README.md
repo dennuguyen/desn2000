@@ -91,9 +91,27 @@ The identified stakeholders were:
 
 After identification of the stakeholders, we expand on who these stakeholders are to make them more relatable to us as people and to the problem.
 
-
-
 > This work was done within a [Google Doc](https://docs.google.com/document/d/1QcTmauxbnZnFPAq2-T5k6lEO8NxcR10Ln2A-Wx-NyZU/edit?usp=sharing).
+
+### User Journeys
+
+```mermaid
+journey
+    title Chetan's Work Day
+    section Morning Routine
+        Make coffee: 3: Chetan
+        Catch the bus to work: 1: Chetan
+    section Work
+        Talk to workmates: 5: Chetan
+        Walk to the cafe to meet clients: 2: Chetan
+        Talk to clients: 5: Chetan
+    section Gym
+        Work out: 2: Chetan
+        Go to the convenience store: 5: Chetan
+    section Night Routine
+        Catch the bus home: 1: Chetan
+        No electricity at home: 1: Chetan
+```
 
 ## User Requirements 🤝
 
