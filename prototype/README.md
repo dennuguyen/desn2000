@@ -16,7 +16,7 @@ Building a proof-of-concept.
 
 A top-down thinking approach.
 
-### Work Breakdown Structure
+### Work Breakdown Structure 📋
 
 Identification of work packages by decomposing the system down into components for implementation.
 
