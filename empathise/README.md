@@ -2,7 +2,7 @@
 
 User-focused thinking of problem spaces and refinement of a problem statement.
 
-## Work Packages
+## Work Packages 💼
 
 [TOC]
 
@@ -111,8 +111,3 @@ As a [user], I want to [need], so I can [context]
 ## Affinity Map User Requirements to Customer Needs 🗺
 
 For the sake of marks, we're going to map our user requirements to customer needs.
-
-## First-Hand Data 🥼
-
-We gathered first-hand data by finding AC ventilation and measuring the temperature and airflow.
-
