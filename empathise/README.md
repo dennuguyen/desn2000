@@ -98,19 +98,24 @@ After identification of the stakeholders, we expand on who these stakeholders ar
 ```mermaid
 journey
     title Chetan's Work Day
-    section Morning Routine
+    section Home
+        Wake up: 3: Chetan
         Make coffee: 3: Chetan
         Catch the bus to work: 1: Chetan
     section Work
         Talk to workmates: 5: Chetan
         Walk to the cafe to meet clients: 2: Chetan
         Talk to clients: 5: Chetan
+        Walk back to the office: 2: Chetan
+        Finish work: 3: Chetan
+        Walk to the gym: 2: Chetan
     section Gym
         Work out: 2: Chetan
         Go to the convenience store: 5: Chetan
-    section Night Routine
         Catch the bus home: 1: Chetan
+    section Home
         No electricity at home: 1: Chetan
+        Try to sleep: 1: Chetan
 ```
 
 ## User Requirements 🤝
