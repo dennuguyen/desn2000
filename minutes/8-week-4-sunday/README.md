@@ -30,8 +30,8 @@
 - @jjsnacks to finish off audience interaction section
 - Tidy up slides and submit
 - Practice presentation and be familiar with the script/speaker notes
-- Brainstorm questions that audience may ask after the presentation
-- Brainstorm questions to ask other groups
+- [Brainstorm questions that audience may ask after the presentation](https://gitlab.com/dennuguyen/desn2000/-/blob/master/interim-presentation/questions.md)
+- [Brainstorm questions to ask other groups](https://gitlab.com/dennuguyen/desn2000/-/blob/master/interim-presentation/questions.md)
 
 ## Next Meeting
 
