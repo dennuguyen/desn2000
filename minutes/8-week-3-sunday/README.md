@@ -1,4 +1,4 @@
-# Meeting 8 - Week 4 Sunday
+# Meeting 8 - Week 3 Sunday
 
 - **When:** 9-10.30 pm
 - **Where:** Teams
