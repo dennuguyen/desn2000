@@ -1,4 +1,4 @@
-# Meeting 9 - Week 4 Thursday
+# Meeting 9 - Week 4 Friday
 
 - **When:** After workshop
 - **Where:** 
