@@ -1,4 +1,17 @@
 # Meeting 10 - Week 4 Sunday
+- **When:** 9-10.30 pm
+- **Where:** Teams
+- **Chair:** 
+- **Scribe:** @catherinecheng02 
+
+**Attendees:**
+- Dan (@dennuguyen)
+- Catherine (@catherinecheng02)
+- Courtney (@courtzc)
+- Nikki (@nikkifang)
+- James (@jjsnacks)
+- Melissa (@melissathein06)
+
 ## Application ideas 
 - Power a greenhouse/urban farm 
 - Cycle the hot exhaust air into district heating (New York City uses steam for heating)
