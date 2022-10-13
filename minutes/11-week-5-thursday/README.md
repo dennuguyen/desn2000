@@ -36,7 +36,7 @@
 		- Not much research
 		- Requires solid foundations - may be hard to secure
     - Accelerate air before it enters turbine - may be loud
--- Catherine
+- Catherine
 	- Turbine requirements
 		- Efficient for low airspeeds - approx. 2-3 m/s
 		- Doesn't give rise to large turbulence
