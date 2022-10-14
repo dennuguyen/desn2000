@@ -14,7 +14,7 @@
 - Melissa (@melissathein06)
 - Nikki (@nikkifang)
 
-### Design Methods
+## Design Methods
 - Axiomatic - match functional requirements to physical domain
 - Biological - modelling design off of naturally occurring biological organisms
 - TRIZ - if there is a product that is similar to other products existing in the market, 40 x 40 matrix to help you solve problems - separation of time, space
@@ -23,7 +23,7 @@
     - will use axiomatic design for design concept generation
     - TRIZ to solve any contradictions that arise
 
-### Group turbine design and research
+## Group turbine design and research
 - Mel
     - Take other people's turbine and make it smaller
     - Bladeless turbine:
@@ -72,7 +72,7 @@
 		- Blade length
 	    - Blade pitch/angle
 
-### Clarifications from Olivia
+## Clarifications from Olivia
 - Independence Axiom - which features of your sketches addresses specific functional requirements
 - Apply design methods to 2-3 design concepts 
 - Links for TRIZ tutorials
