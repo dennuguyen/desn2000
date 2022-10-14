@@ -77,7 +77,7 @@
 - Apply design methods to 2-3 design concepts 
 - Links for TRIZ tutorials
 
-**Actionables**
+## Actionables
 - Research types of HVAC systems - what is the airflow like? 
 - Research different types of turbulence in internal flow
 - Read axiomatic design theory 
