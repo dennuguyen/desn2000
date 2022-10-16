@@ -6,7 +6,7 @@ Conceptual generation and evaluation.
 
 [TOC]
 
-## Concept Generation 📈
+## Concept Generation of Harvesting Solutions 📈
 
 Divergent thinking step to generate as many possible concepts that solves our problem.
 
@@ -16,14 +16,28 @@ A few different methods:
 - Crazy 8
 - C Sketch
 
-## Concept Evaluation 📉
+## Concept Evaluation of Harvesting Solutions 📉
 
 Convergent thinking step to evaluate all the generated concepts to select a single concept to focus on for prototyping.
 
-### Ranking Functional 👑
+### Selection Criteria
 
-Perform a pair-wise comparison chart to rank the requirements in terms of importance to us.
+### PCC
 
-### Best-of-Class Chart 🥇
+### BOC
+
+## Concept Generation of Turbine Solutions 📈
+
+## Concept Evaluation of Turbine Solutions 📉
+
+### Selection Criteria
+
+The selection criteria for turbine solutions are the functional requirements and constraints.
+
+### PCC
+
+Perform a pair-wise comparison chart to rank the requirements and constraints in terms of importance to us.
+
+### BOC
 
 Scoring the concepts.
