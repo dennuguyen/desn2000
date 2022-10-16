@@ -324,7 +324,7 @@ James' BOC:
 | How can the heat loss from chargers be converted into useful energy?                                                                                               |                  1 |                      1 |                     0 |              2 |                                      1 |                  1 |
 | How can the heat from ventilation exhaust be converted into useful energy?                                                                                         |                  2 |                      2 |                     2 |              3 |                                      4 |                  3 |
 
-The team BOC is:
+Final BOC:
 
 | Concepts                                                                                                                                                           | Court | Dan   | Melissa | Nikki | Catherine | James |       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|-------|---------|-------|-----------|-------|-------|
@@ -368,9 +368,106 @@ The identified stakeholders were:
 
 After identification of the stakeholders, we expand on who these stakeholders are to make them more relatable to us as people and to the problem.
 
+We also need to ask our personas:
+- What do they want?
+- Why do they want it?
+
+User requirements elaborate on what our personas want. The user requirements we use are in the form of user stories:
+```
+As a [user], I want to [need], so I can [context]
+```
+
 > This work was done within a [Google Doc](https://docs.google.com/document/d/1QcTmauxbnZnFPAq2-T5k6lEO8NxcR10Ln2A-Wx-NyZU/edit?usp=sharing).
 
-### User Journeys
+### Chetan
+
+24
+
+<img src="/uploads/5272684084c42e05705bb460eb654720/image.png" alt="Chetan" width="50%">
+
+Financial Consultant / Apartment Resident
+
+<table>
+<tr>
+    <th>Activities</th>
+    <td>Works in the CBD as a financial consultant to small and medium-sized businesses.<br><br>
+
+Goes to the gym and takes boxing classes after work in an effort to maintain a healthy lifestyle.
+
+Recently bought a Nintendo Switch and plays Animal Crossing until it is time to sleep.
+    </td>
+</tr>
+<tr>
+    <th>Environments</th>
+    <td>Chetan lives in a hot tropical climate with wet and dry seasons. The region’s average yearly temperature is 27.3° C.<br><br>
+
+The provincial capital (which is where Chetan currently lives) is a rapidly developing city. However, the city (especially the poorer neighbourhoods) is prone to electrical outages due to an inefficient, outdated, and overworked electricity grid.
+
+![image](/uploads/4c5b153719b0e0820a870dcf8c8212a2/image.png)
+
+His hometown had higher rates of poverty and lacked AC units due to their high price. Chetan’s family uses standing fans as they are extremely cheap.
+
+![image](/uploads/4890ee5d73e2daffb7df5e5bf96df99f/image.png)
+
+Chetan’s workplace is a shared office outfitted with a single outdated AC which struggles to effectively cool the entire space. This is most noticeable when all employees are in the office, and the office is only a couple degrees cooler than outside.
+
+Chetan’s gym is not outfitted with an AC unit. The gym gets very hot especially when there are multiple patrons.
+
+Chetan having recently starting his consulting career is renting a cheap unit and is saving up to buy his own apartment in the provincial capital.
+    </td>
+</tr>
+<tr>
+    <th>Life Events</th>
+    <td>Completed university at the country’s capital.<br><br>
+
+Had moved to the provincial capital city from a rural town after receiving an offer to start as an associate financial consultant for a 12-employee-large company.
+    </td>
+</tr>
+<tr>
+    <th>Motivators</th>
+    <td>Loves talking to people which was his drive to pursue his career as a consultant.<br><br>
+
+Strongly motivated by his desire to buy his own home. Chetan does what he can to save money, even if it means enduring the heat in his home. Chetan wants to buy a home in a more affluent neighbourhood as this neighbourhood provides better services and utilities.
+
+Chetan is naturally comfortable in taking risks as he is young and ambitious.
+
+Chetan looks forward to travelling around the country every holiday with his workmates. This holiday is sponsored by his workplace.
+    </td>
+</tr>
+<tr>
+    <th>Needs</th>
+    <td>Enjoys the luxury of AC as much as possible. Chetan finds his productivity linked to how cool he is feeling.<br><br>
+
+Chetan has a habit of walking into the convenience store next to the gym after his workout to cool down.
+    </td>
+</tr>
+<tr>
+    <th>Desires</th>
+    <td>Chetan does wish his gym had AC units to make the space more comfortable to exercise in.</td>
+</tr>
+<tr>
+    <th>Problem Perspective</th>
+    <td>Chetan as an opportunist sees the marketability of solving this solution as a lot of buildings in the provincial capital uses AC, with the modern buildings being outfitted with state-of-the-art ventilation systems.<br><br>
+
+Chetan however is saving up to buy an apartment so he does not want to invest money into this technology personally if it was installed in his current unit.
+    </td>
+</tr>
+<tr>
+    <th>Relationships</th>
+    <td>Chetan sends 20% of his earnings back home to his family with each of his paychecks as he is aware his family is living below the poverty line.</td>
+</tr>
+<tr>
+    <th>User Stories</th>
+    <td>As a resident, I want my current lifestyle to be maintained, as I am content with the status quo.
+
+As a resident, I want to be able to cool down in the summer, so I do not feel uncomfortable and exhausted.
+
+As a resident, I do not want to pay for the cost of implementing any solutions, as I am saving up my money for other investments.
+
+As a resident, I want to pay low electricity utilities, as I am saving up my money for other investments.
+    </td>
+</tr>
+</table>
 
 ```mermaid
 journey
@@ -395,19 +492,201 @@ journey
         Try to sleep: 1: Chetan
 ```
 
-## User Requirements 🤝
+> The inspiration for Chetan actually comes from my personal living experience when I was in Cambodia for 2 months (for Engineering World Health). I also drew inspiration from my homestay's families.
 
-We need to ask our personas:
-- What do they want?
-- Why do they want it?
+### Larry Goldstein
 
-User requirements elaborate on what our personas want. The user requirements we use are in the form of user stories because:
-```
-As a [user], I want to [need], so I can [context]
-```
+72
 
-> This work was done within a [Google Doc](https://docs.google.com/document/d/1A06ONjj7tLm_xGvUQfQnWL-As_b0yvIB1bE-RqM8eos/edit?usp=sharing).
+<img src="/uploads/9edba33dba524079c248925618eb9546/image.png" alt="Larry" width="50%">
+
+Property Investor
+
+<table>
+<tr>
+    <th>Activities</th>
+    <td>Larry enjoys pursuing new and trendy areas to develop and invest in. Otherwise, Larry likes to gain insider trading knowledge at the local golf club.<br><br>
+
+Larry secretly funds drug cartels so that he can maintain low living standards and social inequality in the ghettos of the city so that he can gentrify these neighbourhoods.
+
+Larry smokes expensive Cuban cigars.
+    </td>
+</tr>
+<tr>
+    <th>Environments</th>
+    <td>Larry lives in a 2-story penthouse in the CBD with 2 dogs and a tiger.<br><br>
+
+![image](/uploads/ad698458fb7595c97b026cf138051cf5/image.png)
+    </td>
+</tr>
+<tr>
+    <th>Life Events</th>
+    <td>Larry was born into a rich family.</td>
+</tr>
+<tr>
+    <th>Motivators</th>
+    <td>Larry is strongly motivated by profit. He is always looking for ways to make money.</td>
+</tr>
+<tr>
+    <th>Needs</th>
+    <td>Larry needs heart medication which happens to be Sildenafil.</td>
+</tr>
+<tr>
+    <th>Desires</th>
+    <td>More money.<br><br>
+
+More power and influence.
+
+Ins with the politicians.
+    </td>
+</tr>
+<tr>
+    <th>Problem Perspective</th>
+    <td>Larry would personally consider investing in this idea if the exhausted air of his buildings could be reused to great effect (especially if it lowers maintenance costs).</td>
+</tr>
+<tr>
+    <th>Relationships</th>
+    <td>His wife left him a long time ago.<br><br>
+
+Larry now has a 21 year old supermodel girlfriend and he is still looking at other options.
+
+Larry's children are trust fund babies.
+    </td>
+</tr>
+<tr>
+    <th>User Stories</th>
+    <td>As a building owner, I want to lower my electricity utility bills, so I can save money.</td>
+</tr>
+</table>
+
+> Hopefully Larry is not a real person.
+
+### Michelle
+
+32
+
+<img src="/uploads/02043b1c32bb2be557c82291d4a8b2cf/image.png" alt="Michelle" width="50%">
+
+CEO of High-Rise Ventilation Architecture Firm
+
+<table>
+<tr>
+    <th>Activities</th>
+    <td>Michelle is ambitious. She wears many caps within her company and works late. She secures contracts for her firm and is the soul of her company.</td>
+</tr>
+<tr>
+    <th>Environments</th>
+    <td>Michelle grew up in a strong middle class family in the suburbs.</td>
+</tr>
+<tr>
+    <th>Life Events</th>
+    <td>Michelle’s life is typical for middle class families in her area. She graduated highschool and university with a Bachelor’s degree in Commerce.<br><br>
+
+Michelle has worked as COO in various engineering companies.
+    </td>
+</tr>
+<tr>
+    <th>Motivators</th>
+    <td>Michelle as an ambitious business-woman identified a need for professional high-rise ventilation architecture. She is driven by the idea of creating what is her own.</td>
+</tr>
+<tr>
+    <th>Needs</th>
+    <td></td>
+</tr>
+<tr>
+    <th>Desires</th>
+    <td>Michelle wants to expand her firm to other cities in the country and to one-day expand her firm internationally.</td>
+</tr>
+<tr>
+    <th>Problem Perspective</th>
+    <td>Michelle is an advocate for environmentalism. She sees the current trend for more eco-friendly built environments and wants to be the first to innovate the ventilation sector in order to achieve her business goals.</td>
+</tr>
+<tr>
+    <th>Relationships</th>
+    <td>Michelle has a large network in the mechanical and manufacturing engineering industry.</td>
+</tr>
+<tr>
+    <th>User Stories</th>
+    <td>As a ventilation company, I want an eco-friendly ventilation system, so I can out-compete other ventilation companies.<br><br>
+
+As a ventilation company, I want more work, so I can make profits.
+</td>
+</tr>
+</table>
+
+### Shaun
+
+26
+
+<img src="/uploads/cde85b86cc7a85e22a117306273be9ad/image.png" alt="Shaun" width="50%">
+
+City Councillor overseeing City Planning
+
+<table>
+<tr>
+    <th>Activities</th>
+    <td>A city councillor who works hard to connect with his community and develop plans to improve it.<br><br>
+
+Shaun keeps his activities within his community and enjoys connecting with people.
+    </td>
+</tr>
+<tr>
+    <th>Environments</th>
+    <td>Shaun is a second generation immigrant. His family can be regarded as lower middle class.<br><br>
+
+Shaun graduated from a Catholic high school and from a well-renowned university with a Bachelor's of Civil Engineering.</td>
+</tr>
+<tr>
+    <th>Life Events</th>
+    <td>Shaun has a degree in civil engineering.<br><br>
+
+Shaun has worked in the city council as a city planner for the past 4 years. He advises the Mayor and council on city planning matters.
+    </td>
+</tr>
+<tr>
+    <th>Motivators</th>
+    <td>Loves being involved with the community and making plans to solve his community’s problems.<br><br>
+
+Shaun’s next objective is to become Mayor of his city.
+    </td>
+</tr>
+<tr>
+    <th>Needs</th>
+    <td></td>
+</tr>
+<tr>
+    <th>Desires</th>
+    <td>Shaun has a fiance and wishes to start a family soon.<br><br>
+
+Shaun wants to buy his first home.
+</td>
+</tr>
+<tr>
+    <th>Problem Perspective</th>
+    <td>Shaun has a unique community perspective. He understands how heat stress physically affects the elderly parts of his community.</td>
+</tr>
+<tr>
+    <th>Relationships</th>
+    <td>Shaun has strong familial ties and is closest with his immediate family.</td>
+</tr>
+<tr>
+    <th>User Stories</th>
+    <td>As a city planner, I want to implement urban environment cooling solutions, so I can mitigate the impact of the heat island effect in my community.<br><br>
+
+As a city planner, I want to lower the cost of utilities for my community, so they can save money for other needs or comforts.
+    </td>
+</tr>
+</table>
 
 ## Affinity Map User Requirements to Customer Needs 🗺
 
 For the sake of marks, we're going to map our user requirements to customer needs.
+
+The list of customer need nouns:
+- C1: Cooling
+- C2: Lifestyle
+- C3: Energy
+- C4: Environment
+- C5: Infrastructure
+- C6: Cost
+- C7: Business
