@@ -18,11 +18,11 @@ Customer needs **are** requirements. However, customer needs may not cleanly tra
 
 From our list of customer needs (from this [Google Doc](https://docs.google.com/document/d/1A06ONjj7tLm_xGvUQfQnWL-As_b0yvIB1bE-RqM8eos/edit), we categorised the customer needs into general requirements. This is the first draft:
 
-![image](/uploads/c857e0656e816b1e27b3954e82ba3f33/image.png)
-﻿
+![image](affinity-map-cn-to-fr-1.png)
+
 We further refined the affinity map into the following as we fleshed out the categories into root functional requirements:
 
-![image](/uploads/00df7bfe86b16e6a648b62cf70f209d6/image.png)
+![image](affinity-map-cn-to-fr-2.png)
 
 There was a clean trend where `sustain` was closely related to constraints and `improve` was closely to functional requirements.
 
@@ -44,7 +44,7 @@ The root constraints that we have identified were:
 
 The next step is to decompose the above requirements (green are functional requirements, blue are constraints):
 
-![image](/uploads/a4d2ddc6111c8a9cec4de27dc810ec77/image.png)
+![image](fr-hierarchy.png)
 
 ## Gathering Field Data 🏑
 
@@ -68,7 +68,7 @@ We gathered first-hand data by finding AC ventilation and measuring the temperat
 </table>
 
 
-![image](/uploads/39bbdae9fe12f3ea7f210dd9465756e9/image.png)
+![image](6-180-thomas-1.png)
 
 <table>
 <thead>
@@ -224,7 +224,7 @@ The [recommended internal building temperature](https://www.designingbuildings.c
 
 Summarised image (green is control data, red is independent data, blue is building):
 
-![image](/uploads/1e2ff2a295dca6fa943ec3c438d73326/image.png)
+![image](6-180-thomas-2.png)
 
 ## Defining FR Metrics 💯
 
