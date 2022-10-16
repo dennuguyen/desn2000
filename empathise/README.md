@@ -147,6 +147,34 @@ This was a three step process:
 
 > This work was done within a [Google Sheet](https://docs.google.com/spreadsheets/d/15Y5BLjWYeOzdiXMWd3SZe7I68tTQgj5_khv4GgHinzo/edit?usp=sharing).
 
+### PCC
+
+The team PCC is:
+
+| Criteria                               | Court | Dan | Melissa | Nikki | Catherine | James |      |
+|----------------------------------------|-------|-----|---------|-------|-----------|-------|------|
+| Stakeholder Impact                     | 4.4   | 2   | 2       | 3     | 3         | 3     | 2.90 |
+| Number of Stakeholders                 | 4.4   | 0   | 2       | 1     | 0         | 2     | 1.57 |
+| Complementary Impacts                  | 0     | 3   | 0       | 0     | 2         | 2     | 1.17 |
+| Innovativeness                         | 7.6   | 5   | 4       | 3     | 1         | 3     | 3.93 |
+| Compatibility with Report Requirements | 9.8   | 3   | 5       | 5     | 5         | 5     | 5.47 |
+| Realistic/Feasible                     | 3.2   | 2   | 2       | 3     | 4         | 0     | 2.37 |
+
+### BOC
+
+The team BOC is:
+
+| Concepts                                                                                                                                                           | Court | Dan   | Melissa | Nikki | Catherine | James |       |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|-------|---------|-------|-----------|-------|-------|
+| How can the heat lost from roads be utilised?                                                                                                                      | 50.33 | 53.10 | 41.30   | 40.63 | 47.87     | 34.00 | 44.54 |
+| How can we utilise the wind incident on skyscrapers, and reduce the effect of wind on skyscrapers and pedestrians at ground level (streetlevel vertical turbines)? | 34.63 | 49.83 | 35.33   | 33.60 | 46.57     | 52.57 | 42.09 |
+| How can we harvest energy from human motion to power portable devices?                                                                                             | 27.40 | 61.23 | 24.03   | 34.63 | 29.57     | 30.73 | 34.60 |
+| How can we use human motion to power a safer prosthetic device?                                                                                                    | 40.53 | 59.80 | 46.33   | 35.60 | 36.37     | 60.97 | 46.60 |
+| How can we utilise this sound energy to help reduce noise pollution and/or improve  transport hubs/construction sites?                                             | 42.13 | 64.50 | 46.93   | 49.67 | 55.50     | 35.83 | 49.09 |
+| How can we use the flow of wastewater to power the IOTs, removing the need for battery maintenance?                                                                | 20.43 | 49.47 | 39.73   | 26.27 | 37.40     | 33.47 | 34.46 |
+| How can the heat loss from chargers be converted into useful energy?                                                                                               | 20.17 | 40.67 | 35.80   | 36.20 | 40.13     | 20.17 | 32.19 |
+| How can the heat from ventilation exhaust be converted into useful energy?                                                                                         | 55.93 | 58.23 | 46.93   | 52.03 | 48.13     | 52.03 | 52.22 |
+
 ## Problem Statement ⁉️
 
 A problem statement sets the objective for the team.
