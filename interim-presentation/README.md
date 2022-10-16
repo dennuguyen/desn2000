@@ -1,4 +1,4 @@
-# Interim Presentation
+# DESN2000 - Interim Presentation
 
 [Slides](https://docs.google.com/presentation/d/1VIJ-QyTLupVWgdFt2Plw3OizgLottkExcTtEbrONTyE/edit?usp=sharing)
 
@@ -8,6 +8,7 @@
 - Why should we care about your problem statement?
 - Who are you going to market this to and how will you convince them to buy the product?
 - How much money do you anticipate the solution will take?
+
 ## Questions to other groups
 
 - What future research do you need before you can make a decision on which design you pick?
