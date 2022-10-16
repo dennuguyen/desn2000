@@ -372,7 +372,7 @@ We also need to ask our personas:
 - What do they want?
 - Why do they want it?
 
-User requirements elaborate on what our personas want. The user requirements we use are in the form of user stories:
+User requirements (US) elaborate on what our personas want. The user requirements we use are in the form of user stories:
 ```
 As a [user], I want to [need], so I can [context]
 ```
@@ -680,7 +680,7 @@ As an environmentalist, I want to implement urban environment cooling solutions,
 </tr>
 </table>
 
-## Affinity Map User Requirements to Customer Needs 🗺
+## Affinity Map US to CN 🗺
 
 For the sake of marks, we're going to map our user stories to customer need nouns.
 
