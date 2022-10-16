@@ -46,10 +46,6 @@ The next step is to decompose the above requirements (green are functional requi
 
 ![image](/uploads/a4d2ddc6111c8a9cec4de27dc810ec77/image.png)
 
-## Defining FR Metrics 💯
-
-The definition of metrics helps specify the FR.
-
 ## Gathering Field Data 🏑
 
 First-hand data helps to inform what the FR metrics should be.
@@ -230,6 +226,9 @@ Summarised image (green is control data, red is independent data, blue is buildi
 
 ![image](/uploads/1e2ff2a295dca6fa943ec3c438d73326/image.png)
 
+## Defining FR Metrics 💯
+
+The definition of metrics helps specify the FR.
 
 ## Defining Design Constraints 🛑
 
