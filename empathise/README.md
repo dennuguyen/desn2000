@@ -142,14 +142,90 @@ Evaluate problem areas to narrow down the problem areas. The deliverable for thi
 
 This was a three step process:
 1. Identify the selection criteria to measure the problem areas against.
-1. Conducting a pair-wise comparison chart to weigh the selection criteria in terms of importance to us.
-1. Filling a best-of-class chart to score the problem areas with the selection criteria weighting.
+1. Conducting a pair-wise comparison (PCC) chart to weigh the selection criteria in terms of importance to us.
+1. Filling a best-of-class (BOC) chart to score the problem areas with the selection criteria weighting.
 
 > This work was done within a [Google Sheet](https://docs.google.com/spreadsheets/d/15Y5BLjWYeOzdiXMWd3SZe7I68tTQgj5_khv4GgHinzo/edit?usp=sharing).
 
+### Selection Criteria
+
+The identified selection criteria for problem areas are:
+- Stakeholder Impact.
+- Number of Stakeholders.
+- Complementary Impacts.
+- Innovativeness.
+- Compatibility with Report Requirements.
+- Realistic/Feasible.
+
 ### PCC
 
-The team PCC is:
+Dan's PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        0       |                    0                   |          0         |
+| Number of Stakeholders                 |          0         |            -           |           0           |        0       |                    0                   |          0         |
+| Complementary Impacts                  |          0         |            1           |           -           |        0       |                    1                   |          1         |
+| Innovativeness                         |          1         |            1           |           1           |        -       |                    1                   |          1         |
+| Compatibility with Report Requirements |          1         |            1           |           0           |        0       |                    -                   |          1         |
+| Realistic/Feasible                     |          1         |            1           |           0           |        0       |                    0                   |          -         |
+
+Court's PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        0       |                    0                   |          0         |
+| Number of Stakeholders                 |          0         |            -           |           1           |        0       |                    0                   |          1         |
+| Complementary Impacts                  |          0         |            0           |           -           |        0       |                    0                   |          0         |
+| Innovativeness                         |          1         |            1           |           1           |        -       |                    0                   |          1         |
+| Compatibility with Report Requirements |          1         |            1           |           1           |        1       |                    -                   |          1         |
+| Realistic/Feasible                     |          1         |            0           |           1           |        0       |                    0                   |          -         |
+
+Melissa's PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        0       |                    0                   |          0         |
+| Number of Stakeholders                 |          0         |            -           |           1           |        0       |                    0                   |          1         |
+| Complementary Impacts                  |          0         |            0           |           -           |        0       |                    0                   |          0         |
+| Innovativeness                         |          1         |            1           |           1           |        -       |                    0                   |          1         |
+| Compatibility with Report Requirements |          1         |            1           |           1           |        1       |                    -                   |          1         |
+| Realistic/Feasible                     |          1         |            0           |           1           |        0       |                    0                   |          -         |
+
+Nikki's PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        1       |                    0                   |          0         |
+| Number of Stakeholders                 |          0         |            -           |           1           |        0       |                    0                   |          0         |
+| Complementary Impacts                  |          0         |            0           |           -           |        0       |                    0                   |          0         |
+| Innovativeness                         |          0         |            1           |           1           |        -       |                    0                   |          1         |
+| Compatibility with Report Requirements |          1         |            1           |           1           |        1       |                    -                   |          1         |
+| Realistic/Feasible                     |          1         |            1           |           1           |        0       |                    0                   |          -         |
+
+Catherine's PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        1       |                    0                   |          0         |
+| Number of Stakeholders                 |          0         |            -           |           0           |        0       |                    0                   |          0         |
+| Complementary Impacts                  |          0         |            1           |           -           |        1       |                    0                   |          0         |
+| Innovativeness                         |          0         |            1           |           0           |        -       |                    0                   |          0         |
+| Compatibility with Report Requirements |          1         |            1           |           1           |        1       |                    -                   |          1         |
+| Realistic/Feasible                     |          1         |            1           |           1           |        1       |                    0                   |          -         |
+
+James' PCC:
+
+|                                        | Stakeholder Impact | Number of Stakeholders | Complementary Impacts | Innovativeness | Compatibility with Report Requirements | Realistic/Feasible |
+|----------------------------------------|--------------------|------------------------|-----------------------|----------------|----------------------------------------|--------------------|
+| Stakeholder Impact                     |          -         |            1           |           1           |        0       |                    0                   |          1         |
+| Number of Stakeholders                 |          0         |            -           |           1           |        0       |                    0                   |          1         |
+| Complementary Impacts                  |          0         |            0           |           -           |        1       |                    0                   |          1         |
+| Innovativeness                         |          1         |            1           |           0           |        -       |                    0                   |          1         |
+| Compatibility with Report Requirements |          1         |            1           |           1           |        1       |                    -                   |          1         |
+| Realistic/Feasible                     |          0         |            0           |           0           |        0       |                    0                   |          -         |
+
+Final PCC:
 
 | Criteria                               | Court | Dan | Melissa | Nikki | Catherine | James |      |
 |----------------------------------------|-------|-----|---------|-------|-----------|-------|------|
