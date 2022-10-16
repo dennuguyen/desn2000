@@ -383,7 +383,7 @@ As a [user], I want to [need], so I can [context]
 
 24
 
-<img src="/uploads/5272684084c42e05705bb460eb654720/image.png" alt="Chetan" width="50%">
+<img src="chetan.png" alt="Chetan" width="50%">
 
 Financial Consultant / Apartment Resident
 
@@ -403,11 +403,11 @@ Recently bought a Nintendo Switch and plays Animal Crossing until it is time to 
 
 The provincial capital (which is where Chetan currently lives) is a rapidly developing city. However, the city (especially the poorer neighbourhoods) is prone to electrical outages due to an inefficient, outdated, and overworked electricity grid.
 
-![image](/uploads/4c5b153719b0e0820a870dcf8c8212a2/image.png)
+![image](chetan-city.png)
 
 His hometown had higher rates of poverty and lacked AC units due to their high price. Chetan’s family uses standing fans as they are extremely cheap.
 
-![image](/uploads/4890ee5d73e2daffb7df5e5bf96df99f/image.png)
+![image](chetan-home.png)
 
 Chetan’s workplace is a shared office outfitted with a single outdated AC which struggles to effectively cool the entire space. This is most noticeable when all employees are in the office, and the office is only a couple degrees cooler than outside.
 
@@ -498,7 +498,7 @@ journey
 
 72
 
-<img src="/uploads/9edba33dba524079c248925618eb9546/image.png" alt="Larry" width="50%">
+<img src="larry.png" alt="Larry" width="50%">
 
 Property Investor
 
@@ -516,7 +516,7 @@ Larry smokes expensive Cuban cigars.
     <th>Environments</th>
     <td>Larry lives in a 2-story penthouse in the CBD with 2 dogs and a tiger.<br><br>
 
-![image](/uploads/ad698458fb7595c97b026cf138051cf5/image.png)
+![image](larry-home.png)
     </td>
 </tr>
 <tr>
@@ -565,7 +565,7 @@ Larry's children are trust fund babies.
 
 32
 
-<img src="/uploads/02043b1c32bb2be557c82291d4a8b2cf/image.png" alt="Michelle" width="50%">
+<img src="michelle.png" alt="Michelle" width="50%">
 
 CEO of High-Rise Ventilation Architecture Firm
 
@@ -618,7 +618,7 @@ As a ventilation company, I want more work, so I can make profits.
 
 26
 
-<img src="/uploads/cde85b86cc7a85e22a117306273be9ad/image.png" alt="Shaun" width="50%">
+<img src="shaun.png" alt="Shaun" width="50%">
 
 City Councillor overseeing City Planning
 
