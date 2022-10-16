@@ -674,13 +674,54 @@ Shaun wants to buy his first home.
     <td>As a city planner, I want to implement urban environment cooling solutions, so I can mitigate the impact of the heat island effect in my community.<br><br>
 
 As a city planner, I want to lower the cost of utilities for my community, so they can save money for other needs or comforts.
+
+As an environmentalist, I want to implement urban environment cooling solutions, so I can mitigate the effects of climate change.
     </td>
 </tr>
 </table>
 
 ## Affinity Map User Requirements to Customer Needs 🗺
 
-For the sake of marks, we're going to map our user requirements to customer needs.
+For the sake of marks, we're going to map our user stories to customer need nouns.
+
+```mermaid
+graph LR
+    US1[As a resident, I want my current lifestyle to be maintained, as I am content with the status quo.]
+    US2[As a resident, I want to be able to cool down in the summer, so I do not feel uncomfortable and exhausted.]
+    US3[As a resident, I do not want to pay for the cost of implementing any solutions, as I am saving up my money for other investments.]
+    US4[As a resident, I want to pay low electricity utilities, as I am saving up my money for other investments.]
+    US5[As a building owner, I want to lower my electricity utility bills, so I can save money.]
+    US6[As a ventilation company CEO, I want an eco-friendly ventilation system, so I can out-compete other ventilation companies.]
+    US7[As a ventilation company CEO, I want more work, so I can make profits.]
+    US8[As a city planner, I want to implement urban environment cooling solutions, so I can mitigate the impact of the heat island effect in my community.]
+    US9[As a city planner, I want to lower the cost of utilities for my community, so they can save money for other needs or comforts.]
+    US10[As an environmentalist, I want to implement urban environment cooling solutions, so I can mitigate the effects of climate change.]
+
+    US1 --> CN2
+    US2 --> CN1
+    US2 --> CN2
+    US3 --> CN6
+    US4 --> CN6
+    US5 --> CN6
+    US6 --> CN5
+    US6 --> CN6
+    US6 --> CN7
+    US7 --> CN5
+    US7 --> CN7
+    US8 --> CN1
+    US8 --> CN2
+    US9 --> CN6
+    US10 --> CN3
+    US10 --> CN4
+
+    CN1[Cooling]
+    CN2[Lifestyle]
+    CN3[Energy]
+    CN4[Environment]
+    CN5[Infrastructure]
+    CN6[Cost]
+    CN7[Business]
+```
 
 The list of customer need nouns:
 - C1: Cooling
