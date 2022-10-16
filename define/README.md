@@ -50,11 +50,186 @@ The next step is to decompose the above requirements (green are functional requi
 
 The definition of metrics helps specify the FR.
 
-## First-Hand Data 🥼
+## Gathering Field Data 🏑
 
 First-hand data helps to inform what the FR metrics should be.
 
 We gathered first-hand data by finding AC ventilation and measuring the temperature and airflow.
+
+<table>
+    <tr>
+        <th>Date</th>
+        <td>2022/09/06, 1800</td>
+    </tr>
+    <tr>
+        <th>Weather</th>
+        <td>19 °C, 0 m/s winds</td>
+    </tr>
+    <tr>
+        <th>Location</th>
+        <td>6/180 Thomas St, Haymarket</td>
+    </tr>
+</table>
+
+
+![image](/uploads/39bbdae9fe12f3ea7f210dd9465756e9/image.png)
+
+<table>
+<thead>
+  <tr>
+    <th>Location</th>
+    <th>Temperature (°C)</th>
+    <th>Airflow (m/s)</th>
+    <th>Average Temperature (°C)</th>
+    <th>Average Airflow (m/s)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="3">L1<br>(Control)</td>
+    <td>19.4</td>
+    <td>0.00</td>
+    <td rowspan="3">19.4</td>
+    <td rowspan="3">0.00</td>
+  </tr>
+  <tr>
+    <td>19.4</td>
+    <td>0.00</td>
+  </tr>
+  <tr>
+    <td>19.4</td>
+    <td>0.00</td>
+  </tr>
+  <tr>
+    <td rowspan="6">L2</td>
+    <td>21.1</td>
+    <td>1.58</td>
+    <td rowspan="6">21.47</td>
+    <td rowspan="6">1.43</td>
+  </tr>
+  <tr>
+    <td>21.0</td>
+    <td>1.35</td>
+  </tr>
+  <tr>
+    <td>21.8</td>
+    <td>1.20</td>
+  </tr>
+  <tr>
+    <td>21.8</td>
+    <td>1.21</td>
+  </tr>
+  <tr>
+    <td>21.6</td>
+    <td>1.57</td>
+  </tr>
+  <tr>
+    <td>21.5</td>
+    <td>1.64</td>
+  </tr>
+  <tr>
+    <td rowspan="7">L3</td>
+    <td>21.5</td>
+    <td>1.54</td>
+    <td rowspan="7">21.4</td>
+    <td rowspan="7">1.69</td>
+  </tr>
+  <tr>
+    <td>21.5</td>
+    <td>1.75</td>
+  </tr>
+  <tr>
+    <td>21.1</td>
+    <td>1.57</td>
+  </tr>
+  <tr>
+    <td>21.1</td>
+    <td>1.30</td>
+  </tr>
+  <tr>
+    <td>21.5</td>
+    <td>1.82</td>
+  </tr>
+  <tr>
+    <td>21.4</td>
+    <td>1.67</td>
+  </tr>
+  <tr>
+    <td>21.7</td>
+    <td>2.18</td>
+  </tr>
+  <tr>
+    <td rowspan="7">L4</td>
+    <td>21.8</td>
+    <td>1.21</td>
+    <td rowspan="7">21.27</td>
+    <td rowspan="7">1.24</td>
+  </tr>
+  <tr>
+    <td>21.3</td>
+    <td>1.23</td>
+  </tr>
+  <tr>
+    <td>21.7</td>
+    <td>1.30</td>
+  </tr>
+  <tr>
+    <td>21.3</td>
+    <td>1.35</td>
+  </tr>
+  <tr>
+    <td>21.3</td>
+    <td>0.98</td>
+  </tr>
+  <tr>
+    <td>21.1</td>
+    <td>1.33</td>
+  </tr>
+  <tr>
+    <td>20.4</td>
+    <td>1.31</td>
+  </tr>
+</tbody>
+</table>
+
+The [recommended internal building temperature](https://www.designingbuildings.co.uk/wiki/Temperature_in_buildings) is 21 °C for thermal comfort. It is clear to see that the exhausted air temperature is close.
+
+<table>
+<thead>
+  <tr>
+    <th>Location</th>
+    <th>Temperature Difference Between Control and Building (°C)</th>
+    <th>Airflow Difference Between Control and Building (m/s)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>L2</td>
+    <td>2.07</td>
+    <td>1.43</td>
+  </tr>
+  <tr>
+    <td>L3</td>
+    <td>2.00</td>
+    <td>1.69</td>
+  </tr>
+  <tr>
+    <td>L4</td>
+    <td>1.87</td>
+    <td>1.24</td>
+  </tr>
+  <tr>
+    <td>Average</td>
+    <td>1.98</td>
+    <td>1.45</td>
+  </tr>
+</tbody>
+</table>
+
+Summarised image (green is control data, red is independent data, blue is building):
+
+![image](/uploads/1e2ff2a295dca6fa943ec3c438d73326/image.png)
+
 
 ## Defining Design Constraints 🛑
 
