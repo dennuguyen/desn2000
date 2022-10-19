@@ -32,7 +32,7 @@ The concept generation method was sketching of turbine solutions.
 
 Dan's sketches:
 
-![dan-concept-generation-turbine-sketches](./dan-concept-gen-turbine-sketches.drawio.svg)
+![compression-turbine](./compression-turbine.drawio.svg)
 
 Courtney's sketches:
 
