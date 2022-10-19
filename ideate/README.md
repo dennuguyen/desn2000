@@ -34,7 +34,9 @@ Dan's sketches:
 
 ![compression-turbine](./compression-turbine.drawio.svg)
 
-Courtney's sketches:
+Court's sketches:
+
+![crossflow-turbine](./crossflow-turbine.jpg)
 
 Melissa's sketches:
 
