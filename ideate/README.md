@@ -37,6 +37,7 @@ Dan's sketches:
 Courtney's sketches:
 
 Melissa's sketches:
+![tampon-turbine](./tampon-turbine.png)
 
 Catherine's sketches:
 
