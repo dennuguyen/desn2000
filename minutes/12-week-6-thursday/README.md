@@ -15,6 +15,9 @@
 - Nikki (@nikkifang)
 
 ## Agenda
+
+### Catherine
+
 - Decide on format of final pitch (video vs presentation)
 - Go through the sample final reports
 - Delegate non technical parts of the report 
@@ -25,3 +28,7 @@
     - CAD and drawings 
     - final pitch/video script
 - Delegate other misc tasks eg. sketching etc. 
+
+### Dan
+
+- Redo FR. Since we're going for a turbine solution, we need more specific FR.
