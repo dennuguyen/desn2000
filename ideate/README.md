@@ -28,6 +28,20 @@ Convergent thinking step to evaluate all the generated concepts to select a sing
 
 ## Concept Generation of Turbine Solutions 📈
 
+The concept generation method was sketching of turbine solutions.
+
+Dan's sketches:
+
+Courtney's sketches:
+
+Melissa's sketches:
+
+Catherine's sketches:
+
+Nikki's sketches:
+
+James' sketches:
+
 ## Concept Evaluation of Turbine Solutions 📉
 
 ### Selection Criteria

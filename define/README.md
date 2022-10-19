@@ -46,7 +46,9 @@ The next step is to decompose the above requirements (green are functional requi
 
 ![image](fr-hierarchy.png)
 
-## Gathering Field Data 🏑
+## Problem Area Research 🧐
+
+### Gathering Field Data 🏑
 
 First-hand data helps to inform what the FR metrics should be.
 
@@ -225,6 +227,38 @@ The [recommended internal building temperature](https://www.designingbuildings.c
 Summarised image (green is control data, red is independent data, blue is building):
 
 ![image](6-180-thomas-2.png)
+
+### HVAC Systems Research 💨
+
+### Ventilation Flow Rate 🎏
+
+```math
+```
+
+Where:
+- $``$ is the .
+
+### Turbelence 🏸
+
+[Turbelence is a fluid motion characterised by chaotic changes in pressure and flow velocity](https://en.wikipedia.org/wiki/Turbulence).
+
+Turbelence is characterised by:
+- Irregularity.
+- Diffusivity.
+- Rotationality.
+- Dissipation:
+
+Turbelence can be predicted by the Reynolds number (the larger the number, the more likely turbelence will occur):
+
+```math
+\text{Re} = \frac{\rho v L}{\mu}
+```
+
+Where:
+- $`\rho`$ is the fluid density $`(kg/m^3)`$.
+- $`v`$ is the fluid velocity $`(m/s)`$.
+- $`L`$ is the linear dimension $`(m)`$.
+- $`\mu`$ is the fluid dynamic viscosity $`(Ns/m^2)`$.
 
 ## Defining FR Metrics 💯
 
