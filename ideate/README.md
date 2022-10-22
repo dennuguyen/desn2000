@@ -43,6 +43,7 @@ Melissa's sketches:
 ![tampon-turbine](./tampon-turbine.png)
 
 Catherine's sketches:
+![horizontal-axis-turbine](./HAWT.jpg)
 
 Nikki's sketches:
 
