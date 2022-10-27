@@ -16,7 +16,25 @@
 ## Progress Update
 
 - @melissathein06 is finishing off [user survey](https://gitlab.com/dennuguyen/desn2000/-/issues/82?work_item_id=117205402) and [problem section](https://gitlab.com/dennuguyen/desn2000/-/issues/82?work_item_id=117205409). Will give team editable link to form.
+
+## Unique Value Proposition
+
+Thanks @andykim37377 for the entrepreneurial perspective.
+
+UVP: We want to create a energy harvesting device of ventilation to power sensors for health and safety.
+
+Target Audience:
+- Places that require regular safety checks from safework nsw
+    - Kitchens in restaurants/fast-food.
+    - Underground car parks.
+    - Research labs.
+    - Road tunnels.
+- Mining:
+    - [WA state government](https://www.dmp.wa.gov.au/Safety/Guidance-about-underground-air-6889.aspx).
+    - [NSW state government](https://legislation.nsw.gov.au/view/whole/html/inforce/2015-07-08/sl-2014-0799).
 - 
+
+Anything involved with hazard perception.
 
 ## Actionables
 
