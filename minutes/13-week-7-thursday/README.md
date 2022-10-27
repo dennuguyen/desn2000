@@ -26,4 +26,6 @@
     - Consider input flow range (min and max operational effectiveness), cost, mass.
 - @courtzc [research into sensor types](https://gitlab.com/dennuguyen/desn2000/-/issues/105)
     - Consider different applications, gross power usage.
+- @dennuguyen [create sketch of crossflow turbine]
+    - Get everyone on same page before CAD.
 - Update FRs with research
