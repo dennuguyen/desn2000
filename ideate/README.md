@@ -34,13 +34,16 @@ Dan's sketches:
 
 ![compression-turbine](./compression-turbine.drawio.svg)
 
-Courtney's sketches:
+Court's sketches:
+
+![crossflow-turbine](./crossflow-turbine.jpg)
 
 Melissa's sketches:
 
 ![tampon-turbine](./tampon-turbine.png)
 
 Catherine's sketches:
+![horizontal-axis-turbine](./HAWT.jpg)
 
 Nikki's sketches:
 
