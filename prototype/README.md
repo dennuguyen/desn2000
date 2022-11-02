@@ -16,6 +16,8 @@ Building a proof-of-concept.
 
 A top-down thinking approach.
 
+> System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
+
 ### System Identification
 
 ### Subsystem Identification
