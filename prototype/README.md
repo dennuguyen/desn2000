@@ -7,23 +7,264 @@ Building a proof-of-concept.
 [TOC]
 
 - System design.
-- Requirements allocation via an affinity map or matching diagram.
 - Cycle of analysis, CAD, simulation.
 - Verify solution works (through analysis and simulation).
 - Validate solution against requirements.
+
+## Requirements Allocation 🔑
+
+The requirements to consider for system design were:
+- `FR(1.1.1.1)`: Withstand turbulent airflow where Reynolds number ranges from $30000 - 60000$.
+- `FR(1.1.1.3)`: Able to operate in air flow between $1400 - 1600 \space L/s$.
+- `FR(1.1.1.4)`: Able to operate in speeds between $3 - 5 \space m/s$.
+- `FR(1.1.1.5)`: Harvest wind energy with minimal noise pollution.
+- `FR(1.3.1)`: Can power electronics at an average power of $3 \space W$.
+- `FR(3.1)`: Detect particulates in air.
+- `FR(3.2)`: Communicate data.
+
+A requirements allocation was performed to identify the top-level subsystems:
+
+```mermaid
+graph LR
+FR1.1.1.1 --> Funnel
+FR1.1.1.3 --> Funnel
+FR1.1.1.3 --> Turbine
+FR1.1.1.4 --> Turbine
+FR1.1.1.5 --> Dampers
+FR1.3.1 --> Generator
+FR1.3.1 --> Battery
+FR3.1 --> Sensors
+FR3.1 --> Control
+FR3.2 --> Control
+```
 
 ## System Design 🚀
 
 A top-down thinking approach.
 
+```mermaid
+graph LR
+    
+```
+
+## Sensor Array Selection ⚡️
+
+> Research on sensors in this [Google Sheet](https://docs.google.com/spreadsheets/d/1f3vsNErERXZ-9NdXlSl-dcCkEAP_58Zadz2kLJG4f4g/edit#gid=0).
+
+## Battery Selection 🔋
+
+Consider a gross perspective of possible devices and their power ratings:
+
+<table>
+    <tr>
+        <th>Device</th>
+        <th>Description</th>
+        <th>Input Voltage (V)</th>
+        <th>Input Current (mA)</th>
+    </tr>
+    <tr>
+        <td><a href="https://store.arduino.cc/products/arduino-nano">Arduino Nano</a></td>
+        <td>Microcontroller.</td>
+        <td>7 - 12</td>
+        <td>20 - 200</td>
+    </tr>
+    <tr>
+        <td><a href="https://docs.arduino.cc/hardware/uno-rev3">Arduino Uno</a></td>
+        <td>Microcontroller.</td>
+        <td>7 - 12</td>
+        <td>50 - 200</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/">Raspberry Pi 4</a></td>
+        <td>Microcontroller.</td>
+        <td>4 - 6</td>
+        <td>> 3</td>
+    </tr>
+    <tr>
+        <td><a href="https://en.wikipedia.org/wiki/USB#Low-power_and_high-power_devices">High-Power USB 3.0</a></td>
+        <td>To power sensor device.</td>
+        <td>5</td>
+        <td>900</td>
+    </tr>
+    <tr>
+        <td><a href="https://en.wikipedia.org/wiki/USB#Low-power_and_high-power_devices">USB-C</a></td>
+        <td>To power sensor device.</td>
+        <td>5</td>
+        <td>1500</td>
+    </tr>
+    <tr>
+        <td><a href="https://core-electronics.com.au/wifi-bee-esp8266.html">Wifi Bee ESP8266</a></td>
+        <td>Wifi module.</td>
+        <td>3.3</td>
+        <td>240</td>
+    </tr>
+    <tr>
+        <td><a href="https://core-electronics.com.au/raspberry-pi-pico-w-wireless-wifi.html">Raspberry Pi Pico W</a></td>
+        <td>Wifi module.</td>
+        <td>1.8 - 5.5</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td><a href="https://core-electronics.com.au/tinypico-v2-usb-c.html">TinyPICO V2 USB-C</a></td>
+        <td>Wifi module.</td>
+        <td>1.8 - 5.5</td>
+        <td>90</td>
+    </tr>
+</table>
+
+> Note that a lot of electronic devices can be powered by USB-C.
+
+Consider the battery-life formula:
+$$
+b = \frac{Q}{I}
+$$
+
+Where:
+- $b \space (hr)$ is the battery life.
+- $Q \space (Ahr)$ is the battery capacity.
+- $I \space (A)$ is the current load.
+
+
+Assume that a small microcontroller, wifi module, and three USB-C devices are powered by the battery, the peak current load would be:
+$$
+\begin{aligned}
+I_{\text{peak}} = 200 + 200 + 1500 \times 3 = 4900 \space mA \approx 4.9 A
+\end{aligned}
+$$
+
+For a desired battery life at the peak current load:
+$$
+b_{\text{peak}} = 1 \space hr
+$$
+
+> 1 hour was selected as the maximum time a routine inspection of air quality could be carried out for.
+
+The desired battery capacity is therefore:
+$$
+\begin{aligned}
+Q &= b_{\text{peak}} \times I_{\text{peak}} \\
+&= 1 \times 4.9 \\
+&= 4.9 \space Ahr
+\end{aligned}
+$$
+
+The battery capacity is the standard capacity of most phone-charging powerbanks
+
+In practice, the current load will not be peaked. The current load at rest would realistically be the current draw of the microcontroller:
+$$
+I_{\text{rest}} = 20 \space mA = 0.02 \space A
+$$
+
+> The current draw of a wifi module at rest is $20 \space \mu A$. The sensors may be turned off when not in use.
+
+For a desired battery capacity of $4.9 \space Ahr$, this gives an average battery life of:
+$$
+b_{\text{rest}} = \frac{Q}{I_{\text{rest}}} = \frac{4.9}{0.02} = 24.5 \space hr
+$$
+
+Therefore, any rechargaeable battery that is capable of supplying at least $5 \space V$ and with a capacity of at least $4.9 \space Ahr$ is desired.
+
+> If a battery with greater than $5 \space V$ is selected, then a voltage regulator can be used to step-down the voltage.
+
+---
+
+Consider the battery-capacity formula:
+$$
+E = V \times Q
+$$
+
+Where:
+- $E \space (Whr)$ is the battery energy.
+- $V \space (V)$ is the battery voltage.
+- $Q \space (Ahr)$ is the battery capacity.
+
+To satisfy the requirement of an average constant power of $3 \space W$. Assume that the battery has a power rating of:
+$$
+E = 3 \space Whr
+$$
+
+The standard input voltage for most sensor devices is $3 \space V$ whereas for microcontrollers at least $6 \space V$.
+
+$$
+\begin{aligned}
+Q &= \frac{E}{V} = \frac{3}{6} = 0.5 \space Ah
+\end{aligned}
+$$
+
+## Generator Selection 🚘
+
+The considerations for selecting a generator are:
+- Size.
+- Mass.
+- Charging rate.
+- 
+
+To charge the battery, an appropriate generator was selected
+
+
 > System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
 
-### System Identification
+## Turbine Size 💨
 
-### Subsystem Identification
+Consider the [extended Bernoulli equation](https://www.engineeringtoolbox.com/mechanical-energy-equation-d_614.html) for a turbine (in terms of energy per unit mass):
+$$
+E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, elevation}} + E_{\text{shaft}} + E_{\text{loss}}
+$$
 
-### Component Identification
+Substituting the energies in terms of velocities and pressures gives:
+$$
+\frac{p_{\text{in}}}{\rho} + \frac{v_{\text{in}}^2}{2} + gh_{\text{in}} = \frac{p_{\text{out}}}{\rho} + \frac{v_{\text{out}}^2}{2} + gh_{\text{out}} + E_{\text{shaft}} + E_{\text{loss}}
+$$
 
-## Requirements Allocation 🔑
+Where:
+- $p \space (Pa)$ is the static pressure.
+- $\rho \space (kg/m^3)$ is the fluid density.
+- $v \space (m/s)$ is the flow velocity.
+- $g \space (m/s^2)$ is acceleration of gravity.
+- $h \space (m)$ is the elevation height.
+- $E_{\text{shaft}} \space (J/kg)$ is the net shaft energy per unit mass for the turbine.
+- $E_{\text{loss}} \space (J/kg)$ is the hydraulic loss through the turbine.
 
-Verify that the requirements will be met by allocating requirements to the components.
+This above equation may not be very usable by us so we can multiply it by $\rho$ to get the equation in terms of energy per unit volume:
+$$
+p_{\text{in}} + \rho \frac{v_{\text{in}}^2}{2} + \gamma h_{\text{in}} = p_{\text{out}} + \rho \frac{v_{\text{out}}^2}{2} + \gamma h_{\text{out}} + \rho E_{\text{shaft}} + \rho E_{\text{loss}}
+$$
+
+The fluid density of air is:
+$$
+\rho = 1.225 \space kg/m^3
+$$
+
+The fluid specific weight of air is:
+$$
+\gamma = \rho \times g = 1.225 \times 9.81 = 12.01725 \space kg/m^3
+$$
+
+Consider the efficiency of the turbine:
+$$
+\eta = \frac{E_{\text{shaft}}}{E_{\text{shaft}} + E_{\text{loss}}}
+$$
+
+## Turbine Configuration ⚙️
+
+Consider the expected air flow range which is:
+$$
+v = 3 - 4 \space m/s
+$$
+
+Consider the efficiency curves of the turbine configurations:
+
+## Bearing Selection 🛞
+
+Consider the expected air flow range which is:
+$$
+v = 3 - 4 \space m/s
+$$
+
+The expected rotational speed of the turbine is thus:
+
+## 
+
+## Verification
+
+## Validation
