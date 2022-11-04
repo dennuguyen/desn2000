@@ -166,7 +166,9 @@ Therefore, any rechargaeable battery that is capable of supplying at least $5 \s
 
 > If a battery with greater than $5 \space V$ is selected, then a voltage regulator can be used to step-down the voltage.
 
----
+## Generator Selection 🚘
+
+The selection of a generator depends on the desired charging rate of the battery.
 
 Consider the battery-capacity formula:
 $$
@@ -178,28 +180,17 @@ Where:
 - $V \space (V)$ is the battery voltage.
 - $Q \space (Ahr)$ is the battery capacity.
 
-To satisfy the requirement of an average constant power of $3 \space W$. Assume that the battery has a power rating of:
-$$
-E = 3 \space Whr
-$$
-
-The standard input voltage for most sensor devices is $3 \space V$ whereas for microcontrollers at least $6 \space V$.
+Consider Peukert's Law to determine the desired charge/discharge rate:
 
 $$
-\begin{aligned}
-Q &= \frac{E}{V} = \frac{3}{6} = 0.5 \space Ah
-\end{aligned}
+C_{p} = I^{k}t
 $$
 
-## Generator Selection 🚘
-
-The considerations for selecting a generator are:
-- Size.
-- Mass.
-- Charging rate.
-- 
-
-To charge the battery, an appropriate generator was selected
+Where:
+- $C_{p} \space (Ah)$ is the capacity at one-ampere discharge rate.
+- $I \space (Ah)$ is the actual discharge current.
+- $t \space (h)$ is the time to discharge the battery.
+- $k$ is the Peukert constant.
 
 
 > System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
