@@ -162,7 +162,9 @@ $$
 b_{\text{rest}} = \frac{Q}{I_{\text{rest}}} = \frac{4.9}{0.02} = 24.5 \space hr
 $$
 
-Therefore, any rechargaeable battery that is capable of supplying $5 \space V$ and with a capacity of at least $4.9 \space Ahr$ is desired.
+Therefore, any rechargaeable battery that is capable of supplying at least $5 \space V$ and with a capacity of at least $4.9 \space Ahr$ is desired.
+
+> If a battery with greater than $5 \space V$ is selected, then a voltage regulator can be used to step-down the voltage.
 
 ---
 
