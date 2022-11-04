@@ -32,22 +32,21 @@
 - Finalising sketch and actual design 
 - User surveys and defining user's problems 
 ## Pitch structure
-### PROBLEM 
+### PROBLEM (3 mins = 1 min for problem story + 2 mins for other)
 - Explanation of the problem and its significance
 - Consideration of users when defining the problem was thorough
 - User surveys 
-- Considerations of user testing?
-- Go through updated functional requirements  
-### SOLUTION 
+### SOLUTION (3 mins)
 - Explanation of why we chose this design over others (pros/cons table)
-- Axiomatic design theory matrices
 - Sketch + CAD + Drawings 
 - Overview of final design + explanation of how it stands out with unique value or novelty
-### TECHNICAL
+### TECHNICAL (4 mins = 2 mins + 2 mins)
 - Convince them of technical feasibility
 - Justification of decisions for fasteners and power transmission
 - Validation - test, models, calculations, standards or equivalent
 - List any assumptions 
+- Considerations of user testing? 
+
 ## Actionables
 - User surveys + problem section of pitch - Mel 
 - Prettify FR tree - Nikki
