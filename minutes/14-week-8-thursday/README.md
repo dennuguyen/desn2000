@@ -16,9 +16,9 @@
 
 ## Actionables
 
-Mel  - General user stuff, problem, CAD
-Dan - CAD, fasteners 
-Court - validate Mel, battery, sensor packaging 
-Catherine - finish axiomatic theory and preliminary design concepts, analysing wind turbine design
-Nikki - sketches, start presentation
-James  - power transmission calcs, IOT
+- Mel  - General user stuff, problem, CAD
+- Dan - CAD, fasteners 
+- Court - validate Mel, battery, sensor packaging 
+- Catherine - finish axiomatic theory and preliminary design concepts, analysing wind turbine design
+- Nikki - sketches, start presentation
+- James  - power transmission calcs, IOT
