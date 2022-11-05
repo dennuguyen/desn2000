@@ -1,2 +1,20 @@
 *.DS_Store
 **/~*
+
+# Solidworks
+**/PerformanceLog.txt
+**/*.CWR
+**/*.DSP
+**/*.ELF
+**/*.GEN
+**/*.IDA
+**/*.LCD
+**/*.LDS
+**/*.LOG
+**/*.MAS
+**/*.MFC
+**/*.OUT
+**/*.STE
+**/*.STG
+**/*.BD2
+**/*.BDF
