@@ -221,6 +221,10 @@ $$
 p_{\text{in}} + \rho \frac{v_{\text{in}}^2}{2} + \gamma h_{\text{in}} = p_{\text{out}} + \rho \frac{v_{\text{out}}^2}{2} + \gamma h_{\text{out}} + \rho E_{\text{shaft}} + \rho E_{\text{loss}}
 $$
 
+Where:
+- $\rho E_{\text{shaft}} \space (J/m^3)$ is the net shaft energy per unit mass for the turbine.
+- $\rho E_{\text{loss}} \space (J/m^3)$ is the hydraulic loss through the turbine.
+
 The fluid density of air is:
 $$
 \rho = 1.225 \space kg/m^3
@@ -235,6 +239,44 @@ Consider the efficiency of the turbine:
 $$
 \eta = \frac{E_{\text{shaft}}}{E_{\text{shaft}} + E_{\text{loss}}}
 $$
+
+The [air duct velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) can vary from $5 - 11 m/s$.
+
+## Aerodynamic Performance
+
+Overall turbine torque:
+$$
+Q = N\overline{F_{t}}R
+$$
+
+Total output power:
+$$
+P_{\text{out}} = Q\omega
+$$
+
+Turbine power coefficient:
+$$
+CP = \frac{2P_{\text{out}}}{\rho A r U_{\infty}^3}
+$$
+
+
+## Rotor Solidity Factor
+
+## Blade Aspect Ratio
+
+## Rotor Swept Area
+
+## Cut-In Wind Speed
+
+Cut-in wind speed is the lowest wind speed for turbine to generate consistent power.
+
+The turbine needs to generate enough starting torque at this wind speed to overcome its inertia.
+
+> In a worst-case scenario, the motor could draw power from the battery to self-start the turbine.
+
+## Cut-Out Wind Speed
+
+Cut-out wind speed is the highest input wind speed that a turbine should generate consistent power for.
 
 ## Turbine Configuration ⚙️
 
@@ -254,7 +296,9 @@ $$
 
 The expected rotational speed of the turbine is thus:
 
-## 
+## Circlip Selection
+
+
 
 ## Verification
 
