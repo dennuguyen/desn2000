@@ -176,8 +176,8 @@ A table of appropriate batteries:
         <th>Capacity (mAhr)</th>
         <th>Discharge Voltage (V)</th>
         <th>Charge Voltage (V)</th>
-        <th>Discharge Rate (C)</th>
-        <th>Charge Rate (C)</th>
+        <th>Discharge Rate (C-rate)</th>
+        <th>Charge Rate (C-rate)</th>
         <th>Dimensions (mm^3)</th>
         <th>Cycles</th>
     </tr>
@@ -194,11 +194,40 @@ A table of appropriate batteries:
     </tr>
 </table>
 
+### Confirm Usability of 105075 Battery
+
 For two 105075 batteries in series, the charging voltage would be $8.4 \space V$ and charge rate is $0.2 \space C$.
 
-## Generator Selection 🚘
+The battery life of a single 105075 battery is:
+$$
+t = \frac{1}{Cr} = \frac{1}{0.2} = 5 \space hr
+$$
+- $t \space (hr)$ is the battery life.
+- $Cr \space (hr^{-1})$ is the C-rate.
 
-The selection of a generator depends on the desired charging rate of the battery.
+Consider Peukert's Law to determine the desired discharge rate:
+
+$$
+C_{p} = I^{k}t
+$$
+
+Where:
+- $C_{p} \space (Ahr)$ is the capacity at one-ampere discharge rate.
+- $I \space (Ahr)$ is the actual discharge current.
+- $t \space (hr)$ is the time to discharge the battery.
+- $k$ is the Peukert constant.
+
+To confirm there is sufficient current to power the system:
+$$
+\begin{aligned}
+0.2 &= I^{1.2} \times 1 \\
+I_{\text{max}} &= 8.827 \approx 8.8 \space A > 5 \space A
+\end{aligned}
+$$
+
+> $k = 1.2$ is very modest for a lithium-ion polymer battery due to its "high" efficiency.
+
+## Generator Selection 🚘
 
 Consider the battery-capacity formula:
 $$
@@ -210,18 +239,32 @@ Where:
 - $V \space (V)$ is the battery voltage.
 - $Q \space (Ahr)$ is the battery capacity.
 
-Consider Peukert's Law to determine the desired charge/discharge rate:
-
+For two 105075 batteries in series, the total battery energy is:
 $$
-C_{p} = I^{k}t
+E_{\text{two in-series}} = 2 \times 4.2 \times 5 = 42 \space Whr
+$$
+
+For a single 105075 battery, the battery energy is:
+$$
+E_{\text{single}} = 4.2 \times 5 = 21 \space Whr
+$$
+
+Consider the C-rate relationship with current and battery energy:
+$$
+I = Cr \times E
 $$
 
 Where:
-- $C_{p} \space (Ah)$ is the capacity at one-ampere discharge rate.
-- $I \space (Ah)$ is the actual discharge current.
-- $t \space (h)$ is the time to discharge the battery.
-- $k$ is the Peukert constant.
+- $I \space (A)$ is the current.
+- $E \space (Whr)$ is the battery energy.
+- $Cr \space (hr^{-1})$ is the C-rate.
 
+The required current to charge the battery can be calculated:
+$$
+I_{\text{charge}} = Cr \times E_{\text{single}} = 0.2 \times 21 = 4.2 \space A
+$$
+
+To select an appropriate generator for two in-series 105075 batteries, the generator needs to supply at least $8.4 \space V$ and $4.2 \space A$.
 
 > System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
 
