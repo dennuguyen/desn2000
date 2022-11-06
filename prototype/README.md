@@ -128,7 +128,7 @@ Where:
 Assume that a small microcontroller, wifi module, and three USB-C devices are powered by the battery, the peak current load would be:
 $$
 \begin{aligned}
-I_{\text{peak}} = 200 + 200 + 1500 \times 3 = 4900 \space mA \approx 4.9 A
+I_{\text{peak}} = 200 + 200 + 1500 \times 3 = 4900 \space mA \approx 4.9 \space A
 \end{aligned}
 $$
 
@@ -227,48 +227,44 @@ $$
 
 > $k = 1.2$ is very modest for a lithium-ion polymer battery due to its "high" efficiency.
 
-## Generator Selection 🚘
+## Turbine Power 💨
 
-Consider the battery-capacity formula:
+Consider the maximum power that can be extracted from the fluid:
 $$
-E = V \times Q
-$$
-
-Where:
-- $E \space (Whr)$ is the battery energy.
-- $V \space (V)$ is the battery voltage.
-- $Q \space (Ahr)$ is the battery capacity.
-
-For two 105075 batteries in series, the total battery energy is:
-$$
-E_{\text{two in-series}} = 2 \times 4.2 \times 5 = 42 \space Whr
-$$
-
-For a single 105075 battery, the battery energy is:
-$$
-E_{\text{single}} = 4.2 \times 5 = 21 \space Whr
-$$
-
-Consider the C-rate relationship with current and battery energy:
-$$
-I = Cr \times E
+P_{\text{fluid}} = \frac{1}{2} \rho A v^3
 $$
 
 Where:
-- $I \space (A)$ is the current.
-- $E \space (Whr)$ is the battery energy.
-- $Cr \space (hr^{-1})$ is the C-rate.
+- $P_{\text{fluid}} \space (W)$ is the power of the fluid.
+- $rho \space (kg/m^3)$ is the fluid density.
+- $A \space (m^2)$ is the cross-sectional surface area that the fluid flows.
+- $v \space (m/s)$ is the fluid velocity.
 
-The required current to charge the battery can be calculated:
+The [range of the fluid velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) is:
 $$
-I_{\text{charge}} = Cr \times E_{\text{single}} = 0.2 \times 21 = 4.2 \space A
+\begin{aligned}
+v_{\text{min}} &= 5 \space m/s \\
+v_{\text{max}} &= 11 \space m/s
+\end{aligned}
 $$
 
-To select an appropriate generator for two in-series 105075 batteries, the generator needs to supply at least $8.4 \space V$ and $4.2 \space A$.
+The fluid density of air is:
+$$
+\rho = 1.225 \space kg/m^3
+$$
 
-> System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
+1. Blade design 
+    1. Number of blades
+    1. Size of blades
+    1. Area of the blade
+    1. Angle of blade
+1. Calculate turbine torque
+1. Calculate power coefficient
+1. Calculate power of turbine
+1. Pick motor and calculate power of motor
 
-## Turbine Size 💨
+Multiply $P_{\text{fluid}}$ by Betz's coefficient to get $P_{\text{turbine}}$
+
 
 Consider the [extended Bernoulli equation](https://www.engineeringtoolbox.com/mechanical-energy-equation-d_614.html) for a turbine (in terms of energy per unit mass):
 $$
@@ -363,19 +359,74 @@ Consider the efficiency curves of the turbine configurations:
 ## Turbine Blade Material Selection
 
 
+## Generator Selection 🚘
+
+Consider the battery-capacity formula:
+$$
+E = V \times Q
+$$
+
+Where:
+- $E \space (Whr)$ is the battery energy.
+- $V \space (V)$ is the battery voltage.
+- $Q \space (Ahr)$ is the battery capacity.
+
+For two 105075 batteries in series, the total battery energy is:
+$$
+E_{\text{two in-series}} = 2 \times 4.2 \times 5 = 42 \space Whr
+$$
+
+For a single 105075 battery, the battery energy is:
+$$
+E_{\text{single}} = 4.2 \times 5 = 21 \space Whr
+$$
+
+Consider the C-rate relationship with current and battery energy:
+$$
+I = Cr \times E
+$$
+
+Where:
+- $I \space (A)$ is the current.
+- $E \space (Whr)$ is the battery energy.
+- $Cr \space (hr^{-1})$ is the C-rate.
+
+The required current to charge the battery can be calculated:
+$$
+I_{\text{charge}} = Cr \times E_{\text{single}} = 0.2 \times 21 = 4.2 \space A
+$$
+
+To select an appropriate generator for two in-series 105075 batteries, the generator needs to supply at least $8.4 \space V$ and $4.2 \space A$. Therefore, the required generator power is:
+$$
+P = V \times I = 8.4 \times 4.2 = 35.28 \space W
+$$
+
+A table of appropriate motors:
+<table>
+    <tr>
+        <th>Motor</th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
+Consider the mechanical generated from the turbine:
+$$
+P = \tau \times \omega
+$$
+Where:
+- $\tau \space (Nm)$ is the torque of the turbine.
+- $\omega \space (ms^{-1})$ is the rotational speed of the turbine.
+
+> System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
 
 ## Bearing Selection 🛞
-
-Consider the expected air flow range which is:
-$$
-v = 3 - 4 \space m/s
-$$
 
 The expected rotational speed of the turbine is thus:
 
 ## Circlip Selection
 
-
+## Bolt Selection
 
 ## Verification
 
