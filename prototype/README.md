@@ -164,7 +164,37 @@ $$
 
 Therefore, any rechargaeable battery that is capable of supplying at least $5 \space V$ and with a capacity of at least $4.9 \space Ahr$ is desired.
 
-> If a battery with greater than $5 \space V$ is selected, then a voltage regulator can be used to step-down the voltage.
+> If a battery has greater than $5 \space V$, then a voltage regulator can be used to step-down the voltage.
+
+> If a battery has less than $5 \space V$, then multiple batteries can be placed in series to increase the voltage.
+
+A table of appropriate batteries:
+<table>
+    <tr>
+        <th>Battery</th>
+        <th>Type</th>
+        <th>Capacity (mAhr)</th>
+        <th>Discharge Voltage (V)</th>
+        <th>Charge Voltage (V)</th>
+        <th>Discharge Rate (C)</th>
+        <th>Charge Rate (C)</th>
+        <th>Dimensions (mm^3)</th>
+        <th>Cycles</th>
+    </tr>
+    <tr>
+        <td><a href="https://www.alibaba.com/product-detail/KC-CE-Certified-Rechargeable-Lithium-Ion_62445223510.html">105075</a></td>
+        <td>Lipo</td>
+        <td>5000</td>
+        <td>3.7</td>
+        <td>4.2</td>
+        <td>0.2</td>
+        <td>0.2</td>
+        <td>76 x 50 x 10</td>
+        <td></td>
+    </tr>
+</table>
+
+For two 105075 batteries in series, the charging voltage would be $8.4 \space V$ and charge rate is $0.2 \space C$.
 
 ## Generator Selection 🚘
 
@@ -286,6 +316,10 @@ v = 3 - 4 \space m/s
 $$
 
 Consider the efficiency curves of the turbine configurations:
+
+## Turbine Blade Material Selection
+
+
 
 ## Bearing Selection 🛞
 
