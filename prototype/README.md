@@ -47,6 +47,240 @@ graph LR
     
 ```
 
+## Air Power ✈
+
+Consider the maximum power that can be extracted from the fluid:
+$$
+P_{\text{fluid}} = \frac{1}{2} \rho A v^3
+$$
+
+Where:
+- $P_{\text{fluid}} \space (W)$ is the power of the fluid.
+- $rho \space (kg/m^3)$ is the fluid density.
+- $A \space (m^2)$ is the cross-sectional surface area that the fluid flows.
+- $v \space (m/s)$ is the fluid velocity.
+
+The [range of the fluid velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) is:
+$$
+\begin{aligned}
+v_{\text{min}} &= 5 \space m/s \\
+v_{\text{max}} &= 11 \space m/s
+\end{aligned}
+$$
+
+The fluid density of air is:
+$$
+\rho = 1.225 \space kg/m^3
+$$
+
+Referring to this table of [common rectangular ducts](https://www.engineeringtoolbox.com/rectangular-ducts-d_1010.html), a table of maximum extractable fluid power vs air duct size is created:
+
+<table>
+<thead>
+  <tr>
+    <th style="text-align: center; vertical-align: middle;" rowspan="2">Width (mm)</th>
+    <th style="text-align: center; vertical-align: middle;" colspan="11"><span>Height (mm)</span></th>
+  </tr>
+  <tr>
+    <th><span>100</span></th>
+    <th><span>150</span></th>
+    <th><span>200</span></th>
+    <th><span>250</span></th>
+    <th><span>300</span></th>
+    <th><span>400</span></th>
+    <th><span>500</span></th>
+    <th><span>600</span></th>
+    <th><span>800</span></th>
+    <th><span>1000</span></th>
+    <th><span>1200</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><span style="font-weight:bold">200</span></td>
+    <td>1.53</span></td>
+    <td>2.30</span></td>
+    <td>3.06</span></td>
+    <td>3.83</span></td>
+    <td>4.59</span></td>
+    <td>6.13</span></td>
+    <td>7.66</span></td>
+    <td>9.19</span></td>
+    <td>12.25</span></td>
+    <td>15.31</span></td>
+    <td>18.38</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">250</span></td>
+    <td>1.91</span></td>
+    <td>2.87</span></td>
+    <td>3.83</span></td>
+    <td>4.79</span></td>
+    <td>5.74</span></td>
+    <td>7.66</span></td>
+    <td>9.57</span></td>
+    <td>11.48</span></td>
+    <td>15.31</span></td>
+    <td>19.14</span></td>
+    <td>22.97</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">300</span></td>
+    <td>2.30</span></td>
+    <td>3.45</span></td>
+    <td>4.59</span></td>
+    <td>5.74</span></td>
+    <td>6.89</span></td>
+    <td>9.19</span></td>
+    <td>11.48</span></td>
+    <td>13.78</span></td>
+    <td>18.38</span></td>
+    <td>22.97</span></td>
+    <td>27.56</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">400</span></td>
+    <td>3.06</span></td>
+    <td>4.59</span></td>
+    <td>6.13</span></td>
+    <td>7.66</span></td>
+    <td>9.19</span></td>
+    <td>12.25</span></td>
+    <td>15.31</span></td>
+    <td>18.38</span></td>
+    <td>24.50</span></td>
+    <td>30.63</span></td>
+    <td>36.75</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">500</span></td>
+    <td>3.83</span></td>
+    <td>5.74</span></td>
+    <td>7.66</span></td>
+    <td>9.57</span></td>
+    <td>11.48</span></td>
+    <td>15.31</span></td>
+    <td>19.14</span></td>
+    <td>22.97</span></td>
+    <td>30.63</span></td>
+    <td>38.28</span></td>
+    <td>45.94</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">600</span></td>
+    <td>4.59</span></td>
+    <td>6.89</span></td>
+    <td>9.19</span></td>
+    <td>11.48</span></td>
+    <td>13.78</span></td>
+    <td>18.38</span></td>
+    <td>22.97</span></td>
+    <td>27.56</span></td>
+    <td>36.75</span></td>
+    <td>45.94</span></td>
+    <td>55.13</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">800</span></td>
+    <td>6.13</span></td>
+    <td>9.19</span></td>
+    <td>12.25</span></td>
+    <td>15.31</span></td>
+    <td>18.38</span></td>
+    <td>24.50</span></td>
+    <td>30.63</span></td>
+    <td>36.75</span></td>
+    <td>49.00</span></td>
+    <td>61.25</span></td>
+    <td>73.50</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">1000</span></td>
+    <td>7.66</span></td>
+    <td>11.48</span></td>
+    <td>15.31</span></td>
+    <td>19.14</span></td>
+    <td>22.97</span></td>
+    <td>30.63</span></td>
+    <td>38.28</span></td>
+    <td>45.94</span></td>
+    <td>61.25</span></td>
+    <td>76.56</span></td>
+    <td>91.88</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">1200</span></td>
+    <td>9.19</span></td>
+    <td>13.78</span></td>
+    <td>18.38</span></td>
+    <td>22.97</span></td>
+    <td>27.56</span></td>
+    <td>36.75</span></td>
+    <td>45.94</span></td>
+    <td>55.13</span></td>
+    <td>73.50</span></td>
+    <td>91.88</span></td>
+    <td>110.25</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">1400</span></td>
+    <td>10.72</span></td>
+    <td>16.08</span></td>
+    <td>21.44</span></td>
+    <td>26.80</span></td>
+    <td>32.16</span></td>
+    <td>42.88</span></td>
+    <td>53.59</span></td>
+    <td>64.31</span></td>
+    <td>85.75</span></td>
+    <td>107.19</span></td>
+    <td>128.63</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">1600</span></td>
+    <td>12.25</span></td>
+    <td>18.38</span></td>
+    <td>24.50</span></td>
+    <td>30.63</span></td>
+    <td>36.75</span></td>
+    <td>49.00</span></td>
+    <td>61.25</span></td>
+    <td>73.50</span></td>
+    <td>98.00</span></td>
+    <td>122.50</span></td>
+    <td>147.00</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">1800</span></td>
+    <td>13.78</span></td>
+    <td>20.67</span></td>
+    <td>27.56</span></td>
+    <td>34.45</span></td>
+    <td>41.34</span></td>
+    <td>55.13</span></td>
+    <td>68.91</span></td>
+    <td>82.69</span></td>
+    <td>110.25</span></td>
+    <td>137.81</span></td>
+    <td>165.38</span></td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">2000</span></td>
+    <td>15.31</span></td>
+    <td>22.97</span></td>
+    <td>30.63</span></td>
+    <td>38.28</span></td>
+    <td>45.94</span></td>
+    <td>61.25</span></td>
+    <td>76.56</span></td>
+    <td>91.88</span></td>
+    <td>122.50</span></td>
+    <td>153.13</span></td>
+    <td>183.75</span></td>
+  </tr>
+</tbody>
+</table>
+
 ## Sensor Array Selection ⚡️
 
 > Research on sensors in this [Google Sheet](https://docs.google.com/spreadsheets/d/1f3vsNErERXZ-9NdXlSl-dcCkEAP_58Zadz2kLJG4f4g/edit#gid=0).
@@ -228,40 +462,6 @@ $$
 > $k = 1.2$ is very modest for a lithium-ion polymer battery due to its "high" efficiency.
 
 ## Turbine Power 💨
-
-Consider the maximum power that can be extracted from the fluid:
-$$
-P_{\text{fluid}} = \frac{1}{2} \rho A v^3
-$$
-
-Where:
-- $P_{\text{fluid}} \space (W)$ is the power of the fluid.
-- $rho \space (kg/m^3)$ is the fluid density.
-- $A \space (m^2)$ is the cross-sectional surface area that the fluid flows.
-- $v \space (m/s)$ is the fluid velocity.
-
-The [range of the fluid velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) is:
-$$
-\begin{aligned}
-v_{\text{min}} &= 5 \space m/s \\
-v_{\text{max}} &= 11 \space m/s
-\end{aligned}
-$$
-
-The fluid density of air is:
-$$
-\rho = 1.225 \space kg/m^3
-$$
-
-1. Blade design 
-    1. Number of blades
-    1. Size of blades
-    1. Area of the blade
-    1. Angle of blade
-1. Calculate turbine torque
-1. Calculate power coefficient
-1. Calculate power of turbine
-1. Pick motor and calculate power of motor
 
 Multiply $P_{\text{fluid}}$ by Betz's coefficient to get $P_{\text{turbine}}$
 
