@@ -6,6 +6,9 @@ Building a proof-of-concept.
 
 [TOC]
 
+> System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
+
+
 ## Requirements Allocation 🔑
 
 The requirements to consider for system design were:
@@ -1067,7 +1070,17 @@ The discharge current of the battery is more than sufficient to power the mechat
 
 ### Confirm Battery Energy
 
-Consider the battery energy (which is effectively the energy discharged within one hour):
+Consider the battery-capacity formula:
+$$
+E = V \times Q
+$$
+
+Where:
+- $E \space (Whr)$ is the battery energy.
+- $V \space (V)$ is the battery voltage.
+- $Q \space (Ahr)$ is the battery capacity.
+
+The battery energy (which is effectively the energy discharged within one hour) is therefore:
 $$
 \begin{aligned}
 E_{\text{battery}} &= VQ_{\text{effective}} \\
@@ -1076,10 +1089,6 @@ E_{\text{battery}} &= VQ_{\text{effective}} \\
 \end{aligned}
 $$
 
-Where:
-- $E \space (Whr)$ is the battery energy.
-- $V \space (V)$ is the battery discharge voltage rating.
-- $Q \space (Ahr)$ is the battery capacity.
 
 ### Confirm Battery Power
 
@@ -1095,13 +1104,65 @@ $$
 
 The energy of the battery is more than sufficient to power the mechatronic system.
 
+## Funnel Design 🗻
+
+Consider [Bernoulli's Equation](https://en.wikipedia.org/wiki/Bernoulli%27s_principle):
+$$
+E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, out}}
+$$
+
+Substituting the energies in terms of velocities and pressures gives:
+$$
+\frac{p_{\text{in}}}{\rho} + \frac{v_{\text{in}}^2}{2} + gh_{\text{in}} = \frac{p_{\text{out}}}{\rho} + \frac{v_{\text{out}}^2}{2} + gh_{\text{out}}
+$$
+
+Where:
+- $p \space (Pa)$ is the static pressure.
+- $\rho \space (kg/m^3)$ is the fluid density.
+- $v \space (m/s)$ is the flow velocity.
+- $g \space (m/s^2)$ is acceleration of gravity.
+- $h \space (m)$ is the elevation height.
+
+<!-- CALCULATE AREA -->
+
+$$
+P = Fv
+$$
+
+## Turbine Power 💨
+
+Consider the [Rankine-Froude model](https://en.wikipedia.org/wiki/Blade_element_momentum_theory#Rankine%E2%80%93Froude_model), where the pressure difference in terms of the velocities far upstream and downstream of the rotor is given as:
+$$
+\Delta P = \frac{1}{2}\rho(v_\infty^2 - v_\omega^2)
+$$
+
+Where:
+- $\Delta P \space (Pa)$ is the pressure difference between far upstream and far downstream.
+- $v_\infty \space (m/s)$ is the fluid velocity far upstream.
+- $v_\omega \space (m/s)$ is the fluid velocity far downstream.
+
+
+The force acting on the blade can be derived:
+$$
+\begin{aligned}
+F_{\text{blade}} &= \Delta P \times A \\
+&= \frac{1}{2}\rho(v_\infty^2 - v_\omega^2) \times A
+\end{aligned}
+$$
+
+Where:
+- $F \space (N)$ is the force acting on the turbine.
+- $A \space (m^2)$ is the cross-sectional area that the fluid flows through before impacting with the turbine.
+
+> The Rankine-Froude model is extremely simple.
+
 ## Turbine Blade Design 💨
 
 > Recall: $P_{\text{fluid}} = \frac{1}{2} \rho A v^3$.
 
 Consider the [extended Bernoulli equation](https://www.engineeringtoolbox.com/mechanical-energy-equation-d_614.html) for a turbine (in terms of energy per unit mass):
 $$
-E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, elevation}} + E_{\text{shaft}} + E_{\text{loss}}
+E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, out}} + E_{\text{shaft}} + E_{\text{loss}}
 $$
 
 Substituting the energies in terms of velocities and pressures gives:
@@ -1182,49 +1243,43 @@ Cut-out wind speed is the highest input wind speed that a turbine should generat
 
 ## Turbine Blade Material Selection 🍯
 
+The Ashby chart for Young's modulus vs density is used to select the turbine blade material.
 
+The minimum required [Young's modulus](https://en.wikipedia.org/wiki/Young%27s_modulus) can be determined by considering the maximum possible force applied to the blade.
+
+A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed.
 
 ## Generator Selection 🚘
 
-Consider the battery-capacity formula:
+The rotational speed of the turbine can be calculated by considering the transfer of momentum from air to the turbine blade:
 $$
-E = V \times Q
+\begin{aligned}
+p_{\text{air, in}} &= p_{\text{blade}} + p_{\text{air, out}} \\
+m_{\text{air}}v_{\text{air, in}} &= m_{\text{blade}}v_{\text{blade}} + m_{\text{air}}v_{\text{air, out}} \\
+\end{aligned}
 $$
 
+$$
+v = r \omega
+$$
+
+$$
+P_{\text{air}} = \frac{F_N}{A_{\text{blade}}} 
+$$
+
+The torque of the turbine can be calculated by considering the forces acting on the turbine blade:
+$$
+\tau = rF
+$$
+
+The mechanical power generated from the turbine is therefore:
+$$
+P_{\text{turbine}} = \tau \times \omega
+$$
 Where:
-- $E \space (Whr)$ is the battery energy.
-- $V \space (V)$ is the battery voltage.
-- $Q \space (Ahr)$ is the battery capacity.
+- $\tau \space (Nm)$ is the torque of the turbine.
+- $\omega \space (ms^{-1})$ is the rotational speed of the turbine.
 
-For two 105075 batteries in series, the total battery energy is:
-$$
-E_{\text{two in-series}} = 2 \times 4.2 \times 5 = 42 \space Whr
-$$
-
-For a single 105075 battery, the battery energy is:
-$$
-E_{\text{single}} = 4.2 \times 5 = 21 \space Whr
-$$
-
-Consider the C-rate relationship with current and battery energy:
-$$
-I = Cr \times E
-$$
-
-Where:
-- $I \space (A)$ is the current.
-- $E \space (Whr)$ is the battery energy.
-- $Cr \space (hr^{-1})$ is the C-rate.
-
-The required current to charge the battery can be calculated:
-$$
-I_{\text{charge}} = Cr \times E_{\text{single}} = 0.2 \times 21 = 4.2 \space A
-$$
-
-To select an appropriate generator for two in-series 105075 batteries, the generator needs to supply at least $8.4 \space V$ and $4.2 \space A$. Therefore, the required generator power is:
-$$
-P = V \times I = 8.4 \times 4.2 = 35.28 \space W
-$$
 
 A table of appropriate motors:
 <table>
@@ -1235,24 +1290,37 @@ A table of appropriate motors:
     </tr>
 </table>
 
-Consider the mechanical generated from the turbine:
+Consider the power efficiency of the motors:
 $$
-P = \tau \times \omega
+P_{\text{motor}} = \eta P_{\text{turbine}}
 $$
-Where:
-- $\tau \space (Nm)$ is the torque of the turbine.
-- $\omega \space (ms^{-1})$ is the rotational speed of the turbine.
 
-> System design calculations were made in this [Google Sheet](https://docs.google.com/spreadsheets/d/1eosVVQOt2COTTdD-d0bvh6w1MXfZiy1iHKO29cC1Ua0/edit?usp=sharing).
+The table of viable air ducts vs power can be reduced (green is viable).
 
-## Bearing Selection 🛞
+> It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
 
-The expected rotational speed of the turbine is thus:
+## Bearing Selection 🐻
 
-## Circlip Selection
+Bearing selection is dependent on torque ($\tau$) and rotational speed ($\omega$) of the turbine.
 
-## Bolt Selection
+A table of appropriate bearings:
+
+## Circlip Selection 📎
+
+Circlip selection is dependent on the axial force of the turbine shaft.
+
+## Bolt Selection 🔩
+
+A finite-element analysis of the turbine assembly is done to identify the region of highest stress at the mating points between parts.
+
+Consider the possible failure modes of bolting at this mating point.
+
+This will determine the metric bolt size which will be uniform throughout the entire assembly for ease of assembly.
 
 ## Verification
 
+Each requirement is verified via simulation.
+
 ## Validation
+
+Each customer need is validated.
