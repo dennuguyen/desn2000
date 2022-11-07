@@ -698,7 +698,7 @@ Where:
 - $V \space (V)$ is the voltage.
 - $I \space (A)$ is the current.
 
-Power use can be summed from considering the voltage and current ratings of the devices:
+An efficient mechatronic system would only allow a single sensor device to be enabled at a time (with the microcontroller and wifi module enabled as well). Power use can be summed from considering the voltage and current ratings of the devices:
 $$
 \begin{aligned}
 P_{\text{net}} &= P_{\text{Arduino Nano}} + P_{\text{USB-C}} + P_{\text{TinyPICO}} \\
@@ -707,7 +707,224 @@ P_{\text{net}} &= P_{\text{Arduino Nano}} + P_{\text{USB-C}} + P_{\text{TinyPICO
 \end{aligned}
 $$
 
-Compare this power requirement to the table of maximum extractable fluid power vs air duct sizes for viable 
+Compare this power requirement to the table of maximum effective turbine powers (red cells are nonviable to power a turbine, green cells are viable):
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-y9p2{background-color:#EA4335;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fll5{border-color:inherit;font-weight:bold;text-align:center;vertical-align:bottom}
+.tg .tg-kd2b{background-color:#34A853;border-color:inherit;text-align:center;vertical-align:bottom}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt" rowspan="2">Width (mm)</th>
+    <th class="tg-fll5" colspan="11"><span style="font-weight:bold">Height (mm)</span></th>
+  </tr>
+  <tr>
+    <th class="tg-fll5"><span style="font-weight:bold">100</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">150</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">200</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">250</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">300</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">400</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">500</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">600</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">800</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1000</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1200</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">200</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">0.91</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.36</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.81</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.27</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.72</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.63</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.54</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">7.26</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">250</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.13</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.70</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.27</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.84</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.40</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.54</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.67</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">11.34</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">300</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.36</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.04</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.72</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.40</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.08</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">8.17</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">16.33</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">400</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">1.81</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.72</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.63</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.54</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">7.26</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">14.52</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">21.78</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">500</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.27</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.40</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.54</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.67</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">11.34</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">22.69</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">27.22</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">600</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">2.72</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.08</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">8.17</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">16.33</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">21.78</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">27.22</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">32.67</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">800</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">3.63</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">7.26</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">14.52</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">21.78</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">29.04</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">36.30</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">43.56</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1000</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">4.54</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">11.34</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">22.69</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">27.22</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">36.30</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">45.37</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">54.44</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1200</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">5.44</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">8.17</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">16.33</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">21.78</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">27.22</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">32.67</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">43.56</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">54.44</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">65.33</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1400</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">6.35</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.53</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">12.70</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">15.88</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">19.06</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">25.41</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">31.76</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">38.11</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">50.81</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">63.52</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">76.22</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1600</span></td>
+    <td class="tg-y9p2"><span style="font-weight:normal;background-color:#EA4335">7.26</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">10.89</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">14.52</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">21.78</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">29.04</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">36.30</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">43.56</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">58.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">72.59</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">87.11</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1800</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">8.17</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">12.25</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">16.33</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">20.42</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">24.50</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">32.67</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">40.83</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">49.00</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">65.33</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">81.67</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">98.00</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">2000</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">9.07</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">13.61</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">18.15</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">22.69</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">27.22</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">36.30</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">45.37</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">54.44</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">72.59</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">90.74</span></td>
+    <td class="tg-kd2b"><span style="font-weight:normal;background-color:#34A853">108.89</span></td>
+  </tr>
+</tbody>
+</table>
 
 ## Battery Selection 🔋
 
