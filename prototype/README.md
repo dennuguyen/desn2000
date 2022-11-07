@@ -72,274 +72,554 @@ Referring to this table of [common rectangular ducts](https://www.engineeringtoo
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-ak90{background-color:#ED9570;text-align:center;vertical-align:bottom}
-.tg .tg-uklj{background-color:#EBD36A;text-align:center;vertical-align:bottom}
-.tg .tg-g1b3{background-color:#FBD667;text-align:center;vertical-align:bottom}
-.tg .tg-a2dl{background-color:#E67C73;text-align:center;vertical-align:bottom}
-.tg .tg-zy3w{background-color:#DFD16C;text-align:center;vertical-align:bottom}
-.tg .tg-i74i{background-color:#FDCF67;text-align:center;vertical-align:bottom}
-.tg .tg-bobw{font-weight:bold;text-align:center;vertical-align:bottom}
-.tg .tg-saxo{background-color:#B1CA76;text-align:center;vertical-align:bottom}
-.tg .tg-odu0{background-color:#ECD36A;text-align:center;vertical-align:bottom}
-.tg .tg-wim9{background-color:#C8CE71;text-align:center;vertical-align:bottom}
-.tg .tg-iymw{background-color:#D0CF70;text-align:center;vertical-align:bottom}
-.tg .tg-ucbw{background-color:#DED16D;text-align:center;vertical-align:bottom}
-.tg .tg-5xxj{background-color:#91C57D;text-align:center;vertical-align:bottom}
-.tg .tg-la2o{background-color:#EC9270;text-align:center;vertical-align:bottom}
-.tg .tg-evjp{background-color:#EB8F71;text-align:center;vertical-align:bottom}
-.tg .tg-h0jm{background-color:#F2A96D;text-align:center;vertical-align:bottom}
-.tg .tg-pw7g{background-color:#EF9D6F;text-align:center;vertical-align:bottom}
-.tg .tg-n8yn{background-color:#F6B56B;text-align:center;vertical-align:bottom}
-.tg .tg-99k1{background-color:#FED666;text-align:center;vertical-align:bottom}
-.tg .tg-1goq{background-color:#F0A26E;text-align:center;vertical-align:bottom}
-.tg .tg-uk67{background-color:#E98872;text-align:center;vertical-align:bottom}
-.tg .tg-f0bb{background-color:#E78173;text-align:center;vertical-align:bottom}
-.tg .tg-o3vm{background-color:#B7CB75;text-align:center;vertical-align:bottom}
-.tg .tg-zph9{background-color:#6BBF85;text-align:center;vertical-align:bottom}
-.tg .tg-qx7g{background-color:#D4D06F;text-align:center;vertical-align:bottom}
-.tg .tg-32si{background-color:#FFD666;text-align:center;vertical-align:bottom}
-.tg .tg-1qvh{background-color:#97C67C;text-align:center;vertical-align:bottom}
-.tg .tg-7wv7{background-color:#F6B96B;text-align:center;vertical-align:bottom}
-.tg .tg-bxtm{background-color:#A4C879;text-align:center;vertical-align:bottom}
-.tg .tg-rk9c{background-color:#F4AF6C;text-align:center;vertical-align:bottom}
-.tg .tg-kdq1{background-color:#E4D26B;text-align:center;vertical-align:bottom}
-.tg .tg-9ywq{background-color:#C1CC73;text-align:center;vertical-align:bottom}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-ugok{background-color:#E67F73;text-align:center;vertical-align:bottom}
-.tg .tg-zup4{background-color:#E78273;text-align:center;vertical-align:bottom}
-.tg .tg-yrz9{background-color:#E88572;text-align:center;vertical-align:bottom}
-.tg .tg-t3zq{background-color:#EE9C6F;text-align:center;vertical-align:bottom}
-.tg .tg-wj4b{background-color:#F9C269;text-align:center;vertical-align:bottom}
-.tg .tg-4smu{background-color:#E67D73;text-align:center;vertical-align:bottom}
-.tg .tg-kau8{background-color:#E98972;text-align:center;vertical-align:bottom}
-.tg .tg-p9n2{background-color:#EA8D71;text-align:center;vertical-align:bottom}
-.tg .tg-xglf{background-color:#F1A56D;text-align:center;vertical-align:bottom}
-.tg .tg-im9s{background-color:#FAC569;text-align:center;vertical-align:bottom}
-.tg .tg-jwyu{background-color:#E88472;text-align:center;vertical-align:bottom}
-.tg .tg-4zal{background-color:#F7D567;text-align:center;vertical-align:bottom}
-.tg .tg-cks2{background-color:#F1D469;text-align:center;vertical-align:bottom}
-.tg .tg-6e0j{background-color:#F0D469;text-align:center;vertical-align:bottom}
-.tg .tg-nabm{background-color:#E8D36B;text-align:center;vertical-align:bottom}
-.tg .tg-jwiq{background-color:#D7D06E;text-align:center;vertical-align:bottom}
-.tg .tg-1gz9{background-color:#CBCE71;text-align:center;vertical-align:bottom}
-.tg .tg-ecwx{background-color:#FCD666;text-align:center;vertical-align:bottom}
-.tg .tg-al2l{background-color:#F6D568;text-align:center;vertical-align:bottom}
-.tg .tg-1p8w{background-color:#BECC74;text-align:center;vertical-align:bottom}
-.tg .tg-52o3{background-color:#A8C878;text-align:center;vertical-align:bottom}
-.tg .tg-2zh6{background-color:#7EC281;text-align:center;vertical-align:bottom}
-.tg .tg-mxkh{background-color:#FCCC68;text-align:center;vertical-align:bottom}
-.tg .tg-y7jj{background-color:#F4D568;text-align:center;vertical-align:bottom}
-.tg .tg-542a{background-color:#87C37F;text-align:center;vertical-align:bottom}
-.tg .tg-z7mu{background-color:#78C183;text-align:center;vertical-align:bottom}
-.tg .tg-yew5{background-color:#57BB8A;text-align:center;vertical-align:bottom}
+.tg .tg-clww{background-color:#F6D568;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-06ha{background-color:#EB8F71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-4ivf{background-color:#E78273;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-090p{background-color:#C1CC73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-vr9z{background-color:#E67F73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-d6lg{background-color:#E98872;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-3io6{background-color:#6BBF85;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-4vur{background-color:#E98972;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-vg9x{background-color:#E8D36B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-vwkk{background-color:#FBD667;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-kegi{background-color:#F4D568;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-jsqk{background-color:#91C57D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-mf1y{background-color:#97C67C;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zj55{background-color:#A4C879;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-em69{background-color:#FFD666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fll5{border-color:inherit;font-weight:bold;text-align:center;vertical-align:bottom}
+.tg .tg-fchy{background-color:#E67C73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-u0wo{background-color:#E88572;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-plpd{background-color:#ED9570;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dfxj{background-color:#EE9C6F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-7vq7{background-color:#F2A96D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-f5cs{background-color:#F6B56B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-n0he{background-color:#F9C269;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-nn8n{background-color:#E67D73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-n6dw{background-color:#E78173;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-fbrj{background-color:#EA8D71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-pmy1{background-color:#EF9D6F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-6shm{background-color:#F1A56D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-30wt{background-color:#FAC569;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-lq5z{background-color:#E88472;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-wt7h{background-color:#EC9270;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-pd65{background-color:#F4AF6C;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ljj2{background-color:#FED666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-x1n4{background-color:#F7D567;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-twob{background-color:#F1D469;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-q0ei{background-color:#F0D469;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-qgp5{background-color:#DED16D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-kpva{background-color:#E4D26B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-1yt7{background-color:#D7D06E;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dzpk{background-color:#CBCE71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-f2ym{background-color:#C8CE71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-6qrj{background-color:#B7CB75;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-88pj{background-color:#F0A26E;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ccbk{background-color:#F6B96B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-rcvj{background-color:#FDCF67;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dqzg{background-color:#FCD666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-97r8{background-color:#EBD36A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-0495{background-color:#DFD16C;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-okop{background-color:#D4D06F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-v8nh{background-color:#BECC74;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-lt8a{background-color:#A8C878;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-9d2x{background-color:#B1CA76;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-b1z7{background-color:#7EC281;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-st3g{background-color:#FCCC68;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-d411{background-color:#ECD36A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ylbp{background-color:#D0CF70;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ewaz{background-color:#87C37F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-kp2v{background-color:#78C183;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-j1aw{background-color:#57BB8A;border-color:inherit;text-align:center;vertical-align:bottom}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-amwm" rowspan="2">Width (mm)</th>
-    <th class="tg-bobw" colspan="11"><span style="font-weight:bold">Height (mm)</span></th>
+    <th class="tg-7btt" rowspan="2">Width (mm)</th>
+    <th class="tg-fll5" colspan="11"><span style="font-weight:bold">Height (mm)</span></th>
   </tr>
   <tr>
-    <th class="tg-bobw"><span style="font-weight:bold">100</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">150</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">200</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">250</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">300</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">400</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">500</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">600</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">800</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">1000</span></th>
-    <th class="tg-bobw"><span style="font-weight:bold">1200</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">100</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">150</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">200</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">250</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">300</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">400</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">500</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">600</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">800</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1000</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1200</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">200</span></td>
-    <td class="tg-a2dl"><span style="font-weight:normal;background-color:#E67C73">1.53</span></td>
-    <td class="tg-ugok"><span style="font-weight:normal;background-color:#E67F73">2.30</span></td>
-    <td class="tg-zup4"><span style="font-weight:normal;background-color:#E78273">3.06</span></td>
-    <td class="tg-yrz9"><span style="font-weight:normal;background-color:#E88572">3.83</span></td>
-    <td class="tg-uk67"><span style="font-weight:normal;background-color:#E98872">4.59</span></td>
-    <td class="tg-evjp"><span style="font-weight:normal;background-color:#EB8F71">6.13</span></td>
-    <td class="tg-ak90"><span style="font-weight:normal;background-color:#ED9570">7.66</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-h0jm"><span style="font-weight:normal;background-color:#F2A96D">12.25</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">200</span></td>
+    <td class="tg-fchy"><span style="font-weight:normal;background-color:#E67C73">1.53</span></td>
+    <td class="tg-vr9z">2.30</td>
+    <td class="tg-4ivf"><span style="font-weight:normal;background-color:#E78273">3.06</span></td>
+    <td class="tg-u0wo">3.83</td>
+    <td class="tg-d6lg">4.59</td>
+    <td class="tg-06ha">6.13</td>
+    <td class="tg-plpd">7.66</td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-7vq7">12.25</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-n0he">18.38</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">250</span></td>
-    <td class="tg-4smu"><span style="font-weight:normal;background-color:#E67D73">1.91</span></td>
-    <td class="tg-f0bb"><span style="font-weight:normal;background-color:#E78173">2.87</span></td>
-    <td class="tg-yrz9"><span style="font-weight:normal;background-color:#E88572">3.83</span></td>
-    <td class="tg-kau8"><span style="font-weight:normal;background-color:#E98972">4.79</span></td>
-    <td class="tg-p9n2"><span style="font-weight:normal;background-color:#EA8D71">5.74</span></td>
-    <td class="tg-ak90"><span style="font-weight:normal;background-color:#ED9570">7.66</span></td>
-    <td class="tg-pw7g"><span style="font-weight:normal;background-color:#EF9D6F">9.57</span></td>
-    <td class="tg-xglf"><span style="font-weight:normal;background-color:#F1A56D">11.48</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-im9s"><span style="font-weight:normal;background-color:#FAC569">19.14</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">250</span></td>
+    <td class="tg-nn8n"><span style="font-weight:normal;background-color:#E67D73">1.91</span></td>
+    <td class="tg-n6dw"><span style="font-weight:normal;background-color:#E78173">2.87</span></td>
+    <td class="tg-u0wo">3.83</td>
+    <td class="tg-4vur">4.79</td>
+    <td class="tg-fbrj">5.74</td>
+    <td class="tg-plpd">7.66</td>
+    <td class="tg-pmy1">9.57</td>
+    <td class="tg-6shm">11.48</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-30wt">19.14</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">300</span></td>
-    <td class="tg-ugok"><span style="font-weight:normal;background-color:#E67F73">2.30</span></td>
-    <td class="tg-jwyu"><span style="font-weight:normal;background-color:#E88472">3.45</span></td>
-    <td class="tg-uk67"><span style="font-weight:normal;background-color:#E98872">4.59</span></td>
-    <td class="tg-p9n2"><span style="font-weight:normal;background-color:#EA8D71">5.74</span></td>
-    <td class="tg-la2o"><span style="font-weight:normal;background-color:#EC9270">6.89</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-xglf"><span style="font-weight:normal;background-color:#F1A56D">11.48</span></td>
-    <td class="tg-rk9c"><span style="font-weight:normal;background-color:#F4AF6C">13.78</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-g1b3"><span style="font-weight:normal;background-color:#FBD667">27.56</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">300</span></td>
+    <td class="tg-vr9z">2.30</td>
+    <td class="tg-lq5z">3.45</td>
+    <td class="tg-d6lg">4.59</td>
+    <td class="tg-fbrj">5.74</td>
+    <td class="tg-wt7h">6.89</td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-6shm">11.48</td>
+    <td class="tg-pd65">13.78</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-vwkk">27.56</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">400</span></td>
-    <td class="tg-zup4"><span style="font-weight:normal;background-color:#E78273">3.06</span></td>
-    <td class="tg-uk67"><span style="font-weight:normal;background-color:#E98872">4.59</span></td>
-    <td class="tg-evjp"><span style="font-weight:normal;background-color:#EB8F71">6.13</span></td>
-    <td class="tg-ak90"><span style="font-weight:normal;background-color:#ED9570">7.66</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-h0jm"><span style="font-weight:normal;background-color:#F2A96D">12.25</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-99k1"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-cks2"><span style="font-weight:normal;background-color:#F1D469">36.75</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">400</span></td>
+    <td class="tg-4ivf"><span style="font-weight:normal;background-color:#E78273">3.06</span></td>
+    <td class="tg-d6lg">4.59</td>
+    <td class="tg-06ha">6.13</td>
+    <td class="tg-plpd">7.66</td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-7vq7">12.25</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-twob">36.75</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">500</span></td>
-    <td class="tg-yrz9"><span style="font-weight:normal;background-color:#E88572">3.83</span></td>
-    <td class="tg-p9n2"><span style="font-weight:normal;background-color:#EA8D71">5.74</span></td>
-    <td class="tg-ak90"><span style="font-weight:normal;background-color:#ED9570">7.66</span></td>
-    <td class="tg-pw7g"><span style="font-weight:normal;background-color:#EF9D6F">9.57</span></td>
-    <td class="tg-xglf"><span style="font-weight:normal;background-color:#F1A56D">11.48</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-im9s"><span style="font-weight:normal;background-color:#FAC569">19.14</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-6e0j"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
-    <td class="tg-nabm"><span style="font-weight:normal;background-color:#E8D36B">45.94</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">500</span></td>
+    <td class="tg-u0wo">3.83</td>
+    <td class="tg-fbrj">5.74</td>
+    <td class="tg-plpd">7.66</td>
+    <td class="tg-pmy1">9.57</td>
+    <td class="tg-6shm">11.48</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-30wt">19.14</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-q0ei"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
+    <td class="tg-vg9x">45.94</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">600</span></td>
-    <td class="tg-uk67"><span style="font-weight:normal;background-color:#E98872">4.59</span></td>
-    <td class="tg-la2o"><span style="font-weight:normal;background-color:#EC9270">6.89</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-xglf"><span style="font-weight:normal;background-color:#F1A56D">11.48</span></td>
-    <td class="tg-rk9c"><span style="font-weight:normal;background-color:#F4AF6C">13.78</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-g1b3"><span style="font-weight:normal;background-color:#FBD667">27.56</span></td>
-    <td class="tg-cks2"><span style="font-weight:normal;background-color:#F1D469">36.75</span></td>
-    <td class="tg-nabm"><span style="font-weight:normal;background-color:#E8D36B">45.94</span></td>
-    <td class="tg-ucbw"><span style="font-weight:normal;background-color:#DED16D">55.13</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">600</span></td>
+    <td class="tg-d6lg">4.59</td>
+    <td class="tg-wt7h">6.89</td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-6shm">11.48</td>
+    <td class="tg-pd65">13.78</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-vwkk">27.56</td>
+    <td class="tg-twob">36.75</td>
+    <td class="tg-vg9x">45.94</td>
+    <td class="tg-qgp5">55.13</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">800</span></td>
-    <td class="tg-evjp"><span style="font-weight:normal;background-color:#EB8F71">6.13</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-h0jm"><span style="font-weight:normal;background-color:#F2A96D">12.25</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-99k1"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-cks2"><span style="font-weight:normal;background-color:#F1D469">36.75</span></td>
-    <td class="tg-kdq1"><span style="font-weight:normal;background-color:#E4D26B">49.00</span></td>
-    <td class="tg-jwiq"><span style="font-weight:normal;background-color:#D7D06E">61.25</span></td>
-    <td class="tg-1gz9"><span style="font-weight:normal;background-color:#CBCE71">73.50</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">800</span></td>
+    <td class="tg-06ha">6.13</td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-7vq7">12.25</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-twob">36.75</td>
+    <td class="tg-kpva"><span style="font-weight:normal;background-color:#E4D26B">49.00</span></td>
+    <td class="tg-1yt7">61.25</td>
+    <td class="tg-dzpk">73.50</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">1000</span></td>
-    <td class="tg-ak90"><span style="font-weight:normal;background-color:#ED9570">7.66</span></td>
-    <td class="tg-xglf"><span style="font-weight:normal;background-color:#F1A56D">11.48</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-im9s"><span style="font-weight:normal;background-color:#FAC569">19.14</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-6e0j"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
-    <td class="tg-nabm"><span style="font-weight:normal;background-color:#E8D36B">45.94</span></td>
-    <td class="tg-jwiq"><span style="font-weight:normal;background-color:#D7D06E">61.25</span></td>
-    <td class="tg-wim9"><span style="font-weight:normal;background-color:#C8CE71">76.56</span></td>
-    <td class="tg-o3vm"><span style="font-weight:normal;background-color:#B7CB75">91.88</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">1000</span></td>
+    <td class="tg-plpd">7.66</td>
+    <td class="tg-6shm">11.48</td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-30wt">19.14</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-q0ei"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
+    <td class="tg-vg9x">45.94</td>
+    <td class="tg-1yt7">61.25</td>
+    <td class="tg-f2ym">76.56</td>
+    <td class="tg-6qrj">91.88</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">1200</span></td>
-    <td class="tg-t3zq"><span style="font-weight:normal;background-color:#EE9C6F">9.19</span></td>
-    <td class="tg-rk9c"><span style="font-weight:normal;background-color:#F4AF6C">13.78</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-g1b3"><span style="font-weight:normal;background-color:#FBD667">27.56</span></td>
-    <td class="tg-cks2"><span style="font-weight:normal;background-color:#F1D469">36.75</span></td>
-    <td class="tg-nabm"><span style="font-weight:normal;background-color:#E8D36B">45.94</span></td>
-    <td class="tg-ucbw"><span style="font-weight:normal;background-color:#DED16D">55.13</span></td>
-    <td class="tg-1gz9"><span style="font-weight:normal;background-color:#CBCE71">73.50</span></td>
-    <td class="tg-o3vm"><span style="font-weight:normal;background-color:#B7CB75">91.88</span></td>
-    <td class="tg-bxtm"><span style="font-weight:normal;background-color:#A4C879">110.25</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">1200</span></td>
+    <td class="tg-dfxj">9.19</td>
+    <td class="tg-pd65">13.78</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-vwkk">27.56</td>
+    <td class="tg-twob">36.75</td>
+    <td class="tg-vg9x">45.94</td>
+    <td class="tg-qgp5">55.13</td>
+    <td class="tg-dzpk">73.50</td>
+    <td class="tg-6qrj">91.88</td>
+    <td class="tg-zj55">110.25</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">1400</span></td>
-    <td class="tg-1goq"><span style="font-weight:normal;background-color:#F0A26E">10.72</span></td>
-    <td class="tg-7wv7"><span style="font-weight:normal;background-color:#F6B96B">16.08</span></td>
-    <td class="tg-i74i"><span style="font-weight:normal;background-color:#FDCF67">21.44</span></td>
-    <td class="tg-ecwx"><span style="font-weight:normal;background-color:#FCD666">26.80</span></td>
-    <td class="tg-al2l"><span style="font-weight:normal;background-color:#F6D568">32.16</span></td>
-    <td class="tg-uklj"><span style="font-weight:normal;background-color:#EBD36A">42.88</span></td>
-    <td class="tg-zy3w"><span style="font-weight:normal;background-color:#DFD16C">53.59</span></td>
-    <td class="tg-qx7g"><span style="font-weight:normal;background-color:#D4D06F">64.31</span></td>
-    <td class="tg-1p8w"><span style="font-weight:normal;background-color:#BECC74">85.75</span></td>
-    <td class="tg-52o3"><span style="font-weight:normal;background-color:#A8C878">107.19</span></td>
-    <td class="tg-5xxj"><span style="font-weight:normal;background-color:#91C57D">128.63</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">1400</span></td>
+    <td class="tg-88pj">10.72</td>
+    <td class="tg-ccbk">16.08</td>
+    <td class="tg-rcvj">21.44</td>
+    <td class="tg-dqzg">26.80</td>
+    <td class="tg-clww">32.16</td>
+    <td class="tg-97r8"><span style="font-weight:normal;background-color:#EBD36A">42.88</span></td>
+    <td class="tg-0495">53.59</td>
+    <td class="tg-okop">64.31</td>
+    <td class="tg-v8nh"><span style="font-weight:normal;background-color:#BECC74">85.75</span></td>
+    <td class="tg-lt8a">107.19</td>
+    <td class="tg-jsqk">128.63</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">1600</span></td>
-    <td class="tg-h0jm"><span style="font-weight:normal;background-color:#F2A96D">12.25</span></td>
-    <td class="tg-wj4b"><span style="font-weight:normal;background-color:#F9C269">18.38</span></td>
-    <td class="tg-99k1"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-cks2"><span style="font-weight:normal;background-color:#F1D469">36.75</span></td>
-    <td class="tg-kdq1"><span style="font-weight:normal;background-color:#E4D26B">49.00</span></td>
-    <td class="tg-jwiq"><span style="font-weight:normal;background-color:#D7D06E">61.25</span></td>
-    <td class="tg-1gz9"><span style="font-weight:normal;background-color:#CBCE71">73.50</span></td>
-    <td class="tg-saxo"><span style="font-weight:normal;background-color:#B1CA76">98.00</span></td>
-    <td class="tg-1qvh"><span style="font-weight:normal;background-color:#97C67C">122.50</span></td>
-    <td class="tg-2zh6"><span style="font-weight:normal;background-color:#7EC281">147.00</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">1600</span></td>
+    <td class="tg-7vq7">12.25</td>
+    <td class="tg-n0he">18.38</td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">24.50</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-twob">36.75</td>
+    <td class="tg-kpva"><span style="font-weight:normal;background-color:#E4D26B">49.00</span></td>
+    <td class="tg-1yt7">61.25</td>
+    <td class="tg-dzpk">73.50</td>
+    <td class="tg-9d2x">98.00</td>
+    <td class="tg-mf1y">122.50</td>
+    <td class="tg-b1z7">147.00</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">1800</span></td>
-    <td class="tg-rk9c"><span style="font-weight:normal;background-color:#F4AF6C">13.78</span></td>
-    <td class="tg-mxkh"><span style="font-weight:normal;background-color:#FCCC68">20.67</span></td>
-    <td class="tg-g1b3"><span style="font-weight:normal;background-color:#FBD667">27.56</span></td>
-    <td class="tg-y7jj"><span style="font-weight:normal;background-color:#F4D568">34.45</span></td>
-    <td class="tg-odu0"><span style="font-weight:normal;background-color:#ECD36A">41.34</span></td>
-    <td class="tg-ucbw"><span style="font-weight:normal;background-color:#DED16D">55.13</span></td>
-    <td class="tg-iymw"><span style="font-weight:normal;background-color:#D0CF70">68.91</span></td>
-    <td class="tg-9ywq"><span style="font-weight:normal;background-color:#C1CC73">82.69</span></td>
-    <td class="tg-bxtm"><span style="font-weight:normal;background-color:#A4C879">110.25</span></td>
-    <td class="tg-542a"><span style="font-weight:normal;background-color:#87C37F">137.81</span></td>
-    <td class="tg-zph9"><span style="font-weight:normal;background-color:#6BBF85">165.38</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">1800</span></td>
+    <td class="tg-pd65">13.78</td>
+    <td class="tg-st3g">20.67</td>
+    <td class="tg-vwkk">27.56</td>
+    <td class="tg-kegi">34.45</td>
+    <td class="tg-d411">41.34</td>
+    <td class="tg-qgp5">55.13</td>
+    <td class="tg-ylbp"><span style="font-weight:normal;background-color:#D0CF70">68.91</span></td>
+    <td class="tg-090p">82.69</td>
+    <td class="tg-zj55">110.25</td>
+    <td class="tg-ewaz">137.81</td>
+    <td class="tg-3io6">165.38</td>
   </tr>
   <tr>
-    <td class="tg-bobw"><span style="font-weight:bold">2000</span></td>
-    <td class="tg-n8yn"><span style="font-weight:normal;background-color:#F6B56B">15.31</span></td>
-    <td class="tg-32si"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
-    <td class="tg-4zal"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
-    <td class="tg-6e0j"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
-    <td class="tg-nabm"><span style="font-weight:normal;background-color:#E8D36B">45.94</span></td>
-    <td class="tg-jwiq"><span style="font-weight:normal;background-color:#D7D06E">61.25</span></td>
-    <td class="tg-wim9"><span style="font-weight:normal;background-color:#C8CE71">76.56</span></td>
-    <td class="tg-o3vm"><span style="font-weight:normal;background-color:#B7CB75">91.88</span></td>
-    <td class="tg-1qvh"><span style="font-weight:normal;background-color:#97C67C">122.50</span></td>
-    <td class="tg-z7mu"><span style="font-weight:normal;background-color:#78C183">153.13</span></td>
-    <td class="tg-yew5"><span style="font-weight:normal;background-color:#57BB8A">183.75</span></td>
+    <td class="tg-fll5"><span style="font-weight:bold">2000</span></td>
+    <td class="tg-f5cs">15.31</td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">22.97</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">30.63</span></td>
+    <td class="tg-q0ei"><span style="font-weight:normal;background-color:#F0D469">38.28</span></td>
+    <td class="tg-vg9x">45.94</td>
+    <td class="tg-1yt7">61.25</td>
+    <td class="tg-f2ym">76.56</td>
+    <td class="tg-6qrj">91.88</td>
+    <td class="tg-mf1y">122.50</td>
+    <td class="tg-kp2v">153.13</td>
+    <td class="tg-j1aw">183.75</td>
   </tr>
 </tbody>
 </table>
 
-From the requirement of the turbine being operable in duct sizes of at least $400 \space mm \times 400 \space mm$
+To get the maximum effective turbine power, the maximum extractable fluid power is multiplied by [Betz's coefficient](https://en.wikipedia.org/wiki/Betz%27s_law):
+$$
+P_{\text{turbine}} = \frac{16}{27} \times P_{\text{fluid}}
+$$
+
+The following table shows the maximum effective turbine power vs air duct sizes:
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-23jy{background-color:#ED9670;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-420o{background-color:#E67E73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-lhc5{background-color:#E98772;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-xocn{background-color:#E88672;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-4ivf{background-color:#E78273;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dfko{background-color:#DDD16D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-1xgm{background-color:#D6D06E;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-2vc3{background-color:#C7CD72;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-gi6p{background-color:#F5D568;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-502n{background-color:#EFD469;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-styj{background-color:#E2D26C;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-f3sz{background-color:#B5CA76;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-wlh0{background-color:#F3D468;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-z7se{background-color:#F9D567;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zcjq{background-color:#E7D36B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zsud{background-color:#FAD667;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zlag{background-color:#F9C06A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-em69{background-color:#FFD666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fll5{border-color:inherit;font-weight:bold;text-align:center;vertical-align:bottom}
+.tg .tg-fchy{background-color:#E67C73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-n6dw{background-color:#E78173;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dffa{background-color:#E88372;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-yqa5{background-color:#EA8B71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-km6z{background-color:#EB9170;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zxyu{background-color:#F0A16E;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-iind{background-color:#F3AB6D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ng3h{background-color:#F6B66B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-nn8n{background-color:#E67D73;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-evn7{background-color:#E78073;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-qfjg{background-color:#EA8A71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-dwsa{background-color:#ED976F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-xxoq{background-color:#EF9E6F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-41kv{background-color:#F6B86B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-bbni{background-color:#FAC669;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ris1{background-color:#EB8E71;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-f38b{background-color:#F1A66D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-kicr{background-color:#FCCB68;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ljj2{background-color:#FED666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-97r8{background-color:#EBD36A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-kpva{background-color:#E4D26B;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-9rct{background-color:#D9D06E;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-zokr{background-color:#CECF70;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-556u{background-color:#EE9B6F;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-d65n{background-color:#F3AE6C;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-qw0s{background-color:#FED367;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-hn99{background-color:#FDD666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-t5db{background-color:#F6D567;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-q0ei{background-color:#F0D469;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-5bhf{background-color:#EAD36A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ylbp{background-color:#D0CF70;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-lljt{background-color:#C3CD72;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-an1c{background-color:#B8CB75;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-lj0t{background-color:#F8BE6A;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-9upn{background-color:#FBD666;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-x1n4{background-color:#F7D567;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-ucyy{background-color:#DFD16D;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-v8nh{background-color:#BECC74;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-6euf{background-color:#AEC977;border-color:inherit;text-align:center;vertical-align:bottom}
+.tg .tg-0mk6{background-color:#A3C879;border-color:inherit;text-align:center;vertical-align:bottom}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt" rowspan="2">Width (mm)</th>
+    <th class="tg-fll5" colspan="11"><span style="font-weight:bold">Height (mm)</span></th>
+  </tr>
+  <tr>
+    <th class="tg-fll5"><span style="font-weight:bold">100</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">150</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">200</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">250</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">300</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">400</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">500</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">600</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">800</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1000</span></th>
+    <th class="tg-fll5"><span style="font-weight:bold">1200</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">200</span></td>
+    <td class="tg-fchy"><span style="font-weight:normal;background-color:#E67C73">0.91</span></td>
+    <td class="tg-420o"><span style="font-weight:normal;background-color:#E67E73">1.36</span></td>
+    <td class="tg-n6dw"><span style="font-weight:normal;background-color:#E78173">1.81</span></td>
+    <td class="tg-dffa"><span style="font-weight:normal;background-color:#E88372">2.27</span></td>
+    <td class="tg-xocn"><span style="font-weight:normal;background-color:#E88672">2.72</span></td>
+    <td class="tg-yqa5"><span style="font-weight:normal;background-color:#EA8B71">3.63</span></td>
+    <td class="tg-km6z"><span style="font-weight:normal;background-color:#EB9170">4.54</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-zxyu"><span style="font-weight:normal;background-color:#F0A16E">7.26</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">250</span></td>
+    <td class="tg-nn8n"><span style="font-weight:normal;background-color:#E67D73">1.13</span></td>
+    <td class="tg-evn7"><span style="font-weight:normal;background-color:#E78073">1.70</span></td>
+    <td class="tg-dffa"><span style="font-weight:normal;background-color:#E88372">2.27</span></td>
+    <td class="tg-lhc5"><span style="font-weight:normal;background-color:#E98772">2.84</span></td>
+    <td class="tg-qfjg"><span style="font-weight:normal;background-color:#EA8A71">3.40</span></td>
+    <td class="tg-km6z"><span style="font-weight:normal;background-color:#EB9170">4.54</span></td>
+    <td class="tg-dwsa"><span style="font-weight:normal;background-color:#ED976F">5.67</span></td>
+    <td class="tg-xxoq"><span style="font-weight:normal;background-color:#EF9E6F">6.81</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-41kv"><span style="font-weight:normal;background-color:#F6B86B">11.34</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">300</span></td>
+    <td class="tg-420o"><span style="font-weight:normal;background-color:#E67E73">1.36</span></td>
+    <td class="tg-4ivf"><span style="font-weight:normal;background-color:#E78273">2.04</span></td>
+    <td class="tg-xocn"><span style="font-weight:normal;background-color:#E88672">2.72</span></td>
+    <td class="tg-qfjg"><span style="font-weight:normal;background-color:#EA8A71">3.40</span></td>
+    <td class="tg-ris1"><span style="font-weight:normal;background-color:#EB8E71">4.08</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-xxoq"><span style="font-weight:normal;background-color:#EF9E6F">6.81</span></td>
+    <td class="tg-f38b"><span style="font-weight:normal;background-color:#F1A66D">8.17</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">16.33</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">400</span></td>
+    <td class="tg-n6dw"><span style="font-weight:normal;background-color:#E78173">1.81</span></td>
+    <td class="tg-xocn"><span style="font-weight:normal;background-color:#E88672">2.72</span></td>
+    <td class="tg-yqa5"><span style="font-weight:normal;background-color:#EA8B71">3.63</span></td>
+    <td class="tg-km6z"><span style="font-weight:normal;background-color:#EB9170">4.54</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-zxyu"><span style="font-weight:normal;background-color:#F0A16E">7.26</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-kicr"><span style="font-weight:normal;background-color:#FCCB68">14.52</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-zsud"><span style="font-weight:normal;background-color:#FAD667">21.78</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">500</span></td>
+    <td class="tg-dffa"><span style="font-weight:normal;background-color:#E88372">2.27</span></td>
+    <td class="tg-qfjg"><span style="font-weight:normal;background-color:#EA8A71">3.40</span></td>
+    <td class="tg-km6z"><span style="font-weight:normal;background-color:#EB9170">4.54</span></td>
+    <td class="tg-dwsa"><span style="font-weight:normal;background-color:#ED976F">5.67</span></td>
+    <td class="tg-xxoq"><span style="font-weight:normal;background-color:#EF9E6F">6.81</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-41kv"><span style="font-weight:normal;background-color:#F6B86B">11.34</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-z7se"><span style="font-weight:normal;background-color:#F9D567">22.69</span></td>
+    <td class="tg-gi6p"><span style="font-weight:normal;background-color:#F5D568">27.22</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">600</span></td>
+    <td class="tg-xocn"><span style="font-weight:normal;background-color:#E88672">2.72</span></td>
+    <td class="tg-ris1"><span style="font-weight:normal;background-color:#EB8E71">4.08</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-xxoq"><span style="font-weight:normal;background-color:#EF9E6F">6.81</span></td>
+    <td class="tg-f38b"><span style="font-weight:normal;background-color:#F1A66D">8.17</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">16.33</span></td>
+    <td class="tg-zsud"><span style="font-weight:normal;background-color:#FAD667">21.78</span></td>
+    <td class="tg-gi6p"><span style="font-weight:normal;background-color:#F5D568">27.22</span></td>
+    <td class="tg-502n"><span style="font-weight:normal;background-color:#EFD469">32.67</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">800</span></td>
+    <td class="tg-yqa5"><span style="font-weight:normal;background-color:#EA8B71">3.63</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-zxyu"><span style="font-weight:normal;background-color:#F0A16E">7.26</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-kicr"><span style="font-weight:normal;background-color:#FCCB68">14.52</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-zsud"><span style="font-weight:normal;background-color:#FAD667">21.78</span></td>
+    <td class="tg-wlh0"><span style="font-weight:normal;background-color:#F3D468">29.04</span></td>
+    <td class="tg-97r8"><span style="font-weight:normal;background-color:#EBD36A">36.30</span></td>
+    <td class="tg-kpva"><span style="font-weight:normal;background-color:#E4D26B">43.56</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1000</span></td>
+    <td class="tg-km6z"><span style="font-weight:normal;background-color:#EB9170">4.54</span></td>
+    <td class="tg-xxoq"><span style="font-weight:normal;background-color:#EF9E6F">6.81</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-41kv"><span style="font-weight:normal;background-color:#F6B86B">11.34</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-z7se"><span style="font-weight:normal;background-color:#F9D567">22.69</span></td>
+    <td class="tg-gi6p"><span style="font-weight:normal;background-color:#F5D568">27.22</span></td>
+    <td class="tg-97r8"><span style="font-weight:normal;background-color:#EBD36A">36.30</span></td>
+    <td class="tg-styj"><span style="font-weight:normal;background-color:#E2D26C">45.37</span></td>
+    <td class="tg-9rct"><span style="font-weight:normal;background-color:#D9D06E">54.44</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1200</span></td>
+    <td class="tg-23jy"><span style="font-weight:normal;background-color:#ED9670">5.44</span></td>
+    <td class="tg-f38b"><span style="font-weight:normal;background-color:#F1A66D">8.17</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">16.33</span></td>
+    <td class="tg-zsud"><span style="font-weight:normal;background-color:#FAD667">21.78</span></td>
+    <td class="tg-gi6p"><span style="font-weight:normal;background-color:#F5D568">27.22</span></td>
+    <td class="tg-502n"><span style="font-weight:normal;background-color:#EFD469">32.67</span></td>
+    <td class="tg-kpva"><span style="font-weight:normal;background-color:#E4D26B">43.56</span></td>
+    <td class="tg-9rct"><span style="font-weight:normal;background-color:#D9D06E">54.44</span></td>
+    <td class="tg-zokr"><span style="font-weight:normal;background-color:#CECF70">65.33</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1400</span></td>
+    <td class="tg-556u"><span style="font-weight:normal;background-color:#EE9B6F">6.35</span></td>
+    <td class="tg-d65n"><span style="font-weight:normal;background-color:#F3AE6C">9.53</span></td>
+    <td class="tg-zlag"><span style="font-weight:normal;background-color:#F9C06A">12.70</span></td>
+    <td class="tg-qw0s"><span style="font-weight:normal;background-color:#FED367">15.88</span></td>
+    <td class="tg-hn99"><span style="font-weight:normal;background-color:#FDD666">19.06</span></td>
+    <td class="tg-t5db"><span style="font-weight:normal;background-color:#F6D567">25.41</span></td>
+    <td class="tg-q0ei"><span style="font-weight:normal;background-color:#F0D469">31.76</span></td>
+    <td class="tg-5bhf"><span style="font-weight:normal;background-color:#EAD36A">38.11</span></td>
+    <td class="tg-dfko"><span style="font-weight:normal;background-color:#DDD16D">50.81</span></td>
+    <td class="tg-ylbp"><span style="font-weight:normal;background-color:#D0CF70">63.52</span></td>
+    <td class="tg-lljt"><span style="font-weight:normal;background-color:#C3CD72">76.22</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1600</span></td>
+    <td class="tg-zxyu"><span style="font-weight:normal;background-color:#F0A16E">7.26</span></td>
+    <td class="tg-ng3h"><span style="font-weight:normal;background-color:#F6B66B">10.89</span></td>
+    <td class="tg-kicr"><span style="font-weight:normal;background-color:#FCCB68">14.52</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-zsud"><span style="font-weight:normal;background-color:#FAD667">21.78</span></td>
+    <td class="tg-wlh0"><span style="font-weight:normal;background-color:#F3D468">29.04</span></td>
+    <td class="tg-97r8"><span style="font-weight:normal;background-color:#EBD36A">36.30</span></td>
+    <td class="tg-kpva"><span style="font-weight:normal;background-color:#E4D26B">43.56</span></td>
+    <td class="tg-1xgm"><span style="font-weight:normal;background-color:#D6D06E">58.07</span></td>
+    <td class="tg-2vc3"><span style="font-weight:normal;background-color:#C7CD72">72.59</span></td>
+    <td class="tg-an1c"><span style="font-weight:normal;background-color:#B8CB75">87.11</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">1800</span></td>
+    <td class="tg-f38b"><span style="font-weight:normal;background-color:#F1A66D">8.17</span></td>
+    <td class="tg-lj0t"><span style="font-weight:normal;background-color:#F8BE6A">12.25</span></td>
+    <td class="tg-em69"><span style="font-weight:normal;background-color:#FFD666">16.33</span></td>
+    <td class="tg-9upn"><span style="font-weight:normal;background-color:#FBD666">20.42</span></td>
+    <td class="tg-x1n4"><span style="font-weight:normal;background-color:#F7D567">24.50</span></td>
+    <td class="tg-502n"><span style="font-weight:normal;background-color:#EFD469">32.67</span></td>
+    <td class="tg-zcjq"><span style="font-weight:normal;background-color:#E7D36B">40.83</span></td>
+    <td class="tg-ucyy"><span style="font-weight:normal;background-color:#DFD16D">49.00</span></td>
+    <td class="tg-zokr"><span style="font-weight:normal;background-color:#CECF70">65.33</span></td>
+    <td class="tg-v8nh"><span style="font-weight:normal;background-color:#BECC74">81.67</span></td>
+    <td class="tg-6euf"><span style="font-weight:normal;background-color:#AEC977">98.00</span></td>
+  </tr>
+  <tr>
+    <td class="tg-fll5"><span style="font-weight:bold">2000</span></td>
+    <td class="tg-iind"><span style="font-weight:normal;background-color:#F3AB6D">9.07</span></td>
+    <td class="tg-bbni"><span style="font-weight:normal;background-color:#FAC669">13.61</span></td>
+    <td class="tg-ljj2"><span style="font-weight:normal;background-color:#FED666">18.15</span></td>
+    <td class="tg-z7se"><span style="font-weight:normal;background-color:#F9D567">22.69</span></td>
+    <td class="tg-gi6p"><span style="font-weight:normal;background-color:#F5D568">27.22</span></td>
+    <td class="tg-97r8"><span style="font-weight:normal;background-color:#EBD36A">36.30</span></td>
+    <td class="tg-styj"><span style="font-weight:normal;background-color:#E2D26C">45.37</span></td>
+    <td class="tg-9rct"><span style="font-weight:normal;background-color:#D9D06E">54.44</span></td>
+    <td class="tg-2vc3"><span style="font-weight:normal;background-color:#C7CD72">72.59</span></td>
+    <td class="tg-f3sz"><span style="font-weight:normal;background-color:#B5CA76">90.74</span></td>
+    <td class="tg-0mk6"><span style="font-weight:normal;background-color:#A3C879">108.89</span></td>
+  </tr>
+</tbody>
+</table>
+
+> [Betz's Law](https://en.wikipedia.org/wiki/Betz%27s_law) states that no turbine can capture more than 59.3% of the kinetic energy of the wind.
 
 ## Sensor Array Selection ⚡️
 
@@ -427,7 +707,7 @@ P_{\text{net}} &= P_{\text{Arduino Nano}} + P_{\text{USB-C}} + P_{\text{TinyPICO
 \end{aligned}
 $$
 
-
+Compare this power requirement to the table of maximum extractable fluid power vs air duct sizes for viable 
 
 ## Battery Selection 🔋
 
