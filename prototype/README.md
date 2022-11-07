@@ -664,6 +664,8 @@ $$
 v = r \omega
 $$
 
+> $m$ is dependent on blade material selection but can be optimised later.
+
 > Note that the fluid velocity is a free variable and can be increased if a funnel is used.
 
 The mechanical power generated from the turbine is therefore:
