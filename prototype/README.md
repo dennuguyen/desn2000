@@ -681,6 +681,37 @@ $$
 \eta_{\text{turbine}} = \frac{P_{\text{turbine, actual}}}{P_{\text{turbine, ideal}}}
 $$
 
+## Turbine Selection
+
+Using the two-bladed spiral VWAT from this [paper](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72)...
+
+The selected turbine would provide these values.
+
+$$
+C_p = \frac{P_{out}}{\frac{1}{2}\rho A v^3} \\
+C_p = 0.25 \ @ \ TSR = 0.55
+$$
+
+Assuming that $v=10 m/s$, $R = 0.1m$ and $A = 0.175 \times 0.2 = 0.035$. We can get these power values.
+
+$$
+\begin{aligned}
+P_{out} &= \frac{1}{2} \rho A v^3 C_p \\
+&= \frac{1}{2} \times 1.225 \times 0.035 \times 10^3 \times 0.25 \\
+&= 5.53594
+\end{aligned}
+$$
+
+Then using the $TSR$ value and $R$ we can calculate the angular velocity.
+
+$$
+\begin{aligned}
+\omega &= \frac{v \times TSR}{R} \\
+&= \frac{10 \times 0.55}{0.1} \\
+&= 55 \ rad/s \ \ (525 \ rpm)\\
+\end{aligned}
+$$
+
 ## Sensor Array Selection ⚡️
 
 > Research on sensors in this [Google Sheet](https://docs.google.com/spreadsheets/d/1f3vsNErERXZ-9NdXlSl-dcCkEAP_58Zadz2kLJG4f4g/edit#gid=0).
