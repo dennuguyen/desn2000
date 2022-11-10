@@ -712,6 +712,17 @@ $$
 \end{aligned}
 $$
 
+Now we can figure out the torque using the power output and the angular velocity.
+
+$$
+\begin{aligned}
+P_{out} &= Q \omega \\
+Q &= \frac{\omega}{P_{out}} \\
+&= \frac{55}{5.53594} \\
+&= 9.9351 \ Nm
+\end{aligned}
+$$
+
 ## Sensor Array Selection ⚡️
 
 > Research on sensors in this [Google Sheet](https://docs.google.com/spreadsheets/d/1f3vsNErERXZ-9NdXlSl-dcCkEAP_58Zadz2kLJG4f4g/edit#gid=0).
