@@ -796,6 +796,63 @@ P_{\max} &= Q_{\max} \omega_{\max} \\
 \end{aligned}
 $$
 
+## Turbine Blade Material Selection 🍯
+
+Consider
+$$
+Q = N\overline{F_t}R
+$$
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$
+
+The Ashby chart for Young's modulus vs density is used to select the turbine blade material.
+
+The minimum required [Young's modulus](https://en.wikipedia.org/wiki/Young%27s_modulus) can be determined by considering the maximum possible force applied to the blade.
+
+A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed.
+
+## Generator Selection 🚘
+
+A table of appropriate motors:
+<table>
+    <tr>
+        <th>Motor</th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
+Consider the power efficiency of the motors:
+$$
+P_{\text{motor}} = \eta P_{\text{turbine}}
+$$
+
+The table of viable air ducts vs power can be reduced (green is viable).
+
+> It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
+
+## Bearing Selection 🐻
+
+Bearing selection is dependent on torque ($\tau$) and rotational speed ($\omega$) of the turbine.
+
+A table of appropriate bearings:
+
+## Circlip Selection 📎
+
+Circlip selection is dependent on the axial force of the turbine shaft.
+
+## Bolt Selection 🔩
+
+A finite-element analysis of the turbine assembly is done to identify the region of highest stress at the mating points between parts.
+
+Consider the possible failure modes of bolting at this mating point.
+
+This will determine the metric bolt size which will be uniform throughout the entire assembly for ease of assembly.
+
 ## Sensor Array Selection ⚡️
 
 > Research on sensors in this [Google Sheet](https://docs.google.com/spreadsheets/d/1f3vsNErERXZ-9NdXlSl-dcCkEAP_58Zadz2kLJG4f4g/edit#gid=0).
@@ -1266,7 +1323,6 @@ E_{\text{battery}} &= VQ_{\text{effective}} \\
 \end{aligned}
 $$
 
-
 ### Confirm Battery Power
 
 To confirm the battery has sufficient power to power the mechatronic system:
@@ -1280,63 +1336,6 @@ P_{\text{battery}} = 7.94 > 7.82 = P_{\text{mechatronic system}}
 $$
 
 The energy of the battery is more than sufficient to power the mechatronic system.
-
-## Turbine Blade Material Selection 🍯
-
-Consider
-$$
-Q = N\overline{F_t}R
-$$
-
-$$
-\begin{aligned}
-
-\end{aligned}
-$$
-
-The Ashby chart for Young's modulus vs density is used to select the turbine blade material.
-
-The minimum required [Young's modulus](https://en.wikipedia.org/wiki/Young%27s_modulus) can be determined by considering the maximum possible force applied to the blade.
-
-A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed.
-
-## Generator Selection 🚘
-
-A table of appropriate motors:
-<table>
-    <tr>
-        <th>Motor</th>
-        <th></th>
-        <th></th>
-    </tr>
-</table>
-
-Consider the power efficiency of the motors:
-$$
-P_{\text{motor}} = \eta P_{\text{turbine}}
-$$
-
-The table of viable air ducts vs power can be reduced (green is viable).
-
-> It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
-
-## Bearing Selection 🐻
-
-Bearing selection is dependent on torque ($\tau$) and rotational speed ($\omega$) of the turbine.
-
-A table of appropriate bearings:
-
-## Circlip Selection 📎
-
-Circlip selection is dependent on the axial force of the turbine shaft.
-
-## Bolt Selection 🔩
-
-A finite-element analysis of the turbine assembly is done to identify the region of highest stress at the mating points between parts.
-
-Consider the possible failure modes of bolting at this mating point.
-
-This will determine the metric bolt size which will be uniform throughout the entire assembly for ease of assembly.
 
 ## Verification
 
