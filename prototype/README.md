@@ -736,46 +736,76 @@ $$
 
 ## Turbine Blade Material Selection 🍯
 
-Consider
+For a [two blade vertical wind-air turbine](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72), the force acting on the turbine for a wind speed of $11 \space m/s$ is:
 $$
-Q = N\overline{F_t}R
-$$
-
-$$
-\begin{aligned}
-
-\end{aligned}
+F_{\max} = 11 \space N
 $$
 
-The Ashby chart for Young's modulus vs density is used to select the turbine blade material.
+The turbine blade area is effectively half of the vertical cross-sectional area i.e.:
+$$
+A_{\text{blade}} = \frac{A}{2} = \frac{0.035}{2} = 0.0175 \space N
+$$
 
-The minimum required [Young's modulus](https://en.wikipedia.org/wiki/Young%27s_modulus) can be determined by considering the maximum possible force applied to the blade.
+Therefore, the maximum pressure that can be applied to the blade is:
+$$
+P = \frac{F}{A} = \frac{11}{0.0175} = 628.57 \space Pa
+$$
 
-A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed.
+Taking a [factor of safety](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) of 2, the maximum allowable pressure is reduced to:
+$$
+P_{\max, FOS} = \frac{P_{\max}}{FOS} = \frac{628.57}{2} = 314.29 \space Pa
+$$
 
-## Generator Selection 🚘
+The applied pressure is so insignificant that material selection can be done qualitatively i.e. based on material properties.
 
-A table of appropriate motors:
+<!-- 
+Treat the maximum allowable pressure to be the Young's modulus of the material i.e. the pressure applied to the material before it deforms. The Ashby chart for Young's modulus vs density is used to select the turbine blade material. A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed. -->
+
 <table>
     <tr>
-        <th>Motor</th>
-        <th></th>
-        <th></th>
+        <th>Material</th>
+        <th>Density</th>
+        <th>Cost</th>
+    </tr>
+    <tr>
+        <td>Aluminium</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ABS</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HDPE</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PVC</td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
-Consider the power efficiency of the motors:
-$$
-P_{\text{motor}} = \eta P_{\text{turbine}}
-$$
+The selected turbine blade material is HDPE.
 
-The table of viable air ducts vs power can be reduced (green is viable).
+> Performing a finite-element analysis of the failure cases of the turbine blade shows that HDPE is feasible.
 
-> It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
+The mass of the turbine blade itself is $80 \space g$.
+
+The mass of the turbine shaft itself $61.54 \space g$.
 
 ## Bearing Selection 🐻
 
+The total mass of the turbine blade and shaft assembly is $141.54 \space g$.
+
 Bearing selection is dependent on torque ($\tau$) and rotational speed ($\omega$) of the turbine.
+
+Therefore bearing selection is more dependent on the dimensions, availability, and cost.
+
+The inner diameter of the bearing is equivalent to the turbine shaft diameter of $20 \space mm$.
 
 A table of appropriate bearings:
 
@@ -1275,10 +1305,22 @@ $$
 
 The energy of the battery is more than sufficient to power the mechatronic system.
 
-## Verification
+## Generator Selection 🚘
 
-Each requirement is verified via simulation.
+A table of appropriate motors:
+<table>
+    <tr>
+        <th>Motor</th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
 
-## Validation
+Consider the power efficiency of the motors:
+$$
+P_{\text{motor}} = \eta P_{\text{turbine}}
+$$
 
-Each customer need is validated.
+The table of viable air ducts vs power can be reduced (green is viable).
+
+> It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
