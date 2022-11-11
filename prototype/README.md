@@ -619,68 +619,6 @@ The following table shows the maximum effective turbine power vs air duct sizes:
 
 > [Betz's Law](https://en.wikipedia.org/wiki/Betz%27s_law) states that no turbine can capture more than 59.3% of the kinetic energy of the wind.
 
-## Turbine Power 💨
-
-Consider the [Rankine-Froude model](https://en.wikipedia.org/wiki/Blade_element_momentum_theory#Rankine%E2%80%93Froude_model), where the pressure difference in terms of the velocities far upstream and downstream of the rotor is given as:
-$$
-\Delta P = \frac{1}{2}\rho(v_\infty^2 - v_\omega^2)
-$$
-
-Where:
-- $\Delta P \space (Pa)$ is the pressure difference between far upstream and far downstream.
-- $v_\infty \space (m/s)$ is the fluid velocity far upstream.
-- $v_\omega \space (m/s)$ is the fluid velocity far downstream.
-
-The force acting on the turbine in terms of area of the turbine can be derived:
-$$
-\begin{aligned}
-F_{\text{turbine}} &= \Delta P \times A \\
-&= \frac{1}{2}\rho(v_\infty^2 - v_\omega^2) \times A
-\end{aligned}
-$$
-
-Where:
-- $F \space (N)$ is the force acting on the turbine.
-- $A \space (m^2)$ is the cross-sectional area that the fluid flows through before impacting with the turbine.
-
-> Note that $A$ is a free variable and can be increased.
-
-> The Rankine-Froude model is a simple model that is sufficient for DESN2000.
-
-The torque of the turbine can be calculated by considering the forces acting on the turbine blade:
-$$
-\tau = rF
-$$
-
-The rotational speed of the turbine can be calculated by considering the transfer of momentum from air to the turbine blade:
-$$
-\begin{aligned}
-p_{\text{air, in}} &= p_{\text{blade}} + p_{\text{air, out}} \\
-m_{\text{air}}v_{\text{air, in}} &= m_{\text{blade}}v_{\text{blade}} + m_{\text{air}}v_{\text{air, out}} \\
-\end{aligned}
-$$
-
-$$
-v = r \omega
-$$
-
-> $m$ is dependent on blade material selection but can be optimised later.
-
-> Note that the fluid velocity is a free variable and can be increased if a funnel is used.
-
-The mechanical power generated from the turbine is therefore:
-$$
-P_{\text{turbine, actual}} = \tau \times \omega
-$$
-Where:
-- $\tau \space (Nm)$ is the torque of the turbine.
-- $\omega \space (ms^{-1})$ is the rotational speed of the turbine.
-
-The efficiency of the turbine can then be calculated as:
-$$
-\eta_{\text{turbine}} = \frac{P_{\text{turbine, actual}}}{P_{\text{turbine, ideal}}}
-$$
-
 ## Turbine Selection 💨
 
 Consider the power coefficient formula for a turbine:
