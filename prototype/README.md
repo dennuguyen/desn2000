@@ -52,8 +52,8 @@ Where:
 The [range of the fluid velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) is:
 $$
 \begin{aligned}
-v_{\text{min}} &= 5 \space m/s \\
-v_{\text{max}} &= 11 \space m/s
+v_{\min} &= 5 \space m/s \\
+v_{\max} &= 11 \space m/s
 \end{aligned}
 $$
 
@@ -681,45 +681,118 @@ $$
 \eta_{\text{turbine}} = \frac{P_{\text{turbine, actual}}}{P_{\text{turbine, ideal}}}
 $$
 
-## Turbine Selection
+## Turbine Selection 💨
 
-Using the two-bladed spiral VWAT from this [paper](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72)...
-
-The selected turbine would provide these values.
-
+Consider the power coefficient formula for a turbine:
 $$
-C_p = \frac{P_{out}}{\frac{1}{2}\rho A v^3} \\
-C_p = 0.25 \ @ \ TSR = 0.55
+C_p = \frac{P_{\text{out}}}{\frac{1}{2} \rho A v^3}
 $$
 
-Assuming that $v=10 m/s$, $R = 0.1m$ and $A = 0.175 \times 0.2 = 0.035$. We can get these power values.
+Where:
+- $C_p \space (\text{dimensionless})$ is the power coefficient of the turbine.
+- $P_{\text{out}} \space (W)$ is the output power of the turbine.
+- $\rho \space (kg/m^3)$ is the fluid density.
+- $A \space (m^2)$ is the vertical cross-sectional area of the turbine.
+- $v \space (m/s^2)$ is the fluid velocity.
 
+This [paper](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72) provides an experimentally-obtained power coefficient for a two-bladed spiral vertical wind-air turbine:
+$$
+C_p = 0.25
+$$
+
+Assume the radius of the turbine is:
+$$
+R = 0.1 \space m
+$$
+
+Assume the vertical cross-sectional area of the turbine is:
+$$
+A = 0.175 \times 0.2 = 0.035 \space m^2
+$$
+
+The range of wind speed for turbine operation is:
+$$
+v = [5, 11] \space m/s
+$$
+
+For the minimum wind speed, the minimum output power can be calculated:
 $$
 \begin{aligned}
-P_{out} &= \frac{1}{2} \rho A v^3 C_p \\
-&= \frac{1}{2} \times 1.225 \times 0.035 \times 10^3 \times 0.25 \\
-&= 5.53594
+C_p &= \frac{P_{\text{out, min}}}{\frac{1}{2} \rho A v^3} \\
+0.25 &= \frac{P_{\text{out, min}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 5^3} \\
+\therefore P_{\text{out, min}} &= 0.67 \space W
 \end{aligned}
 $$
 
-Then using the $TSR$ value and $R$ we can calculate the angular velocity.
-
+For the maximum wind speed, the maximum output power can be calculated:
 $$
 \begin{aligned}
-\omega &= \frac{v \times TSR}{R} \\
-&= \frac{10 \times 0.55}{0.1} \\
-&= 55 \ rad/s \ \ (525 \ rpm)\\
+C_p &= \frac{P_{\text{out, max}}}{\frac{1}{2} \rho A v^3} \\
+0.25 &= \frac{P_{\text{out, max}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 11^3} \\
+\therefore P_{\text{out, max}} &= 7.13 \space W
 \end{aligned}
 $$
 
-Now we can figure out the torque using the power output and the angular velocity.
+Consider the relationship between turbine velocity and tip speed ratio:
+$$
+\lambda = \frac{v}{\omega R}
+\omega = \frac{\lambda v}{R}
+$$
 
+Where:
+- $\omega \space (rad/s)$ is the turbine angular velocity.
+- $v \space (m/s)$ is the fluid velocity.
+- $\lambda \space (\text{dimensionless})$ is the tip speed ratio.
+- $R \space (m)$ is the radius of the turbine.
+
+The tip speed ratio is a constant factor which relates the fluid velocity to the turbine rotational velocity. For a two-bladed spiral vertial wind-air turbine with a power coefficient of $0.25$, the tip speed ratio is:
+$$
+\lambda = 0.55
+$$
+
+The minimum turbine rotational velocity is:
 $$
 \begin{aligned}
-P_{out} &= Q \omega \\
-Q &= \frac{\omega}{P_{out}} \\
-&= \frac{55}{5.53594} \\
-&= 9.9351 \ Nm
+\omega_{\min} &= \frac{\lambda v_{\min}}{R} \\
+&= \frac{0.55 \times 5}{0.1} \\
+&= 27.5 \space rad/s \space (262.6 \space RPM)
+\end{aligned}
+$$
+
+The maximum turbine rotational velocity is:
+$$
+\begin{aligned}
+\omega_{\max} &= \frac{\lambda v_{\max}}{R} \\
+&= \frac{0.55 \times 11}{0.1} \\
+&= 60.5 \space rad/s \space (577.7 \space RPM)
+\end{aligned}
+$$
+
+The relationship between output power and torque is:
+$$
+P = Q\omega
+$$
+
+Where:
+- $P \space (W)$ is the turbine power.
+- $Q \space (Nm)$ is the turbine torque.
+- $\omega \space (rad/s)$ is the turbine rotational velocity.
+
+The minimum turbine torque is therefore:
+$$
+\begin{aligned}
+P_{\min} &= Q_{\min} \omega_{\min} \\
+0.67 &= Q_{\min} \times 27.5 \\
+\therefore Q_{\min} &= 0.0244 \space Nm
+\end{aligned}
+$$
+
+The maximum turbine torque is therefore:
+$$
+\begin{aligned}
+P_{\max} &= Q_{\max} \omega_{\max} \\
+7.13 &= Q_{\max} \times 60.5 \\
+\therefore Q_{\max} &= 0.118 \space Nm
 \end{aligned}
 $$
 
@@ -1208,123 +1281,18 @@ $$
 
 The energy of the battery is more than sufficient to power the mechatronic system.
 
-## Funnel Design 🗻
-
-Consider [Bernoulli's Equation](https://en.wikipedia.org/wiki/Bernoulli%27s_principle):
-$$
-E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, out}}
-$$
-
-Substituting the energies in terms of velocities and pressures gives:
-$$
-\frac{p_{\text{in}}}{\rho} + \frac{v_{\text{in}}^2}{2} + gh_{\text{in}} = \frac{p_{\text{out}}}{\rho} + \frac{v_{\text{out}}^2}{2} + gh_{\text{out}}
-$$
-
-Where:
-- $p \space (Pa)$ is the static pressure.
-- $\rho \space (kg/m^3)$ is the fluid density.
-- $v \space (m/s)$ is the flow velocity.
-- $g \space (m/s^2)$ is acceleration of gravity.
-- $h \space (m)$ is the elevation height.
-
-<!-- CALCULATE AREA -->
-
-Consider the power equation in terms of force and velocity:
-$$
-P = Fv
-$$
-
-Where:
-- $P \space (W)$ is the power.
-- $F \space (N)$ is the force.
-- $v \space (m/s)$ is the velocity.
-
-## Turbine Blade Design 🔪
-
-> Recall: $P_{\text{fluid}} = \frac{1}{2} \rho A v^3$.
-
-Consider the [extended Bernoulli equation](https://www.engineeringtoolbox.com/mechanical-energy-equation-d_614.html) for a turbine (in terms of energy per unit mass):
-$$
-E_{\text{pressure, in}} + E_{\text{velocity, in}} + E_{\text{elevation, in}} = E_{\text{pressure, out}} + E_{\text{velocity, out}} + E_{\text{elevation, out}} + E_{\text{shaft}} + E_{\text{loss}}
-$$
-
-Substituting the energies in terms of velocities and pressures gives:
-$$
-\frac{p_{\text{in}}}{\rho} + \frac{v_{\text{in}}^2}{2} + gh_{\text{in}} = \frac{p_{\text{out}}}{\rho} + \frac{v_{\text{out}}^2}{2} + gh_{\text{out}} + E_{\text{shaft}} + E_{\text{loss}}
-$$
-
-Where:
-- $p \space (Pa)$ is the static pressure.
-- $\rho \space (kg/m^3)$ is the fluid density.
-- $v \space (m/s)$ is the flow velocity.
-- $g \space (m/s^2)$ is acceleration of gravity.
-- $h \space (m)$ is the elevation height.
-- $E_{\text{shaft}} \space (J/kg)$ is the net shaft energy per unit mass for the turbine.
-- $E_{\text{loss}} \space (J/kg)$ is the hydraulic loss through the turbine.
-
-This above equation may not be very usable by us so we can multiply it by $\rho$ to get the equation in terms of energy per unit volume:
-$$
-p_{\text{in}} + \rho \frac{v_{\text{in}}^2}{2} + \gamma h_{\text{in}} = p_{\text{out}} + \rho \frac{v_{\text{out}}^2}{2} + \gamma h_{\text{out}} + \rho E_{\text{shaft}} + \rho E_{\text{loss}}
-$$
-
-Where:
-- $\rho E_{\text{shaft}} \space (J/m^3)$ is the net shaft energy per unit mass for the turbine.
-- $\rho E_{\text{loss}} \space (J/m^3)$ is the hydraulic loss through the turbine.
-
-The fluid density of air is:
-$$
-\rho = 1.225 \space kg/m^3
-$$
-
-The fluid specific weight of air is:
-$$
-\gamma = \rho \times g = 1.225 \times 9.81 = 12.01725 \space kg/m^3
-$$
-
-Consider the efficiency of the turbine:
-$$
-\eta = \frac{E_{\text{shaft}}}{E_{\text{shaft}} + E_{\text{loss}}}
-$$
-
-The [air duct velocity](https://www.engineeringtoolbox.com/flow-velocity-air-ducts-d_388.html) can vary from $5 - 11 m/s$.
-
-## Aerodynamic Performance
-
-Overall turbine torque:
-$$
-Q = N\overline{F_{t}}R
-$$
-
-Total output power:
-$$
-P_{\text{out}} = Q\omega
-$$
-
-Turbine power coefficient:
-$$
-CP = \frac{2P_{\text{out}}}{\rho A r U_{\infty}^3}
-$$
-
-
-### Rotor Solidity Factor
-
-### Blade Aspect Ratio
-
-### Rotor Swept Area
-
-### Cut-In Wind Speed
-
-Cut-in wind speed is the lowest wind speed for turbine to generate consistent power.
-
-The turbine needs to generate enough starting torque at this wind speed to overcome its inertia.
-
-> In a worst-case scenario, the motor could draw power from the battery to self-start the turbine.
-
-### Cut-Out Wind Speed
-
-Cut-out wind speed is the highest input wind speed that a turbine should generate consistent power for.
-
 ## Turbine Blade Material Selection 🍯
+
+Consider
+$$
+Q = N\overline{F_t}R
+$$
+
+$$
+\begin{aligned}
+
+\end{aligned}
+$$
 
 The Ashby chart for Young's modulus vs density is used to select the turbine blade material.
 
