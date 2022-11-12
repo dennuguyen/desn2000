@@ -1542,3 +1542,38 @@ $$
 The table of viable air ducts vs power can be reduced (green is viable).
 
 > It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
+
+## Tipping Safety 
+
+To determine the tipping safety of the assembly, the assembly was modelled as a simple truss.
+
+<img src="tipping.drawio.svg" alt="tipping">
+
+Where:
+- $\theta \space (\degree)$ is the tilt angle of the body.
+- $\phi \space (\degree)$ is the angle between the base of the body and the centre of mass.
+- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to $(0, 0)$.
+- $w \space (m)$ is the width of the body.
+- $h \space (m)$ is the height of the body.
+
+The assembly will tip if:
+$$
+\theta + \phi > 90
+$$
+
+For a max tilt angle of $10 \degree$:
+$$
+
+$$
+
+## Slipping Safety
+
+To determine the slipping safety of the assembly.
+
+## Verification
+
+Each requirement is verified via simulation.
+
+## Validation
+
+Each customer need is validated.
