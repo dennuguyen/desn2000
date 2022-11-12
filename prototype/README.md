@@ -791,11 +791,87 @@ Treat the maximum allowable pressure to be the Young's modulus of the material i
 
 The selected turbine blade material is HDPE.
 
-> Performing a finite-element analysis of the failure cases of the turbine blade shows that HDPE is feasible.
+Assume the Young's modulus of HDPE is:
+$$
+E_{\text{HDPE}} = 1400 \space MPa
+$$
 
-The mass of the turbine blade itself is $80 \space g$.
+## Circlip Selection 📎
 
-The mass of the turbine shaft itself $61.54 \space g$.
+Assuming a factor of safety of $1$.
+
+Consider the modulus of elasticity:
+$$
+\lambda = \frac{\sigma}{\epsilon}
+$$
+
+Where:
+- $\lambda \space (Pa)$ is the modulus of elasticity.
+- $\sigma \space (Pa)$ is the stress.
+- $\epsilon \space (\text{dimensionless})$ is the strain.
+
+A finite-element analysis is performed on the turbine shaft to give a stress and strain plot. The greatest stress and strain experienced by the turbine shaft occurs at the circlip groove.
+
+<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
+<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
+
+The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
+$$
+\begin{aligned}
+\lambda &= \frac{7.149 \times 10^5}{5.218 \times 10^{-4}} \\
+&= 1370 \space MPa \\
+&< 1400 \space MPa = E_{\text{HDPE}}
+\end{aligned}
+$$
+
+<img src="turbine-shaft-stress-8mm.png" alt="turbine-shaft-stress-8mm">
+<img src="turbine-shaft-strain-8mm.png" alt="turbine-shaft-strain-8mm">
+
+The modulus of elasticity for a $8 \space mm$ outer diameter shaft is:
+$$
+\begin{aligned}
+\lambda &= \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} \\
+&= 1467 \space MPa \\
+&> 1400 \space MPa = E_{\text{HDPE}}
+\end{aligned}
+$$
+
+> Clearly since the circlip is steel, the shaft will fail before the circlip will fail.
+
+## Optimising Turbine Blade Mass
+
+FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
+
+<img src="turbine-blade-stress-3mm.png" alt="turbine-blade-stress-3mm" width="40%">
+<img src="turbine-blade-strain-3mm.png" alt="turbine-blade-strain-3mm" width="40%">
+
+The modulus of elasticity for a turbine blade with a base width of $3 \space mm$ is:
+$$
+\begin{aligned}
+\lambda &= \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} \\
+&= 1228 \space MPa \\
+&< 1400 \space MPa = E_{\text{HDPE}}
+\end{aligned}
+$$
+
+<img src="turbine-blade-stress-2mm.png" alt="turbine-blade-stress-2mm" width="40%">
+<img src="turbine-blade-strain-2mm.png" alt="turbine-blade-strain-2mm" width="40%">
+
+The modulus of elasticity for a turbine blade with a base width of $2 \space mm$ is:
+$$
+\begin{aligned}
+\lambda &= \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} \\
+&= 1885 \space MPa \\
+&> 1400 \space MPa = E_{\text{HDPE}}
+\end{aligned}
+$$
+
+For a factor of safety of $1$, the turbine blade with a base width of $3 \space mm$ was selected.
+
+<img src="turbine-blade-95.56g.png" alt="turbine-blade-95.56g" width="40%">
+<img src="turbine-blade-56.52g.png" alt="turbine-blade-56.65g" width="40%">
+
+The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to $56.52 \space g$.
 
 ## Bearing Selection 🐻
 
@@ -808,10 +884,6 @@ Therefore bearing selection is more dependent on the dimensions, availability, a
 The inner diameter of the bearing is equivalent to the turbine shaft diameter of $20 \space mm$.
 
 A table of appropriate bearings:
-
-## Circlip Selection 📎
-
-Circlip selection is dependent on the axial force of the turbine shaft.
 
 ## Bolt Selection 🔩
 
