@@ -877,15 +877,148 @@ The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to 
 
 ## Bearing Selection 🐻
 
-The total mass of the turbine blade and shaft assembly is $141.54 \space g$.
+> Reminder that the max turbine torque is $0.118 \space Nm$ and max turbine rotational velocity is $577.7 \space RPM$.
 
-Bearing selection is dependent on torque ($\tau$) and rotational speed ($\omega$) of the turbine.
-
-Therefore bearing selection is more dependent on the dimensions, availability, and cost.
-
-The inner diameter of the bearing is equivalent to the turbine shaft diameter of $20 \space mm$.
+The required inner diameter of the bearing is $10 \space mm$ to fasten the turbine shaft.
 
 A table of appropriate bearings:
+<table>
+    <tr>
+        <th>Bearing</th>
+        <th>Type</th>
+        <th>Inner diameter (mm)</th>
+        <th>Outer diameter (mm)</th>
+        <th>Static Load Rating (N)</th>
+        <th>Dynamic Load Rating (N)</th>
+        <th>Cost (AUD)</th>
+    </tr>
+    <tr>
+        <td><a href="https://au.rs-online.com/web/p/ball-bearings/6189979">6800-2RS</a></td>
+        <td>Ball</td>
+        <td>10</td>
+        <td>19</td>
+        <td>585</td>
+        <td>1380</td>
+        <td>5.35</td>
+    </tr>
+    <tr>
+        <td><a href="https://au.rs-online.com/web/p/ball-bearings/6189991">6000-2RS</a></td>
+        <td>Ball</td>
+        <td>10</td>
+        <td>26</td>
+        <td>1960</td>
+        <td>4620</td>
+        <td>6.13</td>
+    </tr>
+    <tr>
+        <td><a href="https://au.rs-online.com/web/p/ball-bearings/6189985">6200-2RS</a></td>
+        <td>Ball</td>
+        <td>10</td>
+        <td>30</td>
+        <td>2360</td>
+        <td>5070</td>
+        <td>6.13</td>
+    </tr>
+</table>
+
+<img src="./bearing-loads.drawio.svg">
+
+Calculating equivalent dynamic bearing load:
+$$
+P = xF_r + yF_a
+$$
+
+Where:
+- $x$ is the radial load factor.
+- $y$ is the axial load factor.
+- $F_r \space (N)$ is the actual radial bearing load.
+- $F_a \space (N)$ is the actual axial bearing load.
+
+For a deep groove ball bearing type, the load factors are:
+$$
+\begin{aligned}
+x &= 1, \space y = 0 \text{ for } \frac{F_a}{F_r} \leq 0.5 \\
+x &= 0.56, \space y = [1, 2] \text{ for } \frac{F_a}{F_r} > 0.5 \\
+\end{aligned}
+$$
+
+The actual radial bearing load is at worst the torque transferred from the turbine:
+$$
+\begin{aligned}
+F_r &= \frac{\tau_{\text{turbine}}}{r_{\text{bearing}}} \\
+&= \frac{0.118}{19 \times 10^{-3}} \\
+&= 6.21 \space N
+\end{aligned}
+$$
+
+The actual axial bearing load is theoretically the turbine weight (because the turbine is drag-based and ideally no lift is generated):
+$$
+\begin{aligned}
+F_a &= m_{\text{turbine + shaft}} \times g \\
+&= (56.52 + 17.51) \times 10^{-3} \times 9.81 \\
+&= 0.73 \space N
+\end{aligned}
+$$
+
+The axial load to radial load ratio is:
+$$
+\frac{F_a}{F_r} = \frac{0.73}{6.21} = 0.12
+$$
+
+Therefore, the selected load factors are:
+$$
+x = 1, \space y = 0
+$$
+
+The equivalent dynamic bearing load is:
+$$
+\begin{aligned}
+P &= xF_r + yF_a \\
+&= 1 \times 6.21 + 0 \times 0.73 \\
+&= 6.21 \space N
+\end{aligned}
+$$
+
+Consider the bearing life:
+$$
+L_{10} = \left(\frac{C}{P}\right)^a
+$$
+
+Where:
+- $L \space (10^6 \space \text{revolutions})$ is the bearing life in number of revolutions.
+- $C \space (N)$ is the dynamic load rating.
+- $P \space (N)$ is the equivalent dynamic load rating.
+- $a \space (\text{dimensionless})$ is the bearing type factor.
+
+For the [6800-2RS](https://au.rs-online.com/web/p/ball-bearings/6189979), the bearing life is:
+$$
+\begin{aligned}
+L_{10} &= \left(\frac{C_{6800-2RS}}{P}\right)^a \\ 
+&= \left(\frac{585}{6.21}\right)^3 \\
+&= 835974 \times 10^6 \text{ revolutions} \\
+&\approx 836 \times 10^9 \text{ revolutions} \\
+\end{aligned}
+$$
+
+To calculate the bearing life in hours:
+$$
+L_{10h} = \frac{10^6}{60\omega}L_{10}
+$$
+
+Where:
+- $L_{10h} \space (hr)$ is the bearing life in hours.
+- $\omega \space (RPM)$ is the rotational speed.
+- $L_{10} \space (10^6 \text{revolutiosn})$ is the bearing life in number of revolutions.
+
+$$
+\begin{aligned}
+L_{10h} &= \frac{10^6}{60\omega}L_{10} \\
+&= \frac{10^6}{60 \times 577.7} \times 835974 \\
+&= 24 117 881 \space hr
+\end{aligned}
+$$
+
+> That's like 2740 years.
 
 ## Bolt Selection 🔩
 
