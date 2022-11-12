@@ -838,6 +838,8 @@ $$
 
 > Clearly since the circlip is steel, the shaft will fail before the circlip will fail.
 
+The [selected circlip (BS3673)](https://au.rs-online.com/web/p/circlips/0289231) is an external steel circlip for a $10 \space mm$ shaft for a $9.6 \space mm$ groove.
+
 ## Optimising Turbine Blade Mass
 
 FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
