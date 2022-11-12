@@ -881,6 +881,8 @@ The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to 
 
 The required inner diameter of the bearing is $10 \space mm$ to fasten the turbine shaft.
 
+The outer diameter of the inner race must also be greater than the diameter of the circlip to avoid stator and rotor parts of the turbine from interfering. Therefore, any bearing with an outer diameter less than $20 \space mm$ is not suitable.
+
 A table of appropriate bearings:
 <table>
     <tr>
@@ -900,6 +902,15 @@ A table of appropriate bearings:
         <td>585</td>
         <td>1380</td>
         <td>5.35</td>
+    </tr>
+    <tr>
+        <td><a href="https://au.rs-online.com/web/p/ball-bearings/6126057">R-2210X2DDRA1P25LY121</a></td>
+        <td>Ball</td>
+        <td>10</td>
+        <td>22</td>
+        <td>1273</td>
+        <td>2679</td>
+        <td>9.645</td>
     </tr>
     <tr>
         <td><a href="https://au.rs-online.com/web/p/ball-bearings/6189991">6000-2RS</a></td>
