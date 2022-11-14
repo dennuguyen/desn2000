@@ -902,7 +902,12 @@ The [selected circlip (BS3673)](https://au.rs-online.com/web/p/circlips/0289231)
 
 ## Optimising Turbine Blade Mass
 
-FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
+FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. This gives us a factor of safety of:
+$$
+FOS_{\text{blade}} = \frac{10}{2.59} = 3.86
+$$
+
+The part was fixed at the internal shaft.
 
 <img src="turbine-blade-stress-3mm.png" alt="turbine-blade-stress-3mm" width="40%">
 <img src="turbine-blade-strain-3mm.png" alt="turbine-blade-strain-3mm" width="40%">
