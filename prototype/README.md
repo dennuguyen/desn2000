@@ -933,8 +933,6 @@ $$
 \end{aligned}
 $$
 
-For a factor of safety of $1$, the turbine blade with a base width of $3 \space mm$ was selected.
-
 <img src="turbine-blade-95.56g.png" alt="turbine-blade-95.56g" width="40%">
 <img src="turbine-blade-56.52g.png" alt="turbine-blade-56.65g" width="40%">
 
