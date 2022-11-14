@@ -809,11 +809,6 @@ $$
 P = \frac{F}{A} = \frac{2.59}{0.02} = 129.5 \space Pa
 $$
 
-Taking a [factor of safety](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) of 2, the maximum allowable pressure is reduced to:
-$$
-P_{\max, FOS} = \frac{P_{\max}}{FOS} = \frac{129.5}{2} = 64.75 \space Pa
-$$
-
 The applied pressure is so insignificant that material selection can be done qualitatively i.e. based on material properties.
 
 <!-- 
@@ -856,9 +851,23 @@ $$
 E_{\text{HDPE}} = 1400 \space MPa
 $$
 
-## Circlip Selection 📎
+## Factor of Safety
 
-Assuming a factor of safety of $1$.
+Let the force applied on the turbine by the fluid be:
+$$
+F_{\text{fluid, safe}} = 10 \space N
+$$
+
+This gives a factor of safety of:
+$$
+FOS = \frac{F_{\text{fluid, safe}}}{F_{\text{fluid, max}}} = \frac{10}{2.59} = 3.86
+$$
+
+This factor of safety is greater than the [recommended factor of safety of $3$](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) for the rotor components of a turbine.
+
+All subsequent FEAs assume a force of $10 \space N$ is applied.
+
+## Circlip Selection 📎
 
 Consider the modulus of elasticity:
 $$
@@ -900,14 +909,9 @@ $$
 
 The [selected circlip (BS3673)](https://au.rs-online.com/web/p/circlips/0289231) is an external steel circlip for a $10 \space mm$ shaft for a $9.6 \space mm$ groove.
 
-## Optimising Turbine Blade Mass
+## Turbine Blade Design 🔪
 
-FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. This gives us a factor of safety of:
-$$
-FOS_{\text{blade}} = \frac{10}{2.59} = 3.86
-$$
-
-The part was fixed at the internal shaft.
+FEA was performed on the turbine blade to simulate the stress and strain experienced by a $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
 
 <img src="turbine-blade-stress-3mm.png" alt="turbine-blade-stress-3mm" width="40%">
 <img src="turbine-blade-strain-3mm.png" alt="turbine-blade-strain-3mm" width="40%">
@@ -940,7 +944,7 @@ The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to 
 
 ## Bearing Selection 🐻
 
-> Reminder that the max turbine torque is $0.118 \space Nm$ and max turbine rotational velocity is $577.7 \space RPM$.
+> Reminder that the max turbine torque is $0.472 \space Nm$ and max turbine rotational velocity is $1155 \space RPM$.
 
 The required inner diameter of the bearing is $10 \space mm$ to fasten the turbine shaft.
 
@@ -1020,8 +1024,8 @@ The actual radial bearing load is at worst the torque transferred from the turbi
 $$
 \begin{aligned}
 F_r &= \frac{\tau_{\text{turbine}}}{r_{\text{bearing}}} \\
-&= \frac{0.118}{19 \times 10^{-3}} \\
-&= 6.21 \space N
+&= \frac{0.472}{19 \times 10^{-3}} \\
+&= 24.84 \space N
 \end{aligned}
 $$
 
@@ -1036,7 +1040,7 @@ $$
 
 The axial load to radial load ratio is:
 $$
-\frac{F_a}{F_r} = \frac{0.73}{6.21} = 0.12
+\frac{F_a}{F_r} = \frac{0.73}{24.84} \approx 0.03
 $$
 
 Therefore, the selected load factors are:
@@ -1048,8 +1052,8 @@ The equivalent dynamic bearing load is:
 $$
 \begin{aligned}
 P &= xF_r + yF_a \\
-&= 1 \times 6.21 + 0 \times 0.73 \\
-&= 6.21 \space N
+&= 1 \times 24.84 + 0 \times 0.73 \\
+&= 24.84 \space N
 \end{aligned}
 $$
 
@@ -1068,9 +1072,8 @@ For the [6800-2RS](https://au.rs-online.com/web/p/ball-bearings/6189979), the be
 $$
 \begin{aligned}
 L_{10} &= \left(\frac{C_{6800-2RS}}{P}\right)^a \\ 
-&= \left(\frac{585}{6.21}\right)^3 \\
-&= 835974 \times 10^6 \text{ revolutions} \\
-&\approx 836 \times 10^9 \text{ revolutions} \\
+&= \left(\frac{585}{24.84}\right)^3 \\
+&= 13062 \times 10^6 \text{ revolutions} \\
 \end{aligned}
 $$
 
@@ -1087,12 +1090,18 @@ Where:
 $$
 \begin{aligned}
 L_{10h} &= \frac{10^6}{60\omega}L_{10} \\
-&= \frac{10^6}{60 \times 577.7} \times 835974 \\
-&= 24 117 881 \space hr
+&= \frac{10^6}{60 \times 577.7} \times 13062 \\
+&= 376839 \space hr \\
+&\approx 43 \space \text{years}
 \end{aligned}
 $$
 
-> That's like 2740 years.
+## Spline Design 🦔
+
+For a spline width of $2 \space mm$ and height of $1 \space mm$, the modulus of elasticity of the spline acting as a shoulder for the bearing is:
+$$
+
+$$
 
 ## Bolt Selection 🔩
 
