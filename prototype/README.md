@@ -865,7 +865,7 @@ $$
 
 This factor of safety is greater than the [recommended factor of safety of $3$](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) for the rotor components of a turbine.
 
-All subsequent FEAs assume a force of $10 \space N$ is applied.
+All subsequent FEAs assume a fluid force of $10 \space N$ is applied unless otherwise specified.
 
 ## Circlip Selection 📎
 
@@ -881,28 +881,20 @@ Where:
 
 A finite-element analysis is performed on the turbine shaft to give a stress and strain plot. The greatest stress and strain experienced by the turbine shaft occurs at the circlip groove.
 
-<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
-<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
-
-The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
-$$
-\begin{aligned}
-\lambda &= \frac{7.149 \times 10^5}{5.218 \times 10^{-4}} \\
-&= 1370 \space MPa \\
-&< 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
-$$
-
 <img src="turbine-shaft-stress-8mm.png" alt="turbine-shaft-stress-8mm">
 <img src="turbine-shaft-strain-8mm.png" alt="turbine-shaft-strain-8mm">
 
 The modulus of elasticity for a $8 \space mm$ outer diameter shaft is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} \\
-&= 1467 \space MPa \\
-&> 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} = 1467 \space MPa > E_{\text{HDPE}}
+$$
+
+<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
+<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
+
+The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
+$$
+\lambda = \frac{7.149 \times 10^5}{5.218 \times 10^{-4}} = 1370 \space MPa < E_{\text{HDPE}}
 $$
 
 > Clearly since the circlip is steel, the shaft will fail before the circlip will fail.
@@ -918,11 +910,7 @@ FEA was performed on the turbine blade to simulate the stress and strain experie
 
 The modulus of elasticity for a turbine blade with a base width of $3 \space mm$ is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} \\
-&= 1228 \space MPa \\
-&< 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} = 1228 \space MPa < E_{\text{HDPE}}
 $$
 
 <img src="turbine-blade-stress-2mm.png" alt="turbine-blade-stress-2mm" width="40%">
@@ -930,11 +918,7 @@ $$
 
 The modulus of elasticity for a turbine blade with a base width of $2 \space mm$ is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} \\
-&= 1885 \space MPa \\
-&> 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} = 1885 \space MPa > E_{\text{HDPE}}
 $$
 
 <img src="turbine-blade-95.56g.png" alt="turbine-blade-95.56g" width="40%">
@@ -1098,9 +1082,41 @@ $$
 
 ## Spline Design 🦔
 
-For a spline width of $2 \space mm$ and height of $1 \space mm$, the modulus of elasticity of the spline acting as a shoulder for the bearing is:
+The axial force acting on the spline is the weight of the rotor components itself i.e.
+$$
+F_{\text{axial, max}} = m_{\text{turbine + shaft}} \times g = 0.73 \space N
 $$
 
+Let the axial force applied on the turbine be:
+$$
+F_{\text{axial, safe}} = 3 \space N
+$$
+
+This gives a factor of safety of:
+$$
+FOS = \frac{F_{\text{axial, safe}}}{F_{\text{axial, max}}} = \frac{3}{0.73} = 4.11
+$$
+
+Let the spline width be $2 \space mm$ and height be $1 \space mm$.
+
+<img src="spline-dimensions.png" alt="spline-dimensions" width="40%">
+
+<img src="turbine-shaft-stress-10mm-shoulder.png" alt="turbine-shaft-stress-10mm-shoulder" width="40%">
+<img src="turbine-shaft-strain-10mm-shoulder.png" alt="turbine-shaft-strain-10mm-shoulder" width="40%">
+
+The modulus of elasticity of the spline acting as a shoulder for the bearing is:
+$$
+\lambda = \frac{2.602 \times 10^5}{1.407 \times 10^{-4}} = 1849 \space MPa > E_{\text{HDPE}}
+$$
+
+It is clear from the FEA that the most stress is applied on the corner of the spline, therefore a chamfer is applied.
+
+<img src="turbine-shaft-stress-10mm-shoulder-chamfer.png" alt="turbine-shaft-stress-10mm-shoulder-chamfer" width="40%">
+<img src="turbine-shaft-strain-10mm-shoulder-chamfer.png" alt="turbine-shaft-strain-10mm-shoulder-chamfer" width="40%">
+
+The modulus of elasticity of the spline acting as a shoulder for the bearing is:
+$$
+\lambda = \frac{2.263 \times 10^5}{1.735 \times 10^{-4}} = 1304 \space MPa < E_{\text{HDPE}}
 $$
 
 ## Bolt Selection 🔩
