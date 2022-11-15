@@ -618,6 +618,59 @@ The following table shows the maximum effective turbine power vs air duct sizes:
 </table>
 
 > [Betz's Law](https://en.wikipedia.org/wiki/Betz%27s_law) states that no turbine can capture more than 59.3% of the kinetic energy of the wind.
+## Funnel Design 🗻
+
+The fluid velocity can be accelerated by using a funnel:
+$$
+A_1 v_1 = A_2 v_2
+$$
+
+Where:
+- $A_1 \space (m^2)$ is the cross-sectional area at the start of the funnel.
+- $v_1 \space (m/s)$ is the fluid velocity at the start of the funnel.
+- $A_2 \space (m^2)$ is the cross-sectional area at the end of the funnel.
+- $v_2 \space (m/s)$ is the fluid velocity at the end of the funnel.
+
+To accelerate the incoming air by a factor of $2$, the following ratio must be observed:
+$$
+\frac{A_1}{A_2} = \frac{w_1 \times h_1}{w_2 \times h_2} = 2 \\
+$$
+
+Let the height of the funnel start be:
+$$
+h_1 = 0.2 \space m
+$$
+
+The height of the turbine is the height of the funnel end:
+$$
+h_2 = 0.175 \space m
+$$
+
+The width of the funnel start can be determined by the diameter of the base of the assembly.
+
+<img src="funnel.drawio.svg" alt="funnel">
+
+$$
+w_1 = \frac{0.27}{2} = 0.135 \space m
+$$
+
+Round down $w_1$ to account for the thickness of the material:
+$$
+w_1 = 0.13 \space m
+$$
+
+Therefore:
+$$
+w_2 = \frac{w_1 \times h_1}{2 \times h_2} = \frac{0.13 \times 0.2}{2 \times 0.175} = 0.074 \space m
+$$
+
+The range of fluid velocity after acceleration is therefore:
+$$
+\begin{aligned}
+v_{\min} &= 10 \space m/s \\
+v_{\max} &= 22 \space m/s \\
+\end{aligned}
+$$
 
 ## Turbine Selection 💨
 
@@ -650,15 +703,15 @@ $$
 
 The range of wind speed for turbine operation is:
 $$
-v = [5, 11] \space m/s
+v = [10, 22] \space m/s
 $$
 
 For the minimum wind speed, the minimum output power can be calculated:
 $$
 \begin{aligned}
 C_p &= \frac{P_{\text{out, min}}}{\frac{1}{2} \rho A v^3} \\
-0.25 &= \frac{P_{\text{out, min}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 5^3} \\
-\therefore P_{\text{out, min}} &= 0.67 \space W
+0.25 &= \frac{P_{\text{out, min}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 10^3} \\
+\therefore P_{\text{out, min}} &= 5.56 \space W
 \end{aligned}
 $$
 
@@ -666,8 +719,8 @@ For the maximum wind speed, the maximum output power can be calculated:
 $$
 \begin{aligned}
 C_p &= \frac{P_{\text{out, max}}}{\frac{1}{2} \rho A v^3} \\
-0.25 &= \frac{P_{\text{out, max}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 11^3} \\
-\therefore P_{\text{out, max}} &= 7.13 \space W
+0.25 &= \frac{P_{\text{out, max}}}{\frac{1}{2} \times 1.225 \times 0.035 \times 22^3} \\
+\therefore P_{\text{out, max}} &= 57.07 \space W
 \end{aligned}
 $$
 
@@ -692,8 +745,8 @@ The minimum turbine rotational velocity is:
 $$
 \begin{aligned}
 \omega_{\min} &= \frac{\lambda v_{\min}}{R} \\
-&= \frac{0.55 \times 5}{0.1} \\
-&= 27.5 \space rad/s \space (262.6 \space RPM)
+&= \frac{0.55 \times 10}{0.1} \\
+&= 55 \space rad/s \space (525 \space RPM)
 \end{aligned}
 $$
 
@@ -701,8 +754,8 @@ The maximum turbine rotational velocity is:
 $$
 \begin{aligned}
 \omega_{\max} &= \frac{\lambda v_{\max}}{R} \\
-&= \frac{0.55 \times 11}{0.1} \\
-&= 60.5 \space rad/s \space (577.7 \space RPM)
+&= \frac{0.55 \times 22}{0.1} \\
+&= 121 \space rad/s \space (1155 \space RPM)
 \end{aligned}
 $$
 
@@ -720,8 +773,8 @@ The minimum turbine torque is therefore:
 $$
 \begin{aligned}
 P_{\min} &= Q_{\min} \omega_{\min} \\
-0.67 &= Q_{\min} \times 27.5 \\
-\therefore Q_{\min} &= 0.0244 \space Nm
+5.56 &= Q_{\min} \times 55 \\
+\therefore Q_{\min} &= 0.101 \space Nm
 \end{aligned}
 $$
 
@@ -729,37 +782,39 @@ The maximum turbine torque is therefore:
 $$
 \begin{aligned}
 P_{\max} &= Q_{\max} \omega_{\max} \\
-7.13 &= Q_{\max} \times 60.5 \\
-\therefore Q_{\max} &= 0.118 \space Nm
+57.07 &= Q_{\max} \times 121 \\
+\therefore Q_{\max} &= 0.472 \space Nm
 \end{aligned}
 $$
 
 ## Turbine Blade Material Selection 🍯
 
-For a [two blade vertical wind-air turbine](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72), the force acting on the turbine for a wind speed of $11 \space m/s$ is:
+For a [two blade vertical wind-air turbine](https://www.semanticscholar.org/paper/DESIGN-AND-ANALYSIS-OF-VERTICAL-AXIS-WIND-TURBINE-Mazari-Hussain/6f794a50c037165bc87163648b25e4ac56998c72), the force acting on the turbine for a wind speed of $22 \space m/s$ is:
 $$
-F_{\max} = 11 \space N
+\begin{aligned}
+P_{\text{fluid, max}} &= F_{\text{fluid, max}}v_{\text{fluid, max}} \\
+57.07 &= F_{\text{fluid, max}} \times 22 \\
+\therefore F_{\text{fluid, max}} &= 2.59 \space N
+\end{aligned}
 $$
 
-The turbine blade area is effectively half of the vertical cross-sectional area i.e.:
+
+The turbine blade area can be obtained from the Solidworks measurement tool:
 $$
-A_{\text{blade}} = \frac{A}{2} = \frac{0.035}{2} = 0.0175 \space N
+A_{\text{blade}} = 20000 \space mm^2 = 0.02 \space m^2
 $$
 
 Therefore, the maximum pressure that can be applied to the blade is:
 $$
-P = \frac{F}{A} = \frac{11}{0.0175} = 628.57 \space Pa
-$$
-
-Taking a [factor of safety](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) of 2, the maximum allowable pressure is reduced to:
-$$
-P_{\max, FOS} = \frac{P_{\max}}{FOS} = \frac{628.57}{2} = 314.29 \space Pa
+P = \frac{F}{A} = \frac{2.59}{0.02} = 129.5 \space Pa
 $$
 
 The applied pressure is so insignificant that material selection can be done qualitatively i.e. based on material properties.
 
 <!-- 
 Treat the maximum allowable pressure to be the Young's modulus of the material i.e. the pressure applied to the material before it deforms. The Ashby chart for Young's modulus vs density is used to select the turbine blade material. A material with the lowest density is desired to reduce the inertia of the system to reduce the cut-in wind speed. -->
+
+<img src="ashby-young-modulus-vs-density.png" alt="ashby-young-modulus-vs-density">
 
 <table>
     <tr>
@@ -796,9 +851,23 @@ $$
 E_{\text{HDPE}} = 1400 \space MPa
 $$
 
-## Circlip Selection 📎
+## Factor of Safety
 
-Assuming a factor of safety of $1$.
+Let the force applied on the turbine by the fluid be:
+$$
+F_{\text{fluid, safe}} = 10 \space N
+$$
+
+This gives a factor of safety of:
+$$
+FOS = \frac{F_{\text{fluid, safe}}}{F_{\text{fluid, max}}} = \frac{10}{2.59} = 3.86
+$$
+
+This factor of safety is greater than the [recommended factor of safety of $3$](https://www.engineeringtoolbox.com/factors-safety-fos-d_1624.html) for the rotor components of a turbine.
+
+All subsequent FEAs assume a fluid force of $10 \space N$ is applied unless otherwise specified.
+
+## Circlip Selection 📎
 
 Consider the modulus of elasticity:
 $$
@@ -812,48 +881,36 @@ Where:
 
 A finite-element analysis is performed on the turbine shaft to give a stress and strain plot. The greatest stress and strain experienced by the turbine shaft occurs at the circlip groove.
 
-<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
-<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
-
-The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
-$$
-\begin{aligned}
-\lambda &= \frac{7.149 \times 10^5}{5.218 \times 10^{-4}} \\
-&= 1370 \space MPa \\
-&< 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
-$$
-
 <img src="turbine-shaft-stress-8mm.png" alt="turbine-shaft-stress-8mm">
 <img src="turbine-shaft-strain-8mm.png" alt="turbine-shaft-strain-8mm">
 
 The modulus of elasticity for a $8 \space mm$ outer diameter shaft is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} \\
-&= 1467 \space MPa \\
-&> 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} = 1467 \space MPa > E_{\text{HDPE}}
+$$
+
+<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
+<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
+
+The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
+$$
+\lambda = \frac{7.149 \times 10^5}{5.218 \times 10^{-4}} = 1370 \space MPa < E_{\text{HDPE}}
 $$
 
 > Clearly since the circlip is steel, the shaft will fail before the circlip will fail.
 
 The [selected circlip (BS3673)](https://au.rs-online.com/web/p/circlips/0289231) is an external steel circlip for a $10 \space mm$ shaft for a $9.6 \space mm$ groove.
 
-## Optimising Turbine Blade Mass
+## Turbine Blade Design 🔪
 
-FEA was performed on the turbine blade to simulate the stress and strain experienced in the part by a theoretical $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
+FEA was performed on the turbine blade to simulate the stress and strain experienced by a $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
 
 <img src="turbine-blade-stress-3mm.png" alt="turbine-blade-stress-3mm" width="40%">
 <img src="turbine-blade-strain-3mm.png" alt="turbine-blade-strain-3mm" width="40%">
 
 The modulus of elasticity for a turbine blade with a base width of $3 \space mm$ is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} \\
-&= 1228 \space MPa \\
-&< 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} = 1228 \space MPa < E_{\text{HDPE}}
 $$
 
 <img src="turbine-blade-stress-2mm.png" alt="turbine-blade-stress-2mm" width="40%">
@@ -861,14 +918,8 @@ $$
 
 The modulus of elasticity for a turbine blade with a base width of $2 \space mm$ is:
 $$
-\begin{aligned}
-\lambda &= \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} \\
-&= 1885 \space MPa \\
-&> 1400 \space MPa = E_{\text{HDPE}}
-\end{aligned}
+\lambda = \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} = 1885 \space MPa > E_{\text{HDPE}}
 $$
-
-For a factor of safety of $1$, the turbine blade with a base width of $3 \space mm$ was selected.
 
 <img src="turbine-blade-95.56g.png" alt="turbine-blade-95.56g" width="40%">
 <img src="turbine-blade-56.52g.png" alt="turbine-blade-56.65g" width="40%">
@@ -877,7 +928,7 @@ The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to 
 
 ## Bearing Selection 🐻
 
-> Reminder that the max turbine torque is $0.118 \space Nm$ and max turbine rotational velocity is $577.7 \space RPM$.
+> Reminder that the max turbine torque is $0.472 \space Nm$ and max turbine rotational velocity is $1155 \space RPM$.
 
 The required inner diameter of the bearing is $10 \space mm$ to fasten the turbine shaft.
 
@@ -957,8 +1008,8 @@ The actual radial bearing load is at worst the torque transferred from the turbi
 $$
 \begin{aligned}
 F_r &= \frac{\tau_{\text{turbine}}}{r_{\text{bearing}}} \\
-&= \frac{0.118}{19 \times 10^{-3}} \\
-&= 6.21 \space N
+&= \frac{0.472}{19 \times 10^{-3}} \\
+&= 24.84 \space N
 \end{aligned}
 $$
 
@@ -973,7 +1024,7 @@ $$
 
 The axial load to radial load ratio is:
 $$
-\frac{F_a}{F_r} = \frac{0.73}{6.21} = 0.12
+\frac{F_a}{F_r} = \frac{0.73}{24.84} \approx 0.03
 $$
 
 Therefore, the selected load factors are:
@@ -985,8 +1036,8 @@ The equivalent dynamic bearing load is:
 $$
 \begin{aligned}
 P &= xF_r + yF_a \\
-&= 1 \times 6.21 + 0 \times 0.73 \\
-&= 6.21 \space N
+&= 1 \times 24.84 + 0 \times 0.73 \\
+&= 24.84 \space N
 \end{aligned}
 $$
 
@@ -1005,9 +1056,8 @@ For the [6800-2RS](https://au.rs-online.com/web/p/ball-bearings/6189979), the be
 $$
 \begin{aligned}
 L_{10} &= \left(\frac{C_{6800-2RS}}{P}\right)^a \\ 
-&= \left(\frac{585}{6.21}\right)^3 \\
-&= 835974 \times 10^6 \text{ revolutions} \\
-&\approx 836 \times 10^9 \text{ revolutions} \\
+&= \left(\frac{585}{24.84}\right)^3 \\
+&= 13062 \times 10^6 \text{ revolutions} \\
 \end{aligned}
 $$
 
@@ -1024,12 +1074,50 @@ Where:
 $$
 \begin{aligned}
 L_{10h} &= \frac{10^6}{60\omega}L_{10} \\
-&= \frac{10^6}{60 \times 577.7} \times 835974 \\
-&= 24 117 881 \space hr
+&= \frac{10^6}{60 \times 577.7} \times 13062 \\
+&= 376839 \space hr \\
+&\approx 43 \space \text{years}
 \end{aligned}
 $$
 
-> That's like 2740 years.
+## Spline Design 🦔
+
+The axial force acting on the spline is the weight of the rotor components itself i.e.
+$$
+F_{\text{axial, max}} = m_{\text{turbine + shaft}} \times g = 0.73 \space N
+$$
+
+Let the axial force applied on the turbine be:
+$$
+F_{\text{axial, safe}} = 3 \space N
+$$
+
+This gives a factor of safety of:
+$$
+FOS = \frac{F_{\text{axial, safe}}}{F_{\text{axial, max}}} = \frac{3}{0.73} = 4.11
+$$
+
+Let the spline width be $2 \space mm$ and height be $1 \space mm$.
+
+<img src="spline-dimensions.png" alt="spline-dimensions" width="40%">
+
+<img src="turbine-shaft-stress-10mm-shoulder.png" alt="turbine-shaft-stress-10mm-shoulder" width="40%">
+<img src="turbine-shaft-strain-10mm-shoulder.png" alt="turbine-shaft-strain-10mm-shoulder" width="40%">
+
+The modulus of elasticity of the spline acting as a shoulder for the bearing is:
+$$
+\lambda = \frac{2.602 \times 10^5}{1.407 \times 10^{-4}} = 1849 \space MPa > E_{\text{HDPE}}
+$$
+
+It is clear from the FEA that the most stress is applied on the corner of the spline, therefore a chamfer is applied.
+
+<img src="turbine-shaft-stress-10mm-shoulder-chamfer.png" alt="turbine-shaft-stress-10mm-shoulder-chamfer" width="40%">
+<img src="turbine-shaft-strain-10mm-shoulder-chamfer.png" alt="turbine-shaft-strain-10mm-shoulder-chamfer" width="40%">
+
+The modulus of elasticity of the spline acting as a shoulder for the bearing is:
+$$
+\lambda = \frac{2.263 \times 10^5}{1.735 \times 10^{-4}} = 1304 \space MPa < E_{\text{HDPE}}
+$$
 
 ## Bolt Selection 🔩
 
