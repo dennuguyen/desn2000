@@ -1631,7 +1631,7 @@ The table of viable air ducts vs power can be reduced (green is viable).
 
 > It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
 
-## Tipping Safety 
+## Tipping
 
 To determine the tipping safety of the assembly, the assembly was modelled as a simple truss.
 
@@ -1654,9 +1654,55 @@ $$
 
 $$
 
-## Slipping Safety
+## Slipping
 
-To determine the slipping safety of the assembly.
+<img src="slipping.drawio.svg" alt="slipping">
+
+Assume the mass of the assembly is at worst:
+$$
+m_{\text{assembly}} = 5 \space kg
+$$
+
+Considering the vertical acting forces:
+$$
+\begin{aligned}
+\sum{F_y} = N - W &= 0 \\
+N &= W \\
+N &= m_{\text{assembly}} \times g \\
+&= 5 \times 9.81 \\
+&= 49.05 \space N \space \darr \\
+\end{aligned}
+$$
+
+Air ducts all use aluminium. The [static friction of coefficient](atc.sjf.stuba.sk/files/mechanika_vms_ADAMS/Contact_Table.pdf) between rubber and aluminium is:
+$$
+\mu_{\text{rubber, aluminium}} = 0.8
+$$
+
+Considering the acting horizontal forces for the body to slip:
+$$
+\begin{aligned}
+\sum{F_x} = F_p - F_f &> 0 \\
+F_p &> F_f \\
+&> \mu_{\text{rubber, aluminium}} \times N \\
+&> 0.8 \times 49.05 \\
+\therefore F_p &> 39.24 \space N \\
+\end{aligned}
+$$
+
+It will take $39.24 \space N$ in order to make the assembly slip.
+
+Recall that the force of the fluid under a factor of safety of $3.68$ is:
+$$
+F_{\text{fluid, safe}} = 10 \space N
+$$
+
+Since:
+$$
+F_{\text{fluid, safe}} = 10 \space N < 39.24 \space N = F_{p}
+$$
+
+The assembly will not slip with rubber feet mountings in the air duct.
 
 ## Verification
 
