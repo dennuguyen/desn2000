@@ -1631,29 +1631,6 @@ The table of viable air ducts vs power can be reduced (green is viable).
 
 > It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
 
-## Tipping
-
-To determine the tipping safety of the assembly, the assembly was modelled as a simple truss.
-
-<img src="tipping.drawio.svg" alt="tipping">
-
-Where:
-- $\theta \space (\degree)$ is the tilt angle of the body.
-- $\phi \space (\degree)$ is the angle between the base of the body and the centre of mass.
-- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to $(0, 0)$.
-- $w \space (m)$ is the width of the body.
-- $h \space (m)$ is the height of the body.
-
-The assembly will tip if:
-$$
-\theta + \phi > 90
-$$
-
-For a max tilt angle of $10 \degree$:
-$$
-
-$$
-
 ## Slipping
 
 <img src="slipping.drawio.svg" alt="slipping">
@@ -1679,30 +1656,60 @@ $$
 \mu_{\text{rubber, aluminium}} = 0.8
 $$
 
-Considering the acting horizontal forces for the body to slip:
+Considering the acting horizontal forces for the body to not slip:
 $$
 \begin{aligned}
-\sum{F_x} = F_p - F_f &> 0 \\
-F_p &> F_f \\
-&> \mu_{\text{rubber, aluminium}} \times N \\
-&> 0.8 \times 49.05 \\
-\therefore F_p &> 39.24 \space N \\
+\sum{F_x} = F_p - F_f &< 0 \\
+F_p &< F_f \\
+F_{\text{fluid, safe}} &< \mu_{\text{rubber, aluminium}} \times N \\
+10 &< 0.8 \times 49.05 \\
+10 \space N &< 39.24 \space N \text{ which holds true} \\
 \end{aligned}
 $$
 
-It will take $39.24 \space N$ in order to make the assembly slip.
+Since the inequality holds true, the assembly will not slip.
 
-Recall that the force of the fluid under a factor of safety of $3.68$ is:
+## Tipping
+
+<img src="tipping.drawio.svg" alt="tipping">
+
+The position of the centre of mass (with respect to a bottom corner of the assembly) is given by Solidworks:
 $$
-F_{\text{fluid, safe}} = 10 \space N
+(w, h) = (135, 125) \space mm
 $$
 
-Since:
+Consider the moment about the corner of tip for the body to not tip:
 $$
-F_{\text{fluid, safe}} = 10 \space N < 39.24 \space N = F_{p}
+\begin{aligned}
+\sum \tau = \tau_{p} - \tau_{g} &< 0 \\
+\tau_{p} &< \tau_{g} \\
+h \times F_p &< w \times F_g \\
+h \times F_{\text{fluid, safe}} &< w \times m_{\text{assembly}} \times g \\
+0.125 \times 10 &< 0.135 \times 5 \times 9.81 \\
+1.25 \space Nm &< 6.62 \space Nm \text{ which is true}\\
+\end{aligned}
 $$
 
-The assembly will not slip with rubber feet mountings in the air duct.
+Since the inequality holds true, the assembly will not tip.
+
+## Tipping Angle
+
+Where:
+- $\theta \space (\degree)$ is the tilt angle of the body.
+- $\phi \space (\degree)$ is the angle between the base of the body and the centre of mass.
+- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to $(0, 0)$.
+- $w \space (m)$ is the width of the body.
+- $h \space (m)$ is the height of the body.
+
+The assembly will tip if:
+$$
+\theta + \phi > 90
+$$
+
+For a max tilt angle of $10 \degree$:
+$$
+
+$$
 
 ## Verification
 
