@@ -1675,7 +1675,7 @@ Since the inequality holds true, the assembly will not slip.
 
 The position of the centre of mass (with respect to a bottom corner of the assembly) is given by Solidworks:
 $$
-(w, h) = (135, 125) \space mm
+(x, y) = (135, 125) \space mm
 $$
 
 Consider the moment about the corner of tip for the body to not tip:
@@ -1683,8 +1683,8 @@ $$
 \begin{aligned}
 \sum \tau = \tau_{p} - \tau_{g} &< 0 \\
 \tau_{p} &< \tau_{g} \\
-h \times F_p &< w \times F_g \\
-h \times F_{\text{fluid, safe}} &< w \times m_{\text{assembly}} \times g \\
+y \times F_p &< x \times F_g \\
+y \times F_{\text{fluid, safe}} &< x \times m_{\text{assembly}} \times g \\
 0.125 \times 10 &< 0.135 \times 5 \times 9.81 \\
 1.25 \space Nm &< 6.62 \space Nm \text{ which is true}\\
 \end{aligned}
@@ -1694,22 +1694,24 @@ Since the inequality holds true, the assembly will not tip.
 
 ## Tipping Angle
 
+<img src="tipping-angle.drawio.svg" alt="tipping-angle">
+
 Where:
 - $\theta \space (\degree)$ is the tilt angle of the body.
 - $\phi \space (\degree)$ is the angle between the base of the body and the centre of mass.
-- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to $(0, 0)$.
-- $w \space (m)$ is the width of the body.
-- $h \space (m)$ is the height of the body.
+- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to the bottom corner of the assembly.
 
 The assembly will tip if:
 $$
-\theta + \phi > 90
+\begin{aligned}
+\theta + \phi &> 90 \\
+\tan^{-1}{\left(\frac{y}{x}\right)} + \phi &> 90 \\
+\tan^{-1}{\left(\frac{0.125}{0.135}\right)} + \phi &> 90 \\
+\therefore \phi &> 47.2 \degree
+\end{aligned}
 $$
 
-For a max tilt angle of $10 \degree$:
-$$
-
-$$
+Therefore, the assembly will tip indefinitely if it has tipped over $47.2 \degree$.
 
 ## Verification
 
