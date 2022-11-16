@@ -1631,7 +1631,7 @@ The table of viable air ducts vs power can be reduced (green is viable).
 
 > It may be desirable to pick a pancake motor due to its low height in order fit into the assembly.
 
-## Slipping
+## Slipping 🐌
 
 <img src="slipping.drawio.svg" alt="slipping">
 
@@ -1669,7 +1669,7 @@ $$
 
 Since the inequality holds true, the assembly will not slip.
 
-## Tipping
+## Tipping 🎩
 
 <img src="tipping.drawio.svg" alt="tipping">
 
@@ -1692,7 +1692,7 @@ $$
 
 Since the inequality holds true, the assembly will not tip.
 
-## Tipping Angle
+## Tipping Angle 📐
 
 <img src="tipping-angle.drawio.svg" alt="tipping-angle">
 
@@ -1712,11 +1712,3 @@ $$
 $$
 
 Therefore, the assembly will tip indefinitely if it has tipped over $47.2 \degree$.
-
-## Verification
-
-Each requirement is verified via simulation.
-
-## Validation
-
-Each customer need is validated.
