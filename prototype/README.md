@@ -618,6 +618,7 @@ The following table shows the maximum effective turbine power vs air duct sizes:
 </table>
 
 > [Betz's Law](https://en.wikipedia.org/wiki/Betz%27s_law) states that no turbine can capture more than 59.3% of the kinetic energy of the wind.
+
 ## Funnel Design 🗻
 
 The fluid velocity can be accelerated by using a funnel:
@@ -881,16 +882,16 @@ Where:
 
 A finite-element analysis is performed on the turbine shaft to give a stress and strain plot. The greatest stress and strain experienced by the turbine shaft occurs at the circlip groove.
 
-<img src="turbine-shaft-stress-8mm.png" alt="turbine-shaft-stress-8mm">
-<img src="turbine-shaft-strain-8mm.png" alt="turbine-shaft-strain-8mm">
+<img src="shaft-stress-8mm.png" alt="shaft-stress-8mm">
+<img src="shaft-strain-8mm.png" alt="shaft-strain-8mm">
 
 The modulus of elasticity for a $8 \space mm$ outer diameter shaft is:
 $$
 \lambda = \frac{1.278 \times 10^6}{8.694 \times 10^{-4}} = 1467 \space MPa > E_{\text{HDPE}}
 $$
 
-<img src="turbine-shaft-stress-10mm.png" alt="turbine-shaft-stress-10mm">
-<img src="turbine-shaft-strain-10mm.png" alt="turbine-shaft-strain-10mm">
+<img src="shaft-stress-10mm.png" alt="shaft-stress-10mm">
+<img src="shaft-strain-10mm.png" alt="shaft-strain-10mm">
 
 The modulus of elasticity for a $10 \space mm$ outer diameter shaft is:
 $$
@@ -905,24 +906,24 @@ The [selected circlip (BS3673)](https://au.rs-online.com/web/p/circlips/0289231)
 
 FEA was performed on the turbine blade to simulate the stress and strain experienced by a $10 \space N$ fluid impacting a blade. The part was fixed at the internal shaft.
 
-<img src="turbine-blade-stress-3mm.png" alt="turbine-blade-stress-3mm" width="40%">
-<img src="turbine-blade-strain-3mm.png" alt="turbine-blade-strain-3mm" width="40%">
+<img src="blade-stress-3mm.png" alt="blade-stress-3mm" width="40%">
+<img src="blade-strain-3mm.png" alt="blade-strain-3mm" width="40%">
 
 The modulus of elasticity for a turbine blade with a base width of $3 \space mm$ is:
 $$
 \lambda = \frac{1.827 \times 10^6}{1.488 \times 10^{-3}} = 1228 \space MPa < E_{\text{HDPE}}
 $$
 
-<img src="turbine-blade-stress-2mm.png" alt="turbine-blade-stress-2mm" width="40%">
-<img src="turbine-blade-strain-2mm.png" alt="turbine-blade-strain-2mm" width="40%">
+<img src="blade-stress-2mm.png" alt="blade-stress-2mm" width="40%">
+<img src="blade-strain-2mm.png" alt="blade-strain-2mm" width="40%">
 
 The modulus of elasticity for a turbine blade with a base width of $2 \space mm$ is:
 $$
 \lambda = \frac{1.534 \times 10^6}{8.137 \times 10^{-4}} = 1885 \space MPa > E_{\text{HDPE}}
 $$
 
-<img src="turbine-blade-95.56g.png" alt="turbine-blade-95.56g" width="40%">
-<img src="turbine-blade-56.52g.png" alt="turbine-blade-56.65g" width="40%">
+<img src="blade-95.56g.png" alt="blade-95.56g" width="40%">
+<img src="blade-56.52g.png" alt="blade-56.65g" width="40%">
 
 The mass of the turbine was reduced from an initial mass of $95.56 \space g$ to $56.52 \space g$.
 
@@ -1101,8 +1102,8 @@ Let the spline width be $2 \space mm$ and height be $1 \space mm$.
 
 <img src="spline-dimensions.png" alt="spline-dimensions" width="40%">
 
-<img src="turbine-shaft-stress-10mm-shoulder.png" alt="turbine-shaft-stress-10mm-shoulder" width="40%">
-<img src="turbine-shaft-strain-10mm-shoulder.png" alt="turbine-shaft-strain-10mm-shoulder" width="40%">
+<img src="shaft-stress-10mm-shoulder.png" alt="shaft-stress-10mm-shoulder" width="40%">
+<img src="shaft-strain-10mm-shoulder.png" alt="shaft-strain-10mm-shoulder" width="40%">
 
 The modulus of elasticity of the spline acting as a shoulder for the bearing is:
 $$
@@ -1111,8 +1112,8 @@ $$
 
 It is clear from the FEA that the most stress is applied on the corner of the spline, therefore a chamfer is applied.
 
-<img src="turbine-shaft-stress-10mm-shoulder-chamfer.png" alt="turbine-shaft-stress-10mm-shoulder-chamfer" width="40%">
-<img src="turbine-shaft-strain-10mm-shoulder-chamfer.png" alt="turbine-shaft-strain-10mm-shoulder-chamfer" width="40%">
+<img src="shaft-stress-10mm-shoulder-chamfer.png" alt="shaft-stress-10mm-shoulder-chamfer" width="40%">
+<img src="shaft-strain-10mm-shoulder-chamfer.png" alt="shaft-strain-10mm-shoulder-chamfer" width="40%">
 
 The modulus of elasticity of the spline acting as a shoulder for the bearing is:
 $$
