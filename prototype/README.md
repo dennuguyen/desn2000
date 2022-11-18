@@ -1700,7 +1700,7 @@ Since the inequality holds true, the assembly will not tip.
 Where:
 - $\theta \space (\degree)$ is the tilt angle of the body.
 - $\phi \space (\degree)$ is the angle between the base of the body and the centre of mass.
-- $(x, y) \space (m)$ is the coordinates of the entre of mass with respect to the bottom corner of the assembly.
+- $(x, y) \space (m)$ is the coordinates of the centre of mass with respect to the bottom corner of the assembly.
 
 The assembly will tip if:
 $$
