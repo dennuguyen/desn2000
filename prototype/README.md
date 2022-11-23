@@ -1083,6 +1083,8 @@ $$
 
 ## Spline Design 🦔
 
+<img src="./spline-design.drawio.svg" alt="spline-design">
+
 The axial force acting on the spline is the weight of the rotor components itself i.e.
 $$
 F_{\text{axial, max}} = m_{\text{turbine + shaft}} \times g = 0.73 \space N
