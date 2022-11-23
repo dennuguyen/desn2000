@@ -1715,3 +1715,19 @@ $$
 $$
 
 Therefore, the assembly will tip indefinitely if it has tipped over $47.2 \degree$.
+
+## FEA Optimisation Process
+
+```mermaid
+flowchart TD
+    A[Identify Load Cases]
+    B[Conduct FEA]
+    C[Obtain Max Stress and Strain]
+    D[Calculate Modulus of Elasticity]
+    E[Compare Modulus of Elasticity to Young's Modulus]
+    F[Edit Part]
+    G[Done]
+
+    A --> B --> C --> D --> E -->|If modulus of elasticity greater than Young's modulus| F --> B
+    E -->|If modulus of elasticity less than Young's modulus| G
+```
