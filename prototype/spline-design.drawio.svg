@@ -1,58 +1,58 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="201px" height="318px" viewBox="-0.5 -0.5 201 318" content="&lt;mxfile&gt;&lt;diagram id=&quot;crO1nG500FIZMY0rplXh&quot; name=&quot;Page-1&quot;&gt;5ZdNj5swEIZ/DdcIMJ/HTbrbHrbaqjn07OAJWDE4MmaT9NfXDgZiSJTsKmpVhUNiXuyx55kZGxy0KPdfBd4W3zkB5vgu2Tvoi+P7iZ+oXy0cWiHyo1bIBSWt5A3Ckv4GI7pGbSiB2uooOWeSbm0x41UFmbQ0LATf2d3WnNmzbnEOE2GZYTZVf1Eii86teNC/Ac2LbmYvStsnK5xtcsGbyszn+Gh9vNrHJe5sGUfrAhO+O5HQs4MWgnPZtsr9AphG22Frx71ceNqvW0Albxpg4vKOWQPdko8Lk4cOhlrjVjezZqX+5ruCSlhucaa1nQq/0gpZMnXnqeZKOw/kddULPZK3RjJagdEJFps3ZYZKnSTuzA1t0T+qumfd5odKDjQ3ywUhYX/RZ68nqRIUeAlSHFQXMyCMDXyTnKi73w2hRkYqTqLcZyc22ZX3pgfCqmEgnwceX+cNFXnSOayRM1zXNLMJtwOATFL4KoATB8MzDnaaAIYlfbfNn3PazPCDUzXxwNdNZ1FsI3ZH6GreiAzMwNP8vMFWPLIlschBTmwdI9E7f1Nw0klwfnKpUPAK624vXK15Ei6ViNIOUC0F38CCMy6UUnGd8vM1ZWwkYUbzSkdZxQ2UPtdpTdUu9GQelJQQdqnmRFtoukruUxeBa9dFgKZ1EZ1JG3SHsuhK6wT9K1ZQHoJ7ONqPvL/I3f/A/n9QuzcBge54CJitPZmp0zVMQhSnQRT4cXKnnd4fkb0xo/3kHmjRAx6t7j88Wr3gAYEHI+DpFHhwDvj4QP4M8OQ67//9XSaIRmdiEMyiKB2uyLZ483tN8DG7n37HUbfD10TbffhiQ89/AA==&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="233px" height="342px" viewBox="-0.5 -0.5 233 342" content="&lt;mxfile&gt;&lt;diagram id=&quot;crO1nG500FIZMY0rplXh&quot; name=&quot;Page-1&quot;&gt;5VfLjtsgFP0abyPH4Ndyks5MF62mahZdE0NsFGwijPPo1xcCfhA7mswoVVXFiwQf4MI999wL9sCyPL4KtCu+c0yYF/j46IEvXhCAZK5+NXAyQJSEBsgFxQaa98CK/iYW9C3aUExqZ6DknEm6c8GMVxXJpIMhIfjBHbbhzF11h3IyAlYZYmP0F8WyMGgSxD3+ldC8aFeeR6npWaNsmwveVHY9LwCb82O6S9Taso7WBcL8MIDAsweWgnNpWuVxSZimtqXNzHu50tvtW5BK3jQhMjP2iDWk3fJ5Y/LUkqH2uNPNrFmrv8WhoJKsdijT2EGFX2GFLJl6m6vmWjtP8Ld1B3SUvDWS0YpYHCOxfVNmqNQi8Wd+6ILBGdUja6MPJQ6wGDtofd4TIclxAFmHXwkviRQnNcT2hrEl34oTtO+HPtTAQsUgyp06kVVX3pnuGVYNS/I04fH7fJMKP2kNa8oZqmuauQxfpYBgR9VjAgYOhhMOtpggDEm6d3Nhymm7wg9O1U56fv10FsUuxf4FdTVvREbsxKE+b7AVX9iSSOREjmydI9E5f1Nw0lFwfnKpqOAV0sNeuNrzKFxKddINUC0F35IlZ1wopOJa8osNZewCQozmlY6yCiRR+EJrmKoq9GQ7Sooxu5ZzwiSazhJtnlfS1tHkPmkC2ppmeYdgnCbphIrAHbKkzbRBJJ6O9AGDABO3VgUTtSr6W0EIPnA2nFRlx0SAOx4QtuwnM3XyhkkI4hRGMIjvxGwYXJwCE/KeYjZI7kEteMBj1/+Hx+4cPiDh8ILwdEw4nCL88rD+DOHJ+3z/7/ccGLn8QghnUZT2T+RavPnOAz9m99P3H/Xaf2mY4f3XHHj+Aw==&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
     <defs/>
     <g>
-        <path d="M 170 77 L 190 77 L 200 87 L 200 287 L 180 287 L 170 277 L 170 77 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 170 77 L 190 77 L 200 87 L 180 87 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 170 77 L 180 87 L 180 287 L 170 277 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 180 287 L 180 87 L 170 77 M 180 87 L 200 87" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 109.67 7 L 109.67 70.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
-        <path d="M 109.67 75.88 L 106.17 68.88 L 109.67 70.63 L 113.17 68.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <rect x="0" y="137" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 201 100 L 221 100 L 231 110 L 231 310 L 211 310 L 201 300 L 201 100 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 201 100 L 221 100 L 231 110 L 211 110 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 201 100 L 211 110 L 211 310 L 201 300 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 211 310 L 211 110 L 201 100 M 211 110 L 231 110" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 140.67 30 L 140.67 93.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 140.67 98.88 L 137.17 91.88 L 140.67 93.63 L 144.17 91.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="160" width="90" height="30" fill="none" stroke="none" pointer-events="all"/>
         <g transform="translate(-0.5 -0.5)">
             <switch>
                 <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 152px; margin-left: 1px;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 175px; margin-left: 1px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
-                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                            <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                                 Rotational Force
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="30" y="156" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Rotational...
+                <text x="45" y="177" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="middle">
+                    Rotational Force
                 </text>
             </switch>
         </g>
-        <rect x="50" y="17" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <rect x="111" y="0" width="60" height="30" fill="none" stroke="none" pointer-events="all"/>
         <g transform="translate(-0.5 -0.5)">
             <switch>
                 <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
-                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 32px; margin-left: 51px;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 15px; margin-left: 112px;">
                         <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
-                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
-                                Lateral Force
+                            <div style="display: inline-block; font-size: 8px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Axial Force
                             </div>
                         </div>
                     </div>
                 </foreignObject>
-                <text x="80" y="36" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    Lateral Fo...
+                <text x="141" y="17" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="8px" text-anchor="middle">
+                    Axial Force
                 </text>
             </switch>
         </g>
-        <path d="M 120 45.23 C 120 40.68 133.43 37 150 37 C 157.96 37 165.59 37.87 171.21 39.41 C 176.84 40.95 180 43.05 180 45.23 L 180 308.77 C 180 313.32 166.57 317 150 317 C 133.43 317 120 313.32 120 308.77 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 180 45.23 C 180 49.77 166.57 53.46 150 53.46 C 133.43 53.46 120 49.77 120 45.23" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 100 77 L 120 77 L 130 87 L 130 287 L 110 287 L 100 277 L 100 77 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 100 77 L 120 77 L 130 87 L 110 87 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 100 77 L 110 87 L 110 287 L 100 277 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 110 287 L 110 87 L 100 77 M 110 87 L 130 87" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 140 97 L 170 97 L 180 107 L 180 297 L 150 297 L 140 287 L 140 97 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 140 97 L 170 97 L 180 107 L 150 107 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 140 97 L 150 107 L 150 297 L 140 287 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
-        <path d="M 150 297 L 150 107 L 140 97 M 150 107 L 180 107" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 60 151.67 L 133.63 151.67" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
-        <path d="M 138.88 151.67 L 131.88 155.17 L 133.63 151.67 L 131.88 148.17 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 151 68.23 C 151 63.68 164.43 60 181 60 C 188.96 60 196.59 60.87 202.21 62.41 C 207.84 63.95 211 66.05 211 68.23 L 211 331.77 C 211 336.32 197.57 340 181 340 C 164.43 340 151 336.32 151 331.77 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 211 68.23 C 211 72.77 197.57 76.46 181 76.46 C 164.43 76.46 151 72.77 151 68.23" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 131 100 L 151 100 L 161 110 L 161 310 L 141 310 L 131 300 L 131 100 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 131 100 L 151 100 L 161 110 L 141 110 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 131 100 L 141 110 L 141 310 L 131 300 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 141 310 L 141 110 L 131 100 M 141 110 L 161 110" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 171 120 L 201 120 L 211 130 L 211 320 L 181 320 L 171 310 L 171 120 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 171 120 L 201 120 L 211 130 L 181 130 Z" fill-opacity="0.05" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 171 120 L 181 130 L 181 320 L 171 310 Z" fill-opacity="0.1" fill="#000000" stroke="none" pointer-events="all"/>
+        <path d="M 181 320 L 181 130 L 171 120 M 181 130 L 211 130" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 91 174.67 L 164.63 174.67" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 169.88 174.67 L 162.88 178.17 L 164.63 174.67 L 162.88 171.17 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
     </g>
     <switch>
         <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
