@@ -1083,6 +1083,8 @@ $$
 
 ## Spline Design 🦔
 
+<img src="./spline-design.drawio.svg" alt="spline-design">
+
 The axial force acting on the spline is the weight of the rotor components itself i.e.
 $$
 F_{\text{axial, max}} = m_{\text{turbine + shaft}} \times g = 0.73 \space N
@@ -1713,3 +1715,19 @@ $$
 $$
 
 Therefore, the assembly will tip indefinitely if it has tipped over $47.2 \degree$.
+
+## FEA Optimisation Process
+
+```mermaid
+flowchart TD
+    A[Identify Load Cases]
+    B[Conduct FEA]
+    C[Obtain Max Stress and Strain]
+    D[Calculate Modulus of Elasticity]
+    E[Compare Modulus of Elasticity to Young's Modulus]
+    F[Edit Part]
+    G[Done]
+
+    A --> B --> C --> D --> E -->|If modulus of elasticity greater than Young's modulus| F --> B
+    E -->|If modulus of elasticity less than Young's modulus| G
+```

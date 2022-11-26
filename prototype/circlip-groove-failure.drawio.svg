@@ -1,0 +1,36 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="146px" height="68px" viewBox="-0.5 -0.5 146 68" content="&lt;mxfile&gt;&lt;diagram id=&quot;bWzAQvZ9LEWpO8nAZU3Z&quot; name=&quot;Page-1&quot;&gt;zZVNj5swEIZ/DdcIcMzHMUl3t4dWrZRDzw6egLUGR8bZJP31HccGQiBKD1upOUTmHc+M55nBBGRTn980O1TfFQcZxCE/B+RLEMeUpvhvhYsTlvbJCqUW3EnRIGzFb/COXjwKDu1on1FKGnEYi4VqGijMSGNaq9N4217JcdIDK2EibAsmp+ovwU3l1CxOB/0riLLqMkdJ7iw7VryXWh0bny+Iyf76c+aadbFCJ7QV4+p0I5GXgGy0Usat6vMGpCXbUXN+rw+s/bk1NOavHLzHB5NH6I58PZi5dDDwjAe7LC5SNBw0Ccj6VAkD2wMrrOGEI4BaZWqJTxEud5YA8G+7Xui5/DgaDANeb13n80WehmEa0ZTSPMsSiqZpKd1ZQRs430i+tDdQNRh9wS3dGIZ+nropzD3209DUxEvVTT+XXmN+jMo+8oASF57mA7JkQnZ1FsxueVUaud1jxprMmGJrtHqHjZJKo9IoS229F1LeSUyKsrENQlKA+toSEjjNK2+oBec2zWzbtOsVCuEnUU/DMfV0Sj2boU4+gzr9L+Y5W8RRlmcUayIZwYujJzvBOAP7MdnoniydkKX/imzynCw0fGVvXwtXsrYVxRijcwA+uXyfAnhSYKdpkMyIj3H4uap9hp9KYOKBb7JcZMn88HZRWnXEt9c73t6sz2PR8C6WYboEM4l1bUVf/Fx38HH4Rrjtw2eYvPwB&lt;/diagram&gt;&lt;/mxfile&gt;" style="background-color: rgb(255, 255, 255);">
+    <defs/>
+    <g>
+        <path d="M 0 36.97 C 0 31.46 13.43 27 30 27 C 37.96 27 45.59 28.05 51.21 29.92 C 56.84 31.79 60 34.33 60 36.97 L 60 57.03 C 60 62.54 46.57 67 30 67 C 22.04 67 14.41 65.95 8.79 64.08 C 3.16 62.21 0 59.67 0 57.03 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 60 36.97 C 60 42.48 46.57 46.94 30 46.94 C 22.04 46.94 14.41 45.89 8.79 44.02 C 3.16 42.15 0 39.61 0 36.97" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="65" y="7" width="80" height="30" fill="none" stroke="none" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 22px; margin-left: 66px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                Axial Force
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="26" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    Axial Force
+                </text>
+            </switch>
+        </g>
+        <path d="M 5 20.22 C 5 15.68 16.19 12 30 12 C 36.63 12 42.99 12.87 47.68 14.41 C 52.37 15.95 55 18.04 55 20.22 L 55 33.78 C 55 38.32 43.81 42 30 42 C 16.19 42 5 38.32 5 33.78 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 55 20.22 C 55 24.76 43.81 28.44 30 28.44 C 16.19 28.44 5 24.76 5 20.22" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 59.86 7 L 59.86 30.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 59.86 35.88 L 56.36 28.88 L 59.86 30.63 L 63.36 28.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>
